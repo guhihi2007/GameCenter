@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_searchadv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:scrollbars="none"></ListView>
+
+    <cn.lt.game.lib.view.NetWorkStateView
+        android:id="@+id/game_detail_netWrokStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_bar"></cn.lt.game.lib.view.NetWorkStateView>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="0" android:drawable="@mipmap/icon_1_level" />
+    <item android:maxLevel="1" android:drawable="@mipmap/icon_1_level" />
+    <item android:maxLevel="2" android:drawable="@mipmap/icon_2_level" />
+    <item android:maxLevel="3" android:drawable="@mipmap/icon_3_level" />
+    <item android:maxLevel="4" android:drawable="@mipmap/icon_4_level" />
+    <item android:maxLevel="5" android:drawable="@mipmap/icon_5_level" />
+    <item android:maxLevel="6" android:drawable="@mipmap/icon_6_level" />
+    <item android:maxLevel="7" android:drawable="@mipmap/icon_7_level" />
+    <item android:maxLevel="8" android:drawable="@mipmap/icon_8_level" />
+    <item android:maxLevel="9" android:drawable="@mipmap/icon_9_level" />
+    <item android:maxLevel="10" android:drawable="@mipmap/icon_10_level" />
+    <item android:maxLevel="11" android:drawable="@mipmap/icon_11_level" />
+    <item android:maxLevel="12" android:drawable="@mipmap/icon_12_level" />
+    <item android:maxLevel="13" android:drawable="@mipmap/icon_13_level" />
+    <item android:maxLevel="14" android:drawable="@mipmap/icon_14_level" />
+    <item android:maxLevel="15" android:drawable="@mipmap/icon_15_level" />
+    <item android:maxLevel="16" android:drawable="@mipmap/icon_16_level" />
+    <item android:maxLevel="17" android:drawable="@mipmap/icon_17_level" />
+    <item android:maxLevel="18" android:drawable="@mipmap/icon_18_level" />
+    <item android:maxLevel="19" android:drawable="@mipmap/icon_19_level" />
+    <item android:maxLevel="20" android:drawable="@mipmap/icon_20_level" />
+</level-list>

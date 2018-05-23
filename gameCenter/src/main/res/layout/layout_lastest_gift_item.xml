@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/change_padding"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <LinearLayout
+        android:id="@+id/llt_title_root"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="dsfsdf"
+            android:textSize="@dimen/font18sp" />
+
+        <ImageView
+            android:id="@+id/iv_title"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/img_default_80x80_round"/>
+
+        <TextView
+            android:id="@+id/tv_gift_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@id/iv_icon"
+            android:layout_marginLeft="@dimen/gift_giftinfoview_root_padding"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_icon"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:maxLines="1"
+            android:maxWidth="@dimen/gift_giftitemview_tv_gift_name_max_width"
+            android:text="阴阳师中秋国庆大礼包"
+            android:textColor="#333333"
+            android:textSize="@dimen/font17sp"/>
+
+        <ProgressBar
+            android:id="@+id/iv_cursor"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/gift_giftitemview_iv_cursor_layout_height"
+            android:layout_below="@id/tv_gift_name"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:background="@color/background_grey"
+            android:max="1000"
+            android:progress="300"
+            android:progressDrawable="@drawable/gift_reset"/>
+
+
+        <TextView
+            android:id="@+id/tv_reset_git_count_constant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_gift_name"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="@dimen/gift_giftitemview_tv_gift_content_margin_top"
+            android:layout_toRightOf="@+id/iv_cursor"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="剩余"
+            android:textColor="#aaaaaa"
+            android:textSize="@dimen/font11sp"/>
+        <TextView
+            android:id="@+id/tv_reset_git_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_reset_git_count_constant"
+            android:layout_toRightOf="@+id/tv_reset_git_count_constant"
+            android:text="50"
+            android:textColor="#ff8800"
+            android:textSize="@dimen/font11sp"/>
+
+        <Button
+            android:id="@+id/bt_get_gift"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/get_gift_button_selector"
+            android:text="领取"
+            android:textColor="@color/theme_green"
+            android:textSize="@dimen/font15sp"/>
+
+        <TextView
+            android:id="@+id/tv_gifContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_cursor"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="这是礼包介绍这是礼包介绍这是礼包介绍这是礼包介绍这是礼包介绍"
+            android:textColor="#aaaaaa"
+            android:textSize="11sp"
+        />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_buttomLine"
+        android:layout_width="match_parent"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:layout_height="1px"
+        android:layout_below="@+id/tv_gift_content"
+        android:background="#eeeeee"/>
+
+</LinearLayout>

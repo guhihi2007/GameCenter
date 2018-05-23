@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="bottom_bar_height">58dp</dimen>
+    <dimen name="large_font_size">18sp</dimen>
+    <dimen name="middle_font_size">16sp</dimen>
+    <dimen name="small_font_size">12sp</dimen>
+    <dimen name="mini_font_size">10sp</dimen>
+    <dimen name="font_size_14sp">14sp</dimen>
+    <dimen name="font_size_15sp">13sp</dimen>
+    <dimen name="page_title_text">18sp</dimen>
+    <dimen name="grid_item_text_size">13sp</dimen>
+    <dimen name="title_size">16sp</dimen>
+
+
+</resources>

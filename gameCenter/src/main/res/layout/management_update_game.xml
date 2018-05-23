@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@drawable/favorite_list_item_selector"
+        android:id="@+id/management_gameUpdata_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:padding="@dimen/inIntervalRight">
+
+        <RelativeLayout
+            android:id="@+id/rl_operation"
+            android:layout_marginTop="9dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <include
+                android:id="@+id/management_gameUpdata_bt"
+                layout="@layout/btn_rectangle_install"
+                android:layout_width="60dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true" />
+
+            <ImageView
+                android:id="@+id/btn_more"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/management_gameUpdata_bt"
+                android:src="@mipmap/btn_more" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/management_gameUpdata_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:paddingTop="2dp"
+            android:layout_marginRight="10dp" />
+
+        <FrameLayout
+            android:id="@+id/ll_name"
+            android:layout_toLeftOf="@id/rl_operation"
+            android:layout_toRightOf="@+id/management_gameUpdata_icon"
+            android:layout_alignTop="@id/management_gameUpdata_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/management_gameUpdata_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/margin_size_2dp"
+                android:text="爸爸去哪儿"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/middle_frront_size" />
+
+            <View
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/fade_selector"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_group"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/ll_name"
+            android:layout_alignLeft="@+id/ll_name"
+            android:layout_marginTop="@dimen/margin_size_8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <cn.lt.game.ui.common.MarqueeTextView
+                android:id="@+id/management_game_local_version"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="1"
+                android:maxLines="1"
+                android:gravity="left|center_vertical"
+                android:text="2.0.0 → 2.3.6"
+                android:textColor="@color/light_grey_a"
+                android:layout_marginRight="@dimen/margin_size_8dp"
+                android:textSize="@dimen/font11sp" />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/upgrade_version_arrow"-->
+                <!--android:src="@mipmap/upgrade_version_arrow"-->
+                <!--android:layout_marginLeft="@dimen/margin_size_4dp"-->
+                <!--android:layout_marginRight="@dimen/margin_size_4dp"-->
+                <!--android:layout_width="@dimen/margin_size_12dp"-->
+                <!--android:layout_height="@dimen/margin_size_12dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/management_game_remote_version"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:ellipsize="end"-->
+                <!--android:maxLines="1"-->
+                <!--android:text="2.1.0"-->
+                <!--android:textColor="#f80"-->
+                <!--android:textSize="@dimen/tag_font_size" />-->
+
+            <ImageView
+                android:id="@+id/network_indication"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"
+                android:src="@mipmap/ng_indication" />
+
+            <TextView
+                android:id="@+id/management_gameUpdata_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.86M"
+                android:textColor="@color/light_grey_a"
+                android:textSize="@dimen/font11sp" />
+        </LinearLayout>
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            android:layout_alignLeft="@+id/ll_name"
+            android:layout_below="@id/ll_group"
+            android:id="@+id/expand_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            expandableTextView:expandDrawable="@mipmap/drawable_expand"
+            expandableTextView:collapseDrawable="@mipmap/drawable_collapse"
+            expandableTextView:animDuration="200"
+            android:paddingBottom="3dp"
+            expandableTextView:maxCollapsedLines="2">
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_grey_a"
+                android:paddingRight="24dp"
+                android:textSize="11sp" />
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="-18dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="right|bottom"
+                android:background="@android:color/transparent" />
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/gap"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_8dp"/>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ccc"
+    android:orientation="vertical"
+    android:padding="2dp"
+    tools:context=".MainActivity" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="fill_parent"
+        android:layout_height="144dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_navigate"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#ccc"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+</LinearLayout>

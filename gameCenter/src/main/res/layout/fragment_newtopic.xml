@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fl_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.lt.game.ui.app.community.widget.FailedBar
+            android:id="@+id/fl_publish_failed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+        <cn.lt.game.lib.widget.RefreshAndLoadMoreListView
+            android:id="@+id/topic_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/outerIntervalLeft"
+            android:layout_marginRight="@dimen/outerIntervalRight"
+            android:paddingTop="@dimen/margin_size_8dp"
+            />
+        <cn.lt.game.lib.view.NetWorkStateView
+            android:id="@+id/group_netWrokStateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/fl_publish_failed" />
+    </RelativeLayout>
+
+    <!-- 悬浮的小球 -->
+    <cn.lt.game.ui.app.community.widget.CircleRefreshView
+        android:id="@+id/fa_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/game_detail_subTitle_marginTop"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@mipmap/ic_refresh"
+        android:visibility="gone" />
+
+</FrameLayout>

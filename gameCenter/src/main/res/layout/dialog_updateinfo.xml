@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/updateDialog_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/update_info_bg"
+    android:paddingBottom="14dp">
+    <!-- 标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/updateDialog_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/update_info_bg">
+
+        <ImageView
+            android:id="@+id/updateDialog_closeIv"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="16.5dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16.5dp"
+            android:src="@mipmap/ic_dialog_close" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="@string/find_new_version"
+            android:textColor="@color/theme_green"
+            android:textSize="@dimen/font16sp" />
+
+    </RelativeLayout>
+
+    <!-- 底部按钮 -->
+    <Button
+        android:id="@+id/updateDialog_confirm"
+        android:layout_width="208dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ll_update_dialog_body"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/deep_btn_green_selector"
+        android:gravity="center"
+        android:text="@string/immediately_upgrade"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_size"
+        android:visibility="visible" />
+    <!-- 底部按钮 -->
+    <LinearLayout
+        android:id="@+id/ll_force"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_update_dialog_body"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/messageDialog_leftBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_cancel_selector"
+            android:gravity="center"
+            android:text="@string/exit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size" />
+
+        <Button
+            android:id="@+id/messageDialog_rightBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="18dp"
+            android:layout_weight="1"
+            android:background="@drawable/deep_btn_green_selector"
+            android:gravity="center"
+            android:text="@string/update"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size" />
+    </LinearLayout>
+
+    <!-- body文字 -->
+    <LinearLayout
+        android:id="@+id/ll_update_dialog_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateDialog_titleBar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_force_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/margin_size_14dp"
+            android:gravity="left"
+            android:lineSpacingExtra="8dp"
+            android:text="当前版本过低，为提高使用体验，先需要更新最新版本，才能正常使用游戏中心！"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/font_size_15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/updateDialog_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:text="新版本：V"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/font15sp" />
+
+            <TextView
+                android:id="@+id/updateDialog_updateDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/font_size_16sp" />
+
+            <TextView
+                android:id="@+id/iv_void_flux"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/updateDialog_version"
+                android:background="@mipmap/no_flow_bg"
+                android:gravity="center"
+                android:paddingLeft="3dp"
+                android:text="免流量"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_font_size"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/updateDialog_infoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="12dp"
+            android:text="新版升级内容："
+            android:textColor="@color/detail_review"
+            android:textSize="@dimen/font13sp" />
+
+        <TextView
+            android:id="@+id/updateDialog_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="5dp"
+            android:scrollbars="vertical"
+            android:text="1.升级呀升级呀升级；\n2.哇哈哈哈哈升级呀；"
+            android:textColor="@color/detail_review"
+            android:textSize="@dimen/font13sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

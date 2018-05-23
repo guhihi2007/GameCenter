@@ -1,0 +1,20 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >  
+    <item android:id="@android:id/progress">  
+        <clip>  
+            <shape android:shape="rectangle" >  
+                <corners android:radius="3dip" /><!--<span style="font-family: Arial, Helvetica, sans-serif;">设置为0dp就是直角</span>-->  
+                <solid android:color="@color/theme_green" />
+            </shape>
+        </clip>  
+    </item>  
+</layer-list>
+
+
+<!-- 
+<?xml version="1.0" encoding="UTF-8"?> 
+<shape xmlns:android="http://schemas.android.com/apk/res/android"> 
+<solid android:color="#ff52c71b"/> 
+<corners android:radius="3dip"/> 
+</shape>
+
+ -->

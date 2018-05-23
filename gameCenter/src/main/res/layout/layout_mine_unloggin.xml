@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/sinister_smile_cat" />
+
+        <TextView
+            android:id="@+id/tv_un_loggin_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/tv_loggin_mine"
+            android:layout_width="208dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/deep_get_gift_button_selector"
+            android:gravity="center"
+            android:text="马上去登录"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="还没有账号？"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/tv_register_mine"
+                android:layout_width="108dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/gift_button_orange_selector"
+                android:gravity="center"
+                android:text="马上注册"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

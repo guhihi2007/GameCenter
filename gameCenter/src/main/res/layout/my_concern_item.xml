@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_centerVertical="true"
+    android:background="@color/white"
+>
+
+    <cn.lt.game.lib.view.RoundImageView
+        android:id="@+id/iv_concern"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="12dp"
+        android:scaleType="fitCenter"
+    />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_concern"
+        android:orientation="vertical"
+    >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+        >
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="奥巴马"
+                android:textColor="#333"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:id="@+id/iv_user_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/tv_user_name"
+                android:src="@drawable/user_level"
+            />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_concern_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="一分钟前关注"
+            android:textColor="#bbb"
+            android:textSize="13sp"/>
+    </LinearLayout>
+</RelativeLayout>

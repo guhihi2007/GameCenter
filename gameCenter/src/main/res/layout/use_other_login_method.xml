@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="0.0dp"
+        android:layout_height="0.5dp"
+        android:background="#C2C2C2"
+	    android:layout_marginLeft="12dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09"
+        android:gravity="center"
+        android:text="@string/use_follow_account_to_login"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/middle_font_size" />
+
+    <View
+        android:layout_width="0.0dp"
+        android:layout_height="0.5dp"
+        android:background="#C2C2C2"
+	    android:layout_marginRight="12dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

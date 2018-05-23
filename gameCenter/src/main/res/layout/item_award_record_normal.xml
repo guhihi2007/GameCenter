@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/awardRecordRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="8dp"
+    >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/margin_size_12dp"
+    android:paddingRight="@dimen/margin_size_12dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/award_listView_item_img"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:src="@mipmap/img_default_80x80_round"/>
+
+    <TextView
+        android:id="@+id/award_item_txName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/award_listView_item_img"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="京东购物券"
+        android:layout_alignRight="@+id/button"
+        android:layout_marginRight="60dp"
+        android:textColor="#333333"
+        android:textSize="@dimen/font16sp" />
+
+    <TextView
+        android:id="@+id/award_item_detail_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/award_item_txName"
+        android:layout_below="@+id/award_item_txName"
+        android:layout_marginTop="2.5dp"
+        android:ellipsize="end"
+        android:minLines="2"
+        android:maxLines="2"
+        android:lineSpacingExtra="1.5dp"
+        android:layout_alignRight="@+id/button"
+        android:layout_marginRight="60dp"
+        android:text="京东购物券，附近的看风景"
+        android:textColor="#aaaaaa"
+        android:textSize="@dimen/font11sp" />
+
+    <View
+        android:id="@+id/mygift_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width"
+        android:layout_below="@+id/award_listView_item_img"
+        android:background="#eeeeee" />
+
+        <TextView
+            android:id="@+id/jhm"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_below="@+id/mygift_line"
+            android:gravity="center_vertical"
+            android:text="有效期至 : "
+            android:textColor="#aaaaaa"
+            android:textSize="@dimen/font11sp" />
+
+        <TextView
+            android:id="@+id/award_listView_item_time"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/mygift_line"
+            android:layout_toRightOf="@+id/jhm"
+            android:ellipsize="end"
+             android:layout_gravity="center|left"
+            android:maxLines="1"
+            android:text="2017年4月"
+            android:textColor="#aaaaaa"
+            android:textSize="@dimen/font11sp"
+           />
+
+    <RelativeLayout
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/award_listView_item_img"
+        >
+
+        <Button
+            android:id="@+id/lv_award_record_item_status"
+            android:layout_width="@dimen/gift_gifmineitem_btcopy_layout_width"
+            android:layout_height="@dimen/gift_gifmineitem_btcopy_layout_height"
+            android:background="@drawable/btn_green_selector"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="未领取"
+            android:textColor="@color/theme_green"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

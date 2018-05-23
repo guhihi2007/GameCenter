@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/group_list_actionbar_height" >
+
+    <cn.lt.game.ui.app.community.topic.detail.GradientRightView
+        android:id="@+id/group_listactionbar_emptyRightLayout"
+        android:layout_width="8dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" />
+
+    <cn.lt.game.ui.app.community.topic.detail.GradientLeftView
+        android:id="@+id/group_listactionbar_emptyLeftLayout"
+        android:layout_width="8dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true" >
+    </cn.lt.game.ui.app.community.topic.detail.GradientLeftView>
+
+    <RelativeLayout
+        android:id="@+id/group_listactionbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/group_list_actionbar_ValueHeight"
+        android:layout_toLeftOf="@+id/group_listactionbar_emptyRightLayout"
+        android:layout_toRightOf="@+id/group_listactionbar_emptyLeftLayout"
+        android:background="@drawable/border_top"
+        android:paddingLeft="@dimen/inInterval"
+        android:paddingRight="@dimen/inInterval" >
+
+        <cn.lt.game.ui.app.community.topic.detail.SelectButton
+            android:id="@+id/group_listactionbar_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/group_listactionbar_paddingTop"
+            android:enabled="false"
+            android:text="评论 3"
+            android:textColor="@color/indicator_seletor"
+            android:textSize="@dimen/font_size_15sp" />
+
+
+        <!--／／3.2弃用，改用dialog展示-->
+        <!--<TextView-->
+            <!--android:id="@+id/group_listactionbar_sort"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_marginLeft="@dimen/outerInterval"-->
+            <!--android:paddingLeft="2dp"-->
+            <!--android:paddingRight="2dp"-->
+            <!--android:layout_toRightOf="@+id/group_listactionbar_comment"-->
+            <!--android:background="@drawable/btn_topic_mark_green_selector"-->
+            <!--android:gravity="center"-->
+            <!--android:text="正序 "-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/font_size_13sp" -->
+            <!--android:layout_alignTop="@+id/group_listactionbar_comment"/>-->
+
+        <cn.lt.game.ui.app.community.topic.detail.SelectButton
+            android:id="@+id/group_listactionbar_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/group_listactionbar_paddingTop"
+            android:text="赞 5"
+            android:textColor="@color/indicator_seletor"
+            android:textSize="@dimen/font_size_15sp" />
+    </RelativeLayout>
+
+    <cn.lt.game.ui.app.community.topic.detail.GroupListIndicator
+        android:id="@+id/group_listactionbar_Indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_listactionbar_layout"
+        android:layout_toLeftOf="@+id/group_listactionbar_emptyRightLayout"
+        android:layout_toRightOf="@+id/group_listactionbar_emptyLeftLayout"
+        android:clickable="false" />
+
+</RelativeLayout>

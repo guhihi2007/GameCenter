@@ -1,0 +1,36 @@
+<!--
+分割线和小编点评
+配合 item_horizontal_basegame.xml中的ViewStub
+ViewStub目前有缺陷，必须赋值宽高。导致无法使用<merge />
+-->
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    >
+        <View
+        android:id="@+id/horizontalLine"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#dddddd" />
+    
+        <TextView
+            android:id="@+id/describeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/horizontalLine"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/font_size_14sp" />
+        
+    
+</RelativeLayout>
+

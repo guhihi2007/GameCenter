@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/background_grey"
+             android:orientation="vertical">
+
+    <cn.lt.game.lib.widget.RefreshAndLoadMoreListView
+        android:id="@+id/newstrategy_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/outerIntervalLeft"
+        android:layout_marginRight="@dimen/outerIntervalRight"
+    />
+
+    <cn.lt.game.lib.view.NetWorkStateView
+        android:id="@+id/newstrategy_netWrokStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

@@ -1,0 +1,43 @@
+<resources>
+
+    <dimen name="bottom_bar_height">54dp</dimen>
+    <dimen name="large_font_size">18sp</dimen>
+    <dimen name="middle_frront_size">16sp</dimen>
+    <dimen name="small_font_size">12sp</dimen>
+    <dimen name="mini_font_size">10sp</dimen>
+    <dimen name="font_size_14sp">14sp</dimen>
+    <dimen name="font_size_15sp">15sp</dimen>
+    <dimen name="font_size_16sp">16sp</dimen>
+    <dimen name="font_size_17sp">17sp</dimen>
+    <dimen name="page_title_text">18sp</dimen>
+    <dimen name="grid_item_text_size">13sp</dimen>
+    <dimen name="title_size">16sp</dimen>
+    <!-- 测试适配、 -->
+    <!-- 弹出框长度 -->
+
+
+    <dimen name="inIntervalTop">12dp</dimen>
+    <dimen name="inIntervalLeft">12dp</dimen>
+    <dimen name="inIntervalRight">11dp</dimen>
+    <dimen name="inIntervalBottom">12dp</dimen>
+    <dimen name="inInterval">12dp</dimen>
+    <dimen name="outerIntervalTop">8dp</dimen>
+    <dimen name="outerIntervalLeft">8dp</dimen>
+    <dimen name="outerIntervalRight">8dp</dimen>
+    <dimen name="outerIntervalBottom">8dp</dimen>
+    <dimen name="outerInterval">8dp</dimen>
+    <dimen name = "appIconViewHeight_small">56dp</dimen>
+    <dimen name = "userIconWidth">42.66dp</dimen>
+    <!-- app 卡片信息 -->
+
+    <!-- 游戏排行 -->
+
+    <!-- 礼包 -->
+
+    <!-- 游戏详情，游戏截图相关 -->
+    <dimen name="gameScreenshotFramePaddingLeft">8dp</dimen>
+
+
+    <dimen name="corner">20dp</dimen>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="86dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/strategy_listitem_image"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="14dp"
+        android:scaleType="centerCrop"
+         />
+
+    <TextView
+        android:id="@+id/strategy_listitem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/strategy_listitem_image"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:paddingRight="12dp"
+        android:text="抢百万资源 ！胖子MM逆流成河reterte "
+        android:textColor="@color/light_black"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/strategy_listitem_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/strategy_listitem_name"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/strategy_listitem_image"
+        android:paddingRight="12dp"
+        android:text="2014-12-05"
+        android:textColor="@color/light_grey_a"
+        android:layout_marginBottom="20dp"
+        android:textSize="11sp" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/tab_line_unpressed_color_copy"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_8dp"
+        android:visibility="gone"
+        android:background="@color/background_grey"
+        android:layout_below="@+id/strategy_listitem_image"
+        />
+</RelativeLayout>

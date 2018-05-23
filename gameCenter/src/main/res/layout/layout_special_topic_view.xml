@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@android:color/white">
+    <ImageView
+        android:id="@+id/iv_specialTopicImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@mipmap/img_default" />
+
+
+
+    <TextView
+        android:id="@+id/tv_specialTopicTitle"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@null"
+        android:paddingLeft="12dp"
+        android:layout_below="@+id/iv_specialTopicImage"
+        android:gravity="center_vertical"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:text="小编语录："
+        android:textColor="#333333"
+        android:textSize="15sp"/>
+
+
+</RelativeLayout>

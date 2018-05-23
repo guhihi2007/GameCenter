@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout 
+        android:id="@+id/download_advertisement_body"
+         xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingBottom="15dp"
+        >
+     <!-- 标题栏 -->
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="46.6dp"
+	    android:background="@color/theme_green" >
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="10dp"
+	        android:text="@string/selection_play_game"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/large_font_size"/>
+	    <ImageView 
+	        android:id="@+id/download_advertisement_cancelIv"
+	        android:layout_width="45dp"
+	        android:layout_height="30dp"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:scaleType="center"
+	        android:src="@mipmap/img_closedialog"
+	        android:background="@drawable/button_background_selector"
+	        />
+	</RelativeLayout>
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:text="@string/wifi_download"
+	    android:textColor="@color/light_yellow"
+	    android:textSize="@dimen/font_size_14sp"
+	    />
+        
+	<GridView 
+    	android:id="@+id/download_advertisement_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:cacheColorHint="#00000000"
+        android:numColumns="3"
+         />
+	
+	<Button 
+	    android:id="@+id/download_advertisement_downloadBtn"
+	    android:layout_width="200dp"
+	    android:layout_height="40dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_gravity="center_horizontal"
+	    android:text="@string/one_key_requisite_download"
+	    android:textSize="@dimen/middle_font_size"
+	    android:textColor="@color/white"
+	    android:background="@drawable/deep_btn_green_selector"
+	    />
+	
+    </LinearLayout>
+    

@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.lt.game.ui.app.community.ForbadeActivity">
+
+    <cn.lt.game.lib.view.TitleBarView
+        android:id="@+id/forbade_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></cn.lt.game.lib.view.TitleBarView>
+
+    <cn.lt.game.lib.view.NetWorkStateView
+        android:id="@+id/forbade_netwrolStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/forbade_title_bar"></cn.lt.game.lib.view.NetWorkStateView>
+</RelativeLayout>

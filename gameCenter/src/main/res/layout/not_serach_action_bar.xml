@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:background="@color/theme_green">
+
+    <ImageView
+        android:id="@+id/not_serach_btn_back"
+        android:layout_width="@dimen/action_bar_height"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@drawable/button_background_selector"
+        android:padding="@dimen/action_bar_padding"
+        android:src="@mipmap/ic_back" />
+
+    <TextView
+        android:id="@+id/not_serach_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/game_detail_search"
+        android:layout_toRightOf="@+id/not_serach_btn_back"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/white"
+        android:textSize="@dimen/action_bar_title" />
+
+    <ImageButton
+        android:id="@+id/game_detail_search"
+        android:layout_width="@dimen/action_bar_height"
+        android:layout_height="@dimen/action_bar_height"
+        android:padding="@dimen/action_bar_padding"
+        android:layout_toLeftOf="@+id/not_serach_btn_moreButton"
+        android:background="@drawable/button_background_selector"
+        android:src="@mipmap/btn_game_detail_search"
+        android:visibility="invisible" />
+
+    <cn.lt.game.lib.view.TitleMoreButton
+        android:id="@+id/not_serach_btn_moreButton"
+        android:layout_width="@dimen/action_bar_height"
+        android:layout_height="@dimen/action_bar_height"
+        android:padding="@dimen/action_bar_padding"
+        android:background="@drawable/button_background_selector"
+        android:src="@mipmap/ic_more"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <cn.lt.game.ui.app.awardgame.view.ScrollVerticalView
+        android:id="@+id/download_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"
+        android:visibility="visible"/>
+
+</RelativeLayout>

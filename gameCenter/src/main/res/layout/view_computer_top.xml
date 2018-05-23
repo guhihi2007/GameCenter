@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015-05-20"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/rectangle_light_grey_corner"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        />
+    
+    <cn.lt.game.ui.app.community.widget.CircleImageView
+        android:id="@+id/feedback_listitem_computerIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@id/time"
+        android:layout_marginLeft="@dimen/outerInterval"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/time"
+        android:layout_toRightOf="@+id/feedback_listitem_computerIcon"
+        android:background="@drawable/feedback_reply_selector"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="69dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+        <TextView
+            android:id="@+id/feedback_listitem_computerChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/font_size_15sp"
+            android:textColor="@color/light_black"
+            android:text="若在使用游戏中心时出现问题，请在此处留言向我们反馈。"
+            />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:textSize="13sp"
+            android:textColor="#FFAE59"
+            android:layout_marginTop="5dp"
+            android:text="请留下您的QQ、邮箱或电话号码"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:clickable="true"
+    >
+    <cn.lt.game.ui.app.community.widget.BubbleTextView
+        android:id="@+id/bubbleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:text="保存到手机"
+        android:textColor="@color/white"
+        android:paddingTop="6dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="14sp"
+        app:arrowWidth="8dp"
+        app:angle="4dp"
+        app:arrowHeight="5dp"
+        app:arrowLocation="bottom"
+        app:bubbleColor="#000000"
+        />
+</LinearLayout>

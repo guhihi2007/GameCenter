@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/rl_hotRoot"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/status_bar"/>
+
+    <cn.lt.game.ui.app.index.widget.SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titel_bar_muen_icon_hieght"
+        app:backgroudColor="@color/theme_green"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <cn.lt.game.ui.app.hot.HotWebView
+            android:id="@+id/hot_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        />
+
+        <cn.lt.game.lib.view.NetWorkStateView
+            android:id="@+id/netWrokStateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/network_fail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/margin_size_8dp"
+        android:gravity="center"
+        android:text="duang~~~网络出问题啦"
+        android:textColor="@color/detail_review"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:id="@+id/iv_failCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/network_fail"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/network_error"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/network_fail"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/network_fail_set"
+            android:layout_width="@dimen/netwrokState_buttonWidth"
+            android:layout_height="@dimen/netwrokState_buttonHeight"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/deep_btn_green_selector"
+            android:gravity="center"
+            android:text="网络设置"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16sp"/>
+
+        <TextView
+            android:id="@+id/network_fail_tryAgain"
+            android:layout_width="@dimen/netwrokState_buttonWidth"
+            android:layout_height="@dimen/netwrokState_buttonHeight"
+            android:layout_toRightOf="@+id/network_fail_set"
+            android:background="@drawable/deep_btn_green_selector"
+            android:gravity="center"
+            android:text="重试"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

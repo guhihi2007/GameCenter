@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/action_bar_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <cn.lt.game.ui.app.community.widget.ContainsEmojiEditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_below="@+id/topbar"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_edittext"
+        android:gravity="top|left"
+        android:hint="请输入140字以内的评论"
+        android:maxLength="140"
+        android:padding="@dimen/margin_size_12dp"
+        android:textColor="@color/light_black"
+        android:textColorHint="@color/point_grey"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_center_36"
+        android:layout_below="@+id/et_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_size_8dp"
+        android:layout_marginRight="@dimen/margin_size_8dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/btn_exit_app_selector"
+        android:gravity="center"
+        android:text="@string/commit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_size_20dp"
+    android:paddingRight="@dimen/margin_size_20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_round_white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/album"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:text="@string/choose_album"
+            android:textColor="@color/light_black"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/margin_size_12dp"
+            android:layout_marginRight="@dimen/margin_size_12dp"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:text="@string/pictures"
+            android:textColor="@color/light_black"
+            android:textSize="17sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/margin_size_12dp"
+            android:layout_marginRight="@dimen/margin_size_12dp"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:text="@string/cancel_ignor_bt"
+            android:textColor="@color/light_black"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

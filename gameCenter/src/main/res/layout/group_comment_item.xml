@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <cn.lt.game.lib.view.RoundImageView
+        android:id="@+id/group_comment_item_img"
+        android:layout_width="@dimen/group_list_item_imgWidth"
+        android:layout_height="@dimen/group_list_item_imgHeight"
+        android:layout_marginRight="@dimen/inIntervalLeft"
+        android:src="@mipmap/ic_empty" />
+
+    <TextView
+        android:id="@+id/group_comment_item_floors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/group_comment_item_img"
+        android:text="1楼"
+        android:textColor="@color/light_grey" />
+
+    <TextView
+        android:id="@+id/group_comment_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/group_comment_item_img"
+        android:layout_toRightOf="@+id/group_comment_item_img"
+        android:text="小天龙"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/font_size_15sp" />
+
+    <ImageView
+        android:id="@+id/group_comment_item_levelView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user_level"
+        android:layout_alignBottom="@+id/group_comment_item_name"
+        android:layout_alignTop="@+id/group_comment_item_name"
+        android:layout_marginLeft="@dimen/margin_size_4dp"
+        android:layout_toRightOf="@+id/group_comment_item_name"
+        />
+
+    <TextView
+        android:id="@+id/group_comment_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_comment_item_name"
+        android:layout_marginBottom="@dimen/margin_size_6dp"
+        android:layout_marginTop="@dimen/outerInterval"
+        android:layout_toRightOf="@+id/group_comment_item_img"
+        android:text="2015-1-15 15:32:50"
+        android:textColor="@color/light_grey"
+        android:textSize="@dimen/font_size_13sp" />
+
+    <TextView
+        android:id="@+id/group_comment_item_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_comment_item_time"
+        android:layout_marginBottom="@dimen/margin_size_6dp"
+        android:layout_toRightOf="@+id/group_comment_item_img"
+        android:textColor="@color/detail_comments"
+        android:textSize="@dimen/font_size_17sp" />
+
+
+    <TextView
+        android:id="@+id/group_comment_item_replyBt"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/group_comment_item_value"
+        android:layout_marginBottom="@dimen/inInterval"
+        android:gravity="center"
+        android:text="回复"
+        android:textColor="@color/theme_green"
+        android:textSize="@dimen/font_size_15sp"
+        android:paddingLeft="@dimen/margin_size_4dp"
+        android:paddingRight="@dimen/margin_size_4dp"
+        android:background="@mipmap/reply_backgroup"/>
+
+    <LinearLayout
+        android:id="@+id/group_comment_item_replyGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_comment_item_replyBt"
+        android:layout_marginBottom="@dimen/inIntervalBottom"
+        android:background="@mipmap/replylayoutbackground"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/outerInterval"
+        android:paddingRight="@dimen/outerInterval" />
+
+    <View
+        android:id="@+id/group_comment_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/group_comment_item_replyGroup"
+        android:background="@color/holo_light_grey" />
+
+</RelativeLayout>

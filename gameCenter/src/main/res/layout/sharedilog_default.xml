@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shareDialog_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+   >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_round_background"
+        android:paddingLeft="@dimen/inInterval"
+        android:paddingRight="@dimen/inInterval"
+        android:paddingTop="@dimen/margin_size_5dp">
+
+        <TextView
+            android:id="@+id/share_titleText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sharedialog_item_height"
+            android:text="分享到"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/middle_frront_size"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:layout_alignLeft="@id/shareDialog_share_view"
+            android:layout_alignRight="@id/shareDialog_share_view"
+            android:paddingLeft="@dimen/outerInterval"/>
+
+
+        <cn.lt.game.lib.view.ShareView
+            android:id="@+id/shareDialog_share_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingLeft="@dimen/margin_size_4dp"
+            android:paddingRight="@dimen/margin_size_4dp"
+            android:layout_below="@+id/share_titleText"
+            android:layout_marginTop="@dimen/inIntervalTop">
+        </cn.lt.game.lib.view.ShareView>
+
+   </RelativeLayout>
+</FrameLayout>

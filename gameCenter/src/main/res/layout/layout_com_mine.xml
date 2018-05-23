@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:orientation="vertical" >
+
+    <cn.lt.game.lib.view.NetWorkStateView
+        android:id="@+id/rank_netwrolStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </cn.lt.game.lib.view.NetWorkStateView>
+
+    <cn.lt.game.lib.widget.RefreshAndLoadMoreListView
+        android:id="@+id/mycom_listView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+ />
+
+    <ViewStub
+        android:id="@+id/vs_unloggin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/layout_mine_unloggin" />
+
+    <ViewStub
+        android:id="@+id/vs_no_com"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/layout_gift_mine_no_gift" />
+</LinearLayout>

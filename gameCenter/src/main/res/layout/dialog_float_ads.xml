@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_half">
+
+
+    <ImageView
+        android:id="@+id/iv_ads"
+        android:layout_width="298dp"
+        android:layout_height="318dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/app_msg_rating_bar_full" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_above="@id/iv_ads"
+        android:layout_alignRight="@id/iv_ads"
+        android:layout_marginBottom="12dp"
+        android:src="@mipmap/float_ads_close" />
+
+</RelativeLayout>

@@ -1,0 +1,191 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From GameCenter:
+* .idea\
+* .idea\.name
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\encodings.xml
+* .idea\gradle.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\runConfigurations.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* ant.properties
+* build.xml
+* custom_rules.xml
+From TheOneSupportv4:
+* build.gradle
+* build.xml
+* proguard-project.txt
+From ThinkAndroid_src:
+* DownloadClassDiagram.jpg
+* SequenceRoleDiagram.jpg
+* build.gradle
+* build.xml
+* ic_launcher-web.png
+* proguard-project.txt
+From library:
+* LICENSE
+* build.gradle
+* build.xml
+* pom.xml
+* proguard-project.txt
+From slidingmenu_library:
+* LICENSE.txt
+* build.gradle
+* build.xml
+* library.iml
+* pom.xml
+* proguard-project.txt
+* slidingmenu_library.iml
+From trinea-android-common:
+* .gitattributes
+* .gitignore
+* README.md
+* build.gradle
+* build.xml
+* pom.xml
+* proguard-project.txt
+* proguard.cfg
+From viewpagerindicator_library:
+* build.gradle
+* build.xml
+* pom.xml
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+gson-2.2.2.jar => com.google.code.gson:gson:2.2.2
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.2.jar => version 2.2.2 in com.google.code.gson:gson:2.2.2
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In TheOneSupportv4:
+* AndroidManifest.xml => theOneSupportv4\src\main\AndroidManifest.xml
+* assets\ => theOneSupportv4\src\main\assets
+* res\ => theOneSupportv4\src\main\res\
+* src\ => theOneSupportv4\src\main\java
+In ThinkAndroid_src:
+* AndroidManifest.xml => thinkAndroid_src\src\main\AndroidManifest.xml
+* assets\ => thinkAndroid_src\src\main\assets
+* res\ => thinkAndroid_src\src\main\res\
+* src\ => thinkAndroid_src\src\main\java\
+* src\com\ta\util\download\IDownloadService.aidl => thinkAndroid_src\src\main\aidl\com\ta\util\download\IDownloadService.aidl
+In library:
+* AndroidManifest.xml => library\src\main\AndroidManifest.xml
+* assets\ => library\src\main\assets
+* res\ => library\src\main\res\
+* src\ => library\src\main\java\
+In slidingmenu_library:
+* AndroidManifest.xml => slidingmenu_library\src\main\AndroidManifest.xml
+* assets\ => slidingmenu_library\src\main\assets
+* res\ => slidingmenu_library\src\main\res\
+* src\ => slidingmenu_library\src\main\java\
+In trinea-android-common:
+* AndroidManifest.xml => trineaandroidcommon\src\main\AndroidManifest.xml
+* assets\ => trineaandroidcommon\src\main\assets
+* res\ => trineaandroidcommon\src\main\res\
+* src\ => trineaandroidcommon\src\main\java\
+In viewpagerindicator_library:
+* AndroidManifest.xml => viewpagerindicator_library\src\main\AndroidManifest.xml
+* assets\ => viewpagerindicator_library\src\main\assets
+* res\ => viewpagerindicator_library\src\main\res\
+* src\ => viewpagerindicator_library\src\main\java\
+In GameCenter:
+* AndroidManifest.xml => gameCenter\src\main\AndroidManifest.xml
+* assets\ => gameCenter\src\main\assets\
+* jni\ => gameCenter\src\main\jni\
+* libs\android_api_3.6.jar => gameCenter\libs\android_api_3.6.jar
+* libs\armeabi-v7a\libgetuiext.so => gameCenter\src\main\jniLibs\armeabi-v7a\libgetuiext.so
+* libs\armeabi-v7a\libPatcher.so => gameCenter\src\main\jniLibs\armeabi-v7a\libPatcher.so
+* libs\armeabi-v7a\libUtils.so => gameCenter\src\main\jniLibs\armeabi-v7a\libUtils.so
+* libs\armeabi\libgetuiext.so => gameCenter\src\main\jniLibs\armeabi\libgetuiext.so
+* libs\armeabi\libPatcher.so => gameCenter\src\main\jniLibs\armeabi\libPatcher.so
+* libs\armeabi\libUtils.so => gameCenter\src\main\jniLibs\armeabi\libUtils.so
+* libs\DataEyeSDK_Channel_Android_v2.0.6.jar => gameCenter\libs\DataEyeSDK_Channel_Android_v2.0.6.jar
+* libs\eventbus.jar => gameCenter\libs\eventbus.jar
+* libs\GetuiExt-2.0.3.jar => gameCenter\libs\GetuiExt-2.0.3.jar
+* libs\GetuiSdk2.5.0.0.jar => gameCenter\libs\GetuiSdk2.5.0.0.jar
+* libs\huanju-data-raw-v2.0.6-20007a.jar => gameCenter\libs\huanju-data-raw-v2.0.6-20007a.jar
+* libs\json-simple-1.1.1.jar => gameCenter\libs\json-simple-1.1.1.jar
+* libs\junit-4.8.2.jar => gameCenter\libs\junit-4.8.2.jar
+* libs\mips\libPatcher.so => gameCenter\src\main\jniLibs\mips\libPatcher.so
+* libs\mips\libUtils.so => gameCenter\src\main\jniLibs\mips\libUtils.so
+* libs\MobLogCollector.jar => gameCenter\libs\MobLogCollector.jar
+* libs\MobTools.jar => gameCenter\libs\MobTools.jar
+* libs\ShareSDK-Core-2.6.1.jar => gameCenter\libs\ShareSDK-Core-2.6.1.jar
+* libs\ShareSDK-QQ-2.6.1.jar => gameCenter\libs\ShareSDK-QQ-2.6.1.jar
+* libs\ShareSDK-SinaWeibo-2.6.1.jar => gameCenter\libs\ShareSDK-SinaWeibo-2.6.1.jar
+* libs\ShareSDK-Wechat-2.6.1.jar => gameCenter\libs\ShareSDK-Wechat-2.6.1.jar
+* libs\ShareSDK-Wechat-Core-2.6.1.jar => gameCenter\libs\ShareSDK-Wechat-Core-2.6.1.jar
+* libs\ShareSDK-Wechat-Moments-2.6.1.jar => gameCenter\libs\ShareSDK-Wechat-Moments-2.6.1.jar
+* libs\universal-image-loader-1.9.4.jar => gameCenter\libs\universal-image-loader-1.9.4.jar
+* libs\x86\libgetuiext.so => gameCenter\src\main\jniLibs\x86\libgetuiext.so
+* libs\x86\libPatcher.so => gameCenter\src\main\jniLibs\x86\libPatcher.so
+* libs\x86\libUtils.so => gameCenter\src\main\jniLibs\x86\libUtils.so
+* libs\xUtils-2.6.14.jar => gameCenter\libs\xUtils-2.6.14.jar
+* lint.xml => gameCenter\lint.xml
+* proguard-project.txt => gameCenter\proguard-project.txt
+* res\ => gameCenter\src\main\res\
+* src\ => gameCenter\src\main\java\
+* src\cn\lt\game\service\DownloadList.aidl => gameCenter\src\main\aidl\cn\lt\game\service\DownloadList.aidl
+* src\cn\lt\game\service\ICoreService.aidl => gameCenter\src\main\aidl\cn\lt\game\service\ICoreService.aidl
+* src\cn\lt\game\update\PlatUpdateInfo.aidl => gameCenter\src\main\aidl\cn\lt\game\update\PlatUpdateInfo.aidl
+* src\Event.properties => gameCenter\src\main\resources\Event.properties
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

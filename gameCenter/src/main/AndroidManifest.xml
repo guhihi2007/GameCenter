@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.lt.game">
+
+<!--    <uses-permission android:name="android.permission.READ_CALL_LOG" />-->
+    <uses-permission android:name="android.permission.INJECT_EVENTS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+<!--    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />-->
+<!--    <uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<!--    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />-->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--在SD卡中创建与删除文件权限-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!--往SD卡写入数据权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+<!--    <uses-permission android:name="android.permission.RESTART_PACKAGES" />-->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+<!--    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />-->
+<!--    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />-->
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.REAL_GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_ACTIVITY_WATCHER" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="versionName"
+            android:value="${versionName}" />
+        <meta-data
+            android:name="versionCode"
+            android:value="${versionCode}" />
+        <meta-data
+            android:name="BaseHost"
+            android:value="${BASE_HOST}" />
+        <meta-data
+            android:name="DATA_EYE_APP_ID"
+            android:value="${DATA_EYE_APP_ID}" />
+        <!-- DATA_EYE_APP_ID = "C530161078E360C0E85CBFE1C87C8B42D"; -->
+        <!-- DATA_EYE_APP_ID_TEST = "CF152C581896D18DBA38B1BBF92931AE7"; -->
+        <meta-data
+            android:name="GameCenter_CHANNEL"
+            android:value="${channel_lt}" />
+        <meta-data
+            android:name="SplashPosID"
+            android:value="${splash_pos_id}" />
+        <!-- 线上：wwwltblcn -->
+        <!-- 广告推广：baidudingzhi -->
+        <!-- 应用宝：yingyongbao -->
+        <!-- 其他：other -->
+        <!-- 线下：\088888 -->
+        <!-- 老林专用线下：underline_lin -->
+        <!-- 老林专用线下2：underline_lin2 -->
+        <!-- 自用：ziyong -->
+
+
+        <!--百度统计部分 start-->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="7c949c267d" />
+         
+        <!--渠道商编号-->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="${channel_lt}" />
+        <!--是否开启错误日志统计，默认为 false-->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" />
+        <!--   日志发送策略， 可选值： APP_START、 ONCE_A_DAY、 SET_TIME_INTERVAL， 默认为 APP_START-->
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START" />
+        <!-- 日志发送策略  为 SET_TIME_INTERVAL 时，需设定时间间隔(取消下 行注释)。取值为 1-­‐24 的整数，默认为 1 -->
+        <meta-data
+            android:name="BaiduMobAd_TIME_INTERVAL"
+            android:value="1" />
+         <!--日志仅在 wifi 网络下发送，默认为 false-->
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false" />
+        <!--是否获取基站位置信息  ,默认为 true  -->
+        <meta-data
+            android:name="BaiduMobAd_CELL_LOCATION"
+            android:value="true" />
+         <!--是否获取 GPS 位置信息，默认为 true -->
+        <meta-data
+            android:name="BaiduMobAd_GPS_LOCATION"
+            android:value="true" />
+        <!--是否获取 WIFI 位置信息，默认为 true -->
+        <meta-data
+            android:name="BaiduMobAd_WIFI_LOCATION"
+            android:value="true" />
+        <!--百度统计部分 end-->
+
+        <!-- 玩咖 appID -->
+        <meta-data
+            android:name="APP_MONITOR_APPID"
+            android:value="b1007a" />
+
+        <!-- 【必须�? (2.30及以上版新增)展示通知的activity -->
+        <!-- 【注意�? 如果被打�?��activity是启动模式为SingleTop，SingleTask或SingleInstance，请根据通知的异常自查列表第8点处�? -->
+
+
+        <service
+            android:name=".update.PlatUpdateService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="@string/app_name">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.lt.game.update.PlatUpdateService" />
+            </intent-filter>
+        </service>
+
+
+        <!-- 个推SDK配置 开始 -->
+        <service android:name=".service.NoticeService">
+            <intent-filter>
+                <action android:name="cn.lt.game.service.NoticeService" />
+            </intent-filter>
+        </service>
+
+        <service android:name="cn.lt.game.push.getui.GeTuiIntentService" />
+
+        <service
+            android:name="cn.lt.game.push.getui.GeTuiService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice" />
+        <!-- 个推SDK配置结束 -->
+
+        <service
+            android:name=".service.CoreService"
+            android:process=":remote">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.lt.game.service.CoreService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ui.app.LoadingActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoadingTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="index"
+                    android:scheme="gamecenter_chaoqian" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".ui.app.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".gallery.GalleryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.community.SendTopicActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+        <activity
+            android:name=".ui.app.community.SendCommentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+        <activity
+            android:name=".ui.app.community.DraftsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.community.SendReplyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+        <activity
+            android:name=".ui.app.specialtopic.SpecialTopicDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.gamedetail.GameDetailHomeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 反馈页面 -->
+        <activity
+            android:name=".ui.app.sidebar.feedback.FeedBackActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 关于页面 -->
+        <activity
+            android:name=".ui.app.sidebar.AboutActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.app.search.SearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".ui.app.search.SearchTagActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.app.category.CategoryHotCatsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 攻略中心页面 -->
+        <activity
+            android:name=".ui.app.gamestrategy.GameStrategyHomeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.app.gamestrategy.StrategySearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.app.gamegift.GiftHomeActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.app.personalcenter.PersonalCenterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity
+            android:name=".ui.app.gamegift.GiftListActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.gamegift.GiftSearchActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.gamegift.GiftDetailActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.specialtopic.SpecialTopicActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.category.CategoryItemResultActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.common.activity.GameOtherInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.common.activity.GameOtherDetailActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.community.CommunityActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.community.group.GroupMemberActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.community.topic.my.MyTopicActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.community.topic.my.CommentTopicActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.community.topic.detail.TopicDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.ImageViewPagerActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.personalcenter.TermsActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.gamedetail.SendGameDetailCommentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.app.management.ManagementActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.app.WebViewActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="ltgame"
+                    android:pathPrefix="/openwith"
+                    android:scheme="ltgamecenter" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.app.community.ForbadeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.community.topic.detail.reply.ReplyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.app.gameactive.GameActivitiesActivtiy"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.awardgame.AwardActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.awardpoints.awardrecord.PastAwardActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!---->
+        <service
+            android:name=".service.HandleService"
+            android:enabled="true"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":active">
+            <intent-filter>
+                <action android:name="cn.lt.game.START_WAKE_SERVICE" />
+            </intent-filter>
+        </service>
+        <!-- <service android:name=".service.PlayGameIntentService">
+             <intent-filter>
+                 <action android:name="cn.lt.game.service.PlayGameIntentService"/>
+             </intent-filter>
+         </service>-->
+        <service android:name=".service.InstallIntentservice">
+            <intent-filter>
+                <action android:name="cn.lt.game.service.InstallIntentservice" />
+            </intent-filter>
+        </service>
+
+        <!-- sharesdk 所需要的配置 -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent1104129836" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- share sdk微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name=".service.NotifDownloadService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".ui.app.community.topic.group.GroupTopicActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!-- 注册自动装功能 -->
+        <service
+            android:name=".install.autoinstaller.AccessibilityService"
+            android:label="@string/acc_auto_install_service_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_config" />
+        </service>
+        <!-- ==================================== -->
+        <service
+            android:name=".download.DownloadService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <!-- 监听网络状态改变 -->
+        <!--<receiver android:name=".download.ConnectionChangeReceiver">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+        <receiver android:name=".install.InstallReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ui.app.sidebar.AppInfoBackDoorActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".ui.app.sidebar.AllDownloadFileActivity" />
+        <activity
+            android:name=".ui.app.personalcenter.info.EditUserInfoActivity"
+            android:label="@string/title_activity_edit_user_info"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.app.community.personalpage.MyConcernActivity" />
+        <activity android:name=".ui.app.community.personalpage.ComNotificationActivity" />
+        <activity
+            android:name=".ui.app.community.personalpage.PersonalActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.personalcenter.BindPhoneActivity"
+            android:label="@string/title_activity_bind_phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.personalcenter.BindEmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.app.personalcenter.appsetting.AppSettingActivity"
+            android:label="@string/title_activity_app_setting"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的私信列表 -->
+        <activity
+            android:name=".ui.app.community.MyPrivateMessageActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的私信详情 -->
+        <activity
+            android:name=".ui.app.community.MyPrivateMessageDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!--        <receiver
+                    android:name=".receiver.LTDeviceAdminReceiver"
+                    android:permission="android.permission.BIND_DEVICE_ADMIN">
+                    <meta-data
+                        android:name="android.app.device_admin"
+                        android:resource="@xml/device_manager" />
+
+                    <intent-filter>
+                        <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                    </intent-filter>
+                </receiver>-->
+
+        <provider
+            android:name="cn.lt.game.contentprovider.WakeUpUserProvider"
+            android:authorities="cn.lt.game.WakeUpUserProvider"
+            android:exported="true"
+            android:multiprocess="false" />
+        <provider
+            android:name="cn.lt.game.statistics.database.provider.UserAccountProvider"
+            android:authorities="cn.lt.game.UserAccountProvider"
+            android:exported="true"
+            android:multiprocess="true" />
+
+        <service
+            android:name="com.qq.e.comm.DownloadService"
+            android:exported="false" />
+        <service android:name=".service.ScreenMonitorService" />
+
+        <activity
+            android:name="com.qq.e.ads.ADActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+
+        <activity
+            android:name=".ui.app.SplashADActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".ui.app.awardpoints.AwardPointsRecordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.app.hot.HotDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.app.voucher.CouponRecordActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="cn.lt.game.fileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />`
+        </provider>
+
+        <service
+            android:name="cn.lt.game.ui.notification.PushIntentService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.lt.game.ui.notification.PushIntentService"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

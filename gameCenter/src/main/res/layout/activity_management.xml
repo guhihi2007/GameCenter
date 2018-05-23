@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_managerRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/action_bar_new" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/indicator"
+            style="@style/viewPagerIndicators"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewpager_indicator_height" />
+
+        <!-- 小红点 -->
+        <TextView
+            android:id="@+id/management_redPoint1"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:background="@drawable/red_point"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/management_redPoint2"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:background="@drawable/red_point"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

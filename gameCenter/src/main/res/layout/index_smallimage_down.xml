@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <ImageView
+        android:id="@+id/iv_square_game_view"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:src="@mipmap/img_default_80x80_round" />
+
+    <ImageView
+        android:id="@+id/iv_mark_index_game_item"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignLeft="@id/iv_square_game_view"
+        android:layout_alignTop="@id/iv_square_game_view"
+        android:scaleType="fitXY"
+        android:src="@null" />
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:maxWidth="72dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:ellipsize="end"
+        android:lines="2"
+        android:layout_marginTop="6dp"
+        android:text="魂斗罗斗地主"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/font13sp"
+        android:layout_below="@+id/iv_square_game_view"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tagSizeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTv"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="none"
+        android:paddingLeft="1dp"
+        android:layout_marginTop="2dp"
+        android:paddingRight="1dp"
+        android:text="fwefef"
+        android:maxLines="1"
+        android:gravity="center"
+        android:textColor="@color/light_grey"
+        android:textSize="11sp" />
+
+    <RelativeLayout
+        android:id="@+id/install_operation_bar"
+        android:layout_width="62dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/tagSizeTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/download_progressbackgroud" >
+
+        <ProgressBar
+            android:id="@+id/download_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/download_progressbackgroud"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/download_progressdrawable"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/grid_item_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_green_selector"
+            android:gravity="center"
+            android:text="@string/download"
+            android:textColor="@color/theme_green"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

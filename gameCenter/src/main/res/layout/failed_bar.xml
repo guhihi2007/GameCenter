@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_onclick"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="#F6FDD6"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_failed"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:gravity="center_vertical"
+        android:text="有内容发送失败，已存入草稿箱"
+        android:textColor="@color/theme_green"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_onclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:src="@mipmap/entergroup_icon" />
+</RelativeLayout>

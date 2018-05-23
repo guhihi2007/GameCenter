@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015-05-20"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/rectangle_light_grey_corner"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+    
+    <cn.lt.game.lib.view.RoundImageView
+        android:id="@+id/feedback_listitem_computerIcon"
+        android:layout_width="@dimen/feedback_listItem_iconWidth"
+        android:layout_height="@dimen/feedback_listItem_iconHeight"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@id/time"
+        android:layout_marginLeft="@dimen/outerInterval"/>
+    <TextView
+        android:id="@+id/feedback_listitem_computerChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time"
+        android:layout_toRightOf="@+id/feedback_listitem_computerIcon"
+        android:background="@drawable/feedback_reply_selector"
+        android:layout_marginLeft="@dimen/margin_size_4dp"
+        android:layout_marginRight="69dp"
+        android:gravity="left|center_vertical"
+        android:textSize="@dimen/font_size_15sp"
+        android:textColor="@color/light_black"/>
+</RelativeLayout>

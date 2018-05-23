@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015-05-20"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/rectangle_light_grey_corner"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/feedback_listitem_userIcon"
+            android:layout_width="@dimen/feedback_listItem_iconWidth"
+            android:layout_height="@dimen/feedback_listItem_iconHeight"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/outerInterval"
+            android:src="@mipmap/icon_feedback_user"
+            />
+
+        <TextView
+            android:id="@+id/feedback_listitem_userChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_size_4dp"
+            android:layout_toLeftOf="@+id/feedback_listitem_userIcon"
+            android:background="@drawable/feedback_chat_selector"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/light_black"
+            android:layout_marginLeft="69dp"
+            android:textSize="@dimen/font_size_15sp"/>
+
+
+        <ProgressBar
+            android:id="@+id/feedback_listitem_userProgressBar"
+            style="@style/imageProgressBarStyle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/feedback_listitem_userChat"
+            android:layout_alignTop="@+id/feedback_listitem_userChat"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-25dp"
+            android:layout_alignLeft="@+id/feedback_listitem_userChat"
+            android:clickable="false"
+            android:indeterminate="true"
+            android:visibility="visible"
+            />
+
+        <ImageView
+            android:id="@+id/feedback_listItem_userFailure"
+            android:layout_width="@dimen/feedback_listItemImgFailure"
+            android:layout_height="@dimen/feedback_listItemImgFailure"
+            android:layout_marginLeft="-16dp"
+            android:layout_marginTop="@dimen/margin_size_2dp"
+            android:layout_alignLeft="@id/feedback_listitem_userChat"
+            android:src="@mipmap/icon_failure"
+            android:visibility="visible"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

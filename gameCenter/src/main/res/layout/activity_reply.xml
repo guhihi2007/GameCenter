@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_grey"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+    <cn.lt.game.lib.view.TitleBarView
+        android:id="@+id/activityReply_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </cn.lt.game.lib.view.TitleBarView>
+
+    <LinearLayout
+        android:id="@+id/activityReply_sendLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/feedback_sendbarHeight"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/top_line_click">
+
+            <ImageButton
+                android:id="@+id/activityReply_expressionBtn"
+                android:layout_width="@dimen/feedback_sendbarHeight"
+                android:layout_height="@dimen/feedback_sendbarHeight"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/community_topic_face" />
+
+            <TextView
+                android:id="@+id/activityReply_sendBtn"
+                android:layout_width="@dimen/feedback_sendBtnWidth"
+                android:layout_height="@dimen/feedback_sendBtnHeight"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/outerInterval"
+                android:background="@drawable/imgbt_background_selector"
+                android:gravity="center"
+                android:text="@string/reply"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16sp" />
+
+            <EditText
+                android:id="@+id/activityReply_edt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/activityReply_sendBtn"
+                android:layout_alignTop="@+id/activityReply_sendBtn"
+                android:layout_toLeftOf="@+id/activityReply_sendBtn"
+                android:layout_toRightOf="@+id/activityReply_expressionBtn"
+                android:background="@drawable/left_top_right_bottom_selector"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/please_input_information"
+                android:imeOptions="actionDone"
+                android:paddingLeft="@dimen/outerInterval" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/activityReply_faceLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <cn.lt.game.lib.widget.RefreshAndLoadMoreListView
+        android:id="@+id/activityReplay_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activityReply_sendLayout"
+        android:layout_below="@+id/activityReply_titleBar"
+        />
+
+    <cn.lt.game.lib.view.NetWorkStateView
+        android:id="@+id/activityReplay_netwrokStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/activityReply_titleBar"></cn.lt.game.lib.view.NetWorkStateView>
+
+
+</RelativeLayout>

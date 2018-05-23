@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/messageDialog_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dialog_round_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/messageDialog_titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_center_49"
+            android:background="@drawable/dialog_round_background">
+
+            <ImageView
+                android:id="@+id/messageDialog_cancelIv"
+                android:layout_width="@dimen/user_center_49"
+                android:layout_height="@dimen/user_center_49"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="16.5dp"
+                android:paddingLeft="17dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16.5dp"
+                android:src="@mipmap/ic_dialog_close" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="@string/award_title_get_award"
+                android:textColor="@color/theme_green"
+                android:textSize="@dimen/font16sp" />
+        </RelativeLayout>
+        <!-- 华丽的分割线 -->
+
+
+        <TextView
+            android:id="@+id/messageDialog_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size_16dp"
+            android:layout_marginTop="@dimen/margin_size_8dp"
+            android:gravity="center"
+            android:text="请如实填写信息,以便奖品顺利发放！"
+            android:textColor="@color/light_yellow"
+            android:textSize="13sp" />
+        <!--用户信息一-->
+        <LinearLayout
+            android:id="@+id/messageDialog_textBody"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="@dimen/margin_size_8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/messageDialog_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="姓    名："
+                android:textColor="@color/detail_review"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/award_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:textColor="@color/light_black"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/tab_line_unpressed_color_copy" />
+
+        <!--用户信息一-->
+        <LinearLayout
+            android:id="@+id/messageDialog_textBody_phone"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="@dimen/margin_size_8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/messageDialog_message_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="手机号："
+                android:textColor="@color/detail_review"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/award_edit_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:textColor="@color/light_black"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/tab_line_unpressed_color_copy" />
+        <!--用户信息3-->
+        <LinearLayout
+            android:id="@+id/messageDialog_textBody_address"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="@dimen/margin_size_8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/messageDialog_message_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="地    址："
+                android:textColor="@color/detail_review"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/award_edit_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:textColor="@color/light_black"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/award_line_address"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/tab_line_unpressed_color_copy" />
+        <!-- 底部按钮 -->
+
+        <Button
+            android:id="@+id/messageDialog_rightBtn"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/user_center_14"
+            android:layout_marginTop="@dimen/user_center_12"
+            android:background="@drawable/deep_btn_green_selector"
+            android:text="@string/award_button_post"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size" />
+    </LinearLayout>
+
+</RelativeLayout>

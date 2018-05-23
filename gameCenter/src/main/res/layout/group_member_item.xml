@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="12dp" >
+
+        <cn.lt.game.lib.view.RoundImageView
+            android:id="@+id/iv_member_head"
+            android:layout_width="@dimen/member_item_icon_width"
+            android:layout_height="@dimen/member_item_icon_height"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+             />
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_member_head"
+            android:orientation="vertical"
+            android:paddingLeft="12dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/tv_memberName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="奥巴马"
+                    android:textColor="#333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/iv_isAdmin"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/tv_memberName"
+                    android:src="@mipmap/ic_group_leader"
+                    android:visibility="gone" />
+                <ImageView
+                    android:id="@+id/iv_isMyself"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/iv_isAdmin"
+                    android:src="@mipmap/ic_group_myself"
+                    android:visibility="visible" />
+                <ImageView
+                    android:id="@+id/iv_user_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/iv_isMyself"
+                    android:src="@drawable/user_level"
+                    />
+                <ImageView
+                    android:id="@+id/iv_quit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/member_quit_selector"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_joinTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="加入时间:2015.05.05"
+                android:textColor="#bbb"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

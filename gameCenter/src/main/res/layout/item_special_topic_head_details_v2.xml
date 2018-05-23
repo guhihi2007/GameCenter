@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/iv_headImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/photo"
+    />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_headImageView"
+        android:background="#ffffffff"
+        android:paddingBottom="14dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:gravity="center_vertical"
+            android:text="十大经典游戏"
+            android:textColor="#333333"
+            android:textSize="15sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_xbym"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:lineSpacingExtra="8dp"
+            android:text="小编推荐的游戏小编推荐的游戏小编推荐的游戏小编推荐的游戏小编推荐的游戏小编推荐的游戏小编推荐的游戏小编推荐的游戏小编推荐的游戏"
+            android:textColor="#999999"
+            android:textSize="13sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

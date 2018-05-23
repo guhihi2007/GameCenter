@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- 账号输入 -->
+
+    <EditText
+        android:id="@+id/input_account"
+        style="@style/loginInputTextViewStyle"
+        android:dropDownHorizontalOffset="0dp"
+        android:dropDownSelector="@color/white"
+        android:dropDownVerticalOffset="0dp"
+        android:fadingEdge="none"
+        android:hint="@string/login_hint"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:paddingLeft="24dp"
+        android:paddingRight="86dp"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="58dp"
+        android:layout_alignBottom="@id/input_account"
+        android:layout_alignLeft="@id/input_account"
+        android:paddingBottom="21dp"
+        android:paddingTop="21dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_account" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_alignBottom="@id/input_account"
+        android:layout_alignRight="@id/input_account"
+        android:paddingBottom="21dp"
+        android:paddingLeft="42dp"
+        android:paddingTop="21dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/drawable_expand" />
+
+    <ToggleButton
+        android:id="@+id/login_arrow"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_alignBottom="@id/input_account"
+        android:layout_alignRight="@id/input_account"
+        android:background="@null"
+        android:checked="false"
+        android:gravity="center"
+        android:textOff=""
+        android:textOn="" />
+
+    <ImageView
+        android:id="@+id/iv_clear"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_alignBottom="@id/input_account"
+        android:layout_alignRight="@id/input_account"
+        android:layout_marginRight="28dp"
+        android:paddingBottom="22dp"
+        android:paddingLeft="44dp"
+        android:paddingTop="22dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/btn_cancel_or_del"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/input_password"
+        style="@style/loginInputTextViewStyle"
+        android:layout_below="@id/input_account"
+        android:layout_gravity="center_vertical"
+        android:hint="@string/password_hint"
+        android:imeOptions="actionGo"
+        android:inputType="textPassword"
+        android:paddingLeft="24dp"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="58dp"
+        android:layout_alignBottom="@id/input_password"
+        android:layout_alignLeft="@id/input_password"
+        android:paddingBottom="21dp"
+        android:paddingTop="21dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_account_pwd" />
+
+    <!-- 登录按键 -->
+
+    <Button
+        android:id="@+id/log_in"
+        style="@style/loginRegisterButtonStyle"
+        android:layout_below="@id/input_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/deep_btn_green_selector"
+        android:text="@string/login"
+        android:textSize="@dimen/font16sp" />
+
+
+    <!-- 忘记密码 -->
+    <!--android:id="@+id/register"-->
+    <Button
+        android:id="@+id/forget_password"
+        android:layout_width="@dimen/user_center_108"
+        android:layout_height="@dimen/user_center_36"
+        android:layout_alignLeft="@+id/log_in"
+        android:layout_below="@+id/log_in"
+        android:layout_marginTop="@dimen/margin_size_8dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:text="@string/forget_password"
+        android:textColor="@color/theme_green"
+        android:textSize="@dimen/user_center_16" />
+
+    <!-- 注册 -->
+    <Button
+        android:id="@+id/register"
+        android:layout_width="@dimen/user_center_108"
+        android:layout_height="@dimen/user_center_36"
+        android:layout_alignRight="@+id/log_in"
+        android:layout_below="@+id/log_in"
+        android:layout_marginTop="@dimen/margin_size_8dp"
+        android:background="@android:color/transparent"
+        android:gravity="right|center_vertical"
+        android:text="@string/register_new"
+        android:textColor="@color/theme_green"
+        android:textSize="@dimen/user_center_16" />
+
+    <!-- 其他登录方式 -->
+
+    <include
+        android:id="@+id/use_other_login_method"
+        layout="@layout/use_other_login_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/other_login_method"
+        layout="@layout/other_login_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/use_other_login_method"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

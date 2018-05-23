@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_grey">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/action_bar_new" />
+
+    <RelativeLayout
+        android:id="@+id/feedback_msgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:background="@drawable/border_bottom"
+        android:padding="@dimen/outerInterval">
+
+        <View
+            android:id="@+id/feedback_emptyView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/feedback_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/version"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/font_size_13sp" />
+
+        <TextView
+            android:id="@+id/feedback_version_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_size_2dp"
+            android:layout_toLeftOf="@+id/feedback_emptyView"
+            android:layout_toRightOf="@+id/feedback_version"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/detail_review"
+            android:textSize="@dimen/font_size_13sp" />
+
+        <TextView
+            android:id="@+id/feedback_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/feedback_version_value"
+            android:layout_marginTop="@dimen/margin_size_4dp"
+            android:text="@string/model"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/font_size_13sp" />
+
+        <TextView
+            android:id="@+id/feedback_model_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/feedback_model"
+            android:layout_marginLeft="@dimen/margin_size_2dp"
+            android:layout_toLeftOf="@+id/feedback_emptyView"
+            android:layout_toRightOf="@+id/feedback_model"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/detail_review"
+            android:textSize="@dimen/font_size_13sp" />
+
+        <TextView
+            android:id="@+id/feedback_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/feedback_emptyView"
+            android:text="@string/system"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/font_size_13sp" />
+
+        <TextView
+            android:id="@+id/feedback_system_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/feedback_system"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/detail_review"
+            android:textSize="@dimen/font_size_13sp" />
+
+        <TextView
+            android:id="@+id/feedback_netType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feedback_system_value"
+            android:layout_marginTop="@dimen/margin_size_4dp"
+            android:layout_toRightOf="@+id/feedback_emptyView"
+            android:text="@string/Network"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/font_size_13sp" />
+
+        <TextView
+            android:id="@+id/feedback_netType_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/feedback_netType"
+            android:layout_toRightOf="@+id/feedback_netType"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/detail_review"
+            android:textSize="@dimen/font_size_13sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/feedback_sendLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/feedback_sendbarHeight"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/feedback_photographBtn"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_size_12dp"
+            android:layout_marginRight="@dimen/margin_size_12dp"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/icon_photograph_default" />
+
+        <TextView
+            android:id="@+id/feedback_sendBtn"
+            android:layout_width="@dimen/feedback_sendBtnWidth"
+            android:layout_height="@dimen/feedback_sendBtnHeight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/outerInterval"
+            android:background="@drawable/imgbt_background_selector"
+            android:gravity="center"
+            android:text="@string/transmit"
+            android:enabled="false"
+            android:textColor="@drawable/feedback_send_selector"
+            android:textSize="@dimen/font_size_16sp" />
+
+        <EditText
+            android:id="@+id/feedback_edt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/feedback_sendBtn"
+            android:layout_alignTop="@id/feedback_sendBtn"
+            android:layout_toLeftOf="@id/feedback_sendBtn"
+            android:layout_toRightOf="@id/feedback_photographBtn"
+            android:background="@drawable/left_top_right_bottom_white"
+            android:hint="@string/please_input_information"
+            android:paddingLeft="@dimen/outerInterval"
+            android:textColor="#333"
+            android:textColorHint="#ccc"
+            android:textSize="@dimen/font13sp" />
+
+    </RelativeLayout>
+
+    <cn.lt.game.lib.widget.RefreshAndLoadMoreListView
+        android:id="@+id/feedback_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/feedback_sendLayout"
+        android:layout_below="@id/feedback_msgLayout"
+        />
+
+
+    <cn.lt.game.lib.view.NetWorkStateView
+        android:id="@+id/feedback_netWrokStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/title_bar"
+        android:visibility="gone" />
+
+</RelativeLayout>

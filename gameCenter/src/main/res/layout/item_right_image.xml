@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/rl_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_light_grey_corner"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:text="2015-05-20"
+        android:textColor="@color/white"
+        android:visibility="gone"
+    />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.lt.game.lib.view.RoundImageView
+            android:id="@+id/feedback_listitem_userIcon"
+            android:layout_width="@dimen/feedback_listItem_iconWidth"
+            android:layout_height="@dimen/feedback_listItem_iconHeight"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/outerInterval"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_feedback_user"
+        />
+
+        <ImageView
+            android:id="@+id/feedback_listitem_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="@dimen/margin_size_4dp"
+            android:layout_toLeftOf="@+id/feedback_listitem_userIcon"
+            android:background="@drawable/feedback_chat_selector"
+            android:maxHeight="125dp"
+            android:maxWidth="125dp"
+            android:paddingRight="12dp"
+            android:src="@mipmap/icon_feedback_failed"
+        />
+
+        <ImageView
+            android:id="@+id/feedback_listItem_failure"
+            android:layout_width="@dimen/feedback_listItemImgFailure"
+            android:layout_height="@dimen/feedback_listItemImgFailure"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="@dimen/margin_size_2dp"
+            android:layout_toLeftOf="@id/feedback_listitem_image"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_failure"
+            android:visibility="gone"
+        />
+
+        <RelativeLayout
+            android:id="@+id/feedback_listitem_progressLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/feedback_listitem_image"
+            android:layout_alignLeft="@+id/feedback_listitem_image"
+            android:layout_alignRight="@+id/feedback_listitem_image"
+            android:layout_alignTop="@+id/feedback_listitem_image"
+            android:layout_marginRight="12dp"
+            android:background="#66000000"
+            android:visibility="gone"
+        >
+
+            <ProgressBar
+                android:id="@+id/feedback_listItem_progess"
+                style="@style/imageProgressBarStyle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+            />
+
+
+            <TextView
+                android:id="@+id/feedback_listItem_progressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feedback_listItem_progess"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_size_4dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_13sp"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

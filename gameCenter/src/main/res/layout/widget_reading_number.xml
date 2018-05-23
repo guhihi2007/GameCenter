@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <cn.lt.game.ui.app.community.widget.ReadingNumberTextView 
+        android:id="@+id/reading_number"
+        style="@style/community_reading_num_style" />
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <!-- 头部间隔-->
+    <TextView
+        android:id="@+id/reply_listItem_header_marginTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inInterval"
+        android:background="@color/background_grey"/>
+
+    <RelativeLayout
+        android:id="@+id/reply_listItem_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reply_listItem_header_marginTop"
+        android:background="@drawable/left_top_right_bottom_selector"
+        android:clickable="false"
+        android:paddingBottom="@dimen/margin_size_20dp">
+
+        <cn.lt.game.lib.view.RoundImageView
+            android:id="@+id/reply_listItem_headerIcon"
+            android:layout_width="@dimen/replay_icon_width"
+            android:layout_height="@dimen/replay_icon_height"
+            android:layout_marginLeft="@dimen/margin_size_18dp"
+            android:layout_marginTop="@dimen/margin_size_18dp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/reply_listItem_headerReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rl_lv"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/reply_listItem_headerIcon"
+            android:layout_marginRight="@dimen/margin_size_18dp"
+            android:background="@mipmap/reply_backgroup"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_size_4dp"
+            android:paddingRight="@dimen/margin_size_4dp"
+            android:text="回复"
+            android:textColor="@color/theme_green"
+            android:textSize="@dimen/font_size_13sp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_lv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/reply_listItem_headerIcon"
+            android:layout_marginRight="@dimen/margin_size_6dp"
+            android:layout_toLeftOf="@id/reply_listItem_headerReply"
+            android:layout_toRightOf="@+id/reply_listItem_headerIcon">
+
+            <TextView
+                android:id="@+id/reply_listItem_headerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/inInterval"
+                android:layout_marginRight="@dimen/inInterval"
+                android:ellipsize="end"
+                android:maxEms="14"
+                android:maxLines="1"
+                android:text="aaaa"
+                android:textColor="@color/main_btn_normal"
+                android:textSize="@dimen/font_size_15sp"/>
+
+
+            <ImageView
+                android:id="@+id/reply_listItem_levelView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/reply_listItem_headerName"
+                android:src="@drawable/user_level"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/reply_listItem_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/rl_lv"
+            android:layout_below="@+id/rl_lv"
+            android:layout_marginLeft="@dimen/inInterval"
+            android:layout_marginTop="@dimen/margin_size_6dp"
+            android:text="aaaaaaa"
+            android:textColor="@color/light_grey"
+            android:textSize="@dimen/font_size_13sp"/>
+
+        <TextView
+            android:id="@+id/reply_listItem_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/reply_listItem_headerIcon"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/reply_listItem_headerIcon"
+            android:layout_marginTop="@dimen/inInterval"
+            android:paddingBottom="@dimen/inInterval"
+            android:text="aaa"
+            android:textColor="#333"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/reply_listItem_headerHint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inInterval"
+        android:layout_below="@+id/reply_listItem_layout"
+        android:background="@mipmap/reply_indicator"
+        android:visibility="gone">
+
+    </TextView>
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:gravity="center"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/iv_noData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/empty_data_img" />
+
+        <TextView
+            android:id="@+id/network_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你还没有游戏"
+            android:layout_marginTop="@dimen/margin_size_6dp"
+            android:layout_marginBottom="@dimen/margin_size_14dp"
+            android:textColor="@color/detail_review"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/network_goDownLoading"
+            android:layout_width="@dimen/game_detail_bottomTab_BTWidth"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/deep_btn_green_selector"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="center"
+            android:text="马上去下载 "
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

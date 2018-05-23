@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <cn.lt.game.ui.app.community.topic.my.TopicTitleView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_marginTop="@dimen/margin_size_4dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="#333"
+        android:textSize="17sp" />
+
+
+
+    <TextView
+        android:id="@+id/tv_topicTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/title"
+        android:textColor="#bbb"
+        android:textSize="13sp" />
+
+
+</merge>

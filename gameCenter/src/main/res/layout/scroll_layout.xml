@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/theme_green"
+    >
+
+    <LinearLayout
+        android:id="@+id/download_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/download_num"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="5"
+            />
+
+        <ImageView
+            android:id="@+id/download_arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/button_down_load_top"
+            />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@color/theme_green"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+            <View
+                android:id="@+id/download_num_cover"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/theme_green"
+                />
+
+
+            <ImageView
+                android:id="@+id/button_down_load_bottm"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/button_down_load_bottm"
+                />
+
+            <View
+                android:id="@+id/download_num_cover1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/theme_green"
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:layout_marginBottom="2dp"
+        android:textSize="12sp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

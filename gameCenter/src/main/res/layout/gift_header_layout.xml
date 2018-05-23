@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gamegiftCenter_headLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <cn.lt.game.lib.view.banner.MyGallery
+        android:id="@+id/gamegiftCenter_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_height"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/giftCenter_logo_pointLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/giftCenter_logo_pointView_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/gift_giftheadview_margin_top"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal" />
+
+</LinearLayout>

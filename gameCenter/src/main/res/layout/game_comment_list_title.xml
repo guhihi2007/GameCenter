@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="49dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@color/theme_green"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/game_description_title"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="热门评论"
+            android:textColor="@color/light_black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</LinearLayout>

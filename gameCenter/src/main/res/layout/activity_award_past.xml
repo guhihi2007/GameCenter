@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <!-- 标题栏 -->
+    <cn.lt.game.lib.view.TitleBarView
+        android:id="@+id/action_bar_award_past"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--listview栏-->
+    <cn.lt.game.lib.view.NetWorkStateView
+        android:id="@+id/net_award_past"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <cn.lt.game.lib.widget.RefreshAndLoadMoreListView
+        android:id="@+id/lv_award_past"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    />
+</LinearLayout>

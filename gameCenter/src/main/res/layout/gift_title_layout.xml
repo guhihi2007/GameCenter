@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp">
+
+    <ImageView
+        android:id="@+id/mygift_title_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/gift_giftinfoview_img_margin_right"
+        android:scaleType="fitXY"
+        android:src="@mipmap/img_default_80x80_round" />
+
+    <TextView
+        android:id="@+id/mygift_title_txName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mygift_title_img"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="阴阳师"
+        android:layout_marginTop="@dimen/margin_size_6dp"
+        android:textColor="#333333"
+        android:textSize="@dimen/font16sp" />
+
+
+    <TextView
+        android:id="@+id/mygift_title_packCountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mygift_title_txName"
+        android:layout_below="@id/mygift_title_txName"
+        android:layout_marginTop="9dp"
+        android:text="剩余数量"
+        android:textColor="#aaaaaa"
+        android:textSize="@dimen/font11sp" />
+
+    <TextView
+        android:id="@+id/mygift_title_txAlreadyGetCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_alignLeft="@id/mygift_title_packCountTitle"
+        android:layout_below="@id/mygift_title_packCountTitle"
+        android:text="剩余天数"
+        android:textColor="#aaaaaa"
+        android:textSize="@dimen/font11sp" />
+
+    <ImageView
+        android:id="@+id/mygift_title_imgMore"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/entergroup_icon_gray"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

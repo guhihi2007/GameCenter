@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40.5dp"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/category_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="热门网游"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:textColor="@drawable/category_textview_selector"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/category_divider"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:layout_centerVertical="true"
+        android:background="#ccc" />
+
+</RelativeLayout>

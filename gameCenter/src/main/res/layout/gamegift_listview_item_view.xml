@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center_horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <ImageView
+        android:id="@+id/gift_listView_item_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/img_default_80x80_round" />
+
+    <TextView
+        android:id="@+id/gift_listView_item_txName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gift_listView_item_img"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="爸爸去哪儿哈哈干哈"
+        android:textColor="#333333"
+        android:textSize="@dimen/font15sp" />
+
+    <TextView
+        android:id="@+id/gift_listView_item_txMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gift_listView_item_txName"
+        android:layout_alignRight="@+id/gift_listView_item_txName"
+        android:layout_below="@+id/gift_listView_item_txName"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="剩余：70%"
+        android:textColor="#aaaaaa"
+        android:textSize="11sp" />
+
+</RelativeLayout>

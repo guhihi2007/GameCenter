@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/border_left_top_right_bottom"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="私信"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_redPoint"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginLeft="@dimen/margin_size_4dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="@dimen/margin_size_4dp"
+            android:layout_toRightOf="@+id/tv_title"
+            android:background="@drawable/red_point"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/mygift_title_imgMore"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/drawable_right" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

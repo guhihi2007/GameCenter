@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
+
+    <TextView
+        android:id="@+id/gift_value_title_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:text="礼包内容："
+        android:textColor="#999999"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/gift_value_giftValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_toRightOf="@+id/gift_value_title_one"
+        android:text="ddddddddddddddddddddq"
+        android:lineSpacingExtra="7dp"
+        android:textColor="#999999"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/gift_value_line_one"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="14dp"
+        android:layout_below="@+id/gift_value_giftValue"
+        android:background="@color/line_background" />
+
+    <TextView
+        android:id="@+id/gift_value_title_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gift_value_line_one"
+        android:text="领取流程："
+        android:layout_marginBottom="7dp"
+        android:textColor="#999999"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/gift_value_giftProcedures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_alignTop="@+id/gift_value_title_two"
+        android:layout_toRightOf="@+id/gift_value_title_two"
+        android:text="dddddddddddddd"
+        android:textColor="#999999"
+        android:lineSpacingExtra="7dp"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/gift_value_line_two"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="14dp"
+        android:layout_below="@+id/gift_value_giftProcedures"
+        android:background="@color/line_background" />
+
+    <TextView
+        android:id="@+id/gift_value_title_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gift_value_line_two"
+        android:text="有效期："
+        android:paddingLeft="12dp"
+        android:textColor="#999999"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/gift_value_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/gift_value_title_three"
+        android:layout_toRightOf="@+id/gift_value_title_three"
+		android:text="sdfdsf"
+        android:textColor="#999999"
+        android:textSize="13sp" />
+
+</RelativeLayout>

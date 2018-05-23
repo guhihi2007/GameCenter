@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 长方形游戏安装键 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/install_operation_bar"
+    android:layout_width="60dp"
+    android:layout_height="25dp"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true">
+
+    <ProgressBar
+        android:id="@+id/download_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/download_progressbackgroud"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/download_progressdrawable"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/install_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_green_selector"
+        android:gravity="center"
+        android:text="@string/download"
+        android:textColor="@color/theme_green"
+        android:textSize="13sp" />
+
+</RelativeLayout>
+

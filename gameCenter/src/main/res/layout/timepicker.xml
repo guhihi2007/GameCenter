@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/timePicker1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/user_center_24"
+    android:layout_marginRight="@dimen/user_center_24"
+    android:layout_marginBottom="@dimen/user_center_20"
+    android:orientation="horizontal">
+
+    <cn.lt.game.lib.widget.time.WheelView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="15sp" />
+
+    <cn.lt.game.lib.widget.time.WheelView
+        android:id="@+id/month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="15sp" />
+
+    <cn.lt.game.lib.widget.time.WheelView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="15sp" />
+
+    <cn.lt.game.lib.widget.time.WheelView
+        android:id="@+id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="15sp" />
+
+    <cn.lt.game.lib.widget.time.WheelView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="15sp" />
+</LinearLayout>

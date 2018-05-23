@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 顶部标题栏 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page_action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:background="@color/theme_green">
+
+    <!-- 后退键 -->
+    <ImageView
+        android:id="@+id/btn_page_back"
+        android:layout_width="@dimen/action_bar_height"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@drawable/button_background_selector"
+        android:src="@mipmap/ic_back"
+        android:padding="@dimen/action_bar_padding"/>
+
+    <!-- 下一步/完成  按键 -->
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/user_center_34"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_register_selector"
+        android:paddingBottom="@dimen/user_center_5"
+        android:paddingLeft="@dimen/user_center_2"
+        android:paddingTop="@dimen/user_center_5"
+        android:scaleType="fitCenter"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:textSize="@dimen/font15sp" />
+
+    <ImageView
+        android:id="@+id/extra_operation"
+        android:layout_width="@dimen/action_bar_height"
+        android:layout_height="@dimen/action_bar_height"
+        android:padding="@dimen/action_bar_padding"
+        android:src="@mipmap/ic_edit"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+    <!-- 设置 按键 -->
+
+    <ImageButton
+        android:id="@+id/btn_setting"
+        android:layout_width="@dimen/action_bar_height"
+        android:layout_height="@dimen/action_bar_height"
+        android:padding="@dimen/action_bar_padding"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_background_selector"
+        android:src="@mipmap/sidebar_right_icon"
+        android:visibility="gone" />
+
+    <!-- 标题文字 -->
+
+    <TextView
+        android:id="@+id/tv_page_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/btn_next"
+        android:layout_toRightOf="@id/btn_page_back"
+        android:maxLines="1"
+        android:text="@string/find_password"
+        android:textColor="@color/white"
+        android:textSize="@dimen/action_bar_title" />
+
+</RelativeLayout>

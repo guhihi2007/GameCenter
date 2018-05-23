@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 首页基础游戏 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/change_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/gameBody"
+            android:layout_width="match_parent"
+            android:layout_height="98dp">
+
+            <TextView
+                android:id="@+id/tv_number_single"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="挡块"
+                android:visibility="invisible" />
+            <!--要显示的排名 开始-->
+            <ImageView
+                android:id="@+id/rank_index_iv"
+                android:layout_width="@dimen/corner"
+                android:layout_height="@dimen/corner"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/iv_mark_index_game_item"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignLeft="@+id/logoIv"
+                android:layout_alignTop="@+id/logoIv"
+                android:scaleType="fitXY"
+                android:src="@null" />
+
+            <FrameLayout
+                android:id="@+id/fl_number"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_number_single_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:text="39"
+                    android:textColor="@color/point_grey"
+                    android:textSize="13sp" />
+            </FrameLayout>
+            <!--要显示的排名 结尾-->
+            <ImageView
+                android:id="@+id/iv_gold"
+                android:layout_width="@dimen/corner"
+                android:layout_height="@dimen/corner"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/rl_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/logoIv"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/topLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="horizontal">
+
+                    <!--按钮-->
+                    <RelativeLayout
+                        android:id="@+id/install_operation_bar"
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="12dp">
+
+                        <ProgressBar
+                            android:id="@+id/download_progress_bar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/download_progressbackgroud"
+                            android:max="100"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/download_progressdrawable"
+                            android:visibility="visible" />
+
+                        <Button
+                            android:id="@+id/grid_item_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn_green_selector"
+                            android:gravity="center"
+                            android:text="@string/download"
+                            android:textColor="@color/theme_green"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@id/install_operation_bar"
+                        android:layout_marginBottom="@dimen/margin_size_4dp"
+                        >
+                        <TextView
+                            android:id="@+id/label"
+                            android:layout_width="30dp"
+                            android:layout_height="16dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/rectangle_green_corner"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="礼包"
+                            android:textColor="@color/theme_green"
+                            android:textSize="11sp"
+                            android:visibility="gone" />
+                        <TextView
+                            android:id="@+id/tv_point"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_size_4dp"
+
+                            android:layout_toRightOf="@+id/nameTv"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="+20"
+                            android:textColor="@color/light_yellow"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/nameTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/label"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxEms="7"
+                            android:maxLines="1"
+                            android:text="名字asdfasdfasdfasdfasdf"
+                            android:textColor="@color/light_black"
+                            android:textSize="16sp" />
+                </RelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/centerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/down_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:ellipsize="marquee"
+                        android:maxLines="1"
+                        android:text="3000万次下载"
+                        android:textColor="@color/light_grey_a"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/game_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ellipsize="marquee"
+                        android:maxLines="1"
+                        android:text="231MB"
+                        android:textColor="@color/light_grey_a"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tagTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/centerLayout"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/centerLayout"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="修仙游戏|超级好玩的欧系哦asdfasdddddddddddddddddddddddd"
+                    android:textColor="@color/light_grey_a"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/logoIv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tv_number_single"
+                android:layout_toRightOf="@+id/tv_number_single"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/img_default_80x80_round" />
+
+
+        </RelativeLayout>
+
+        <!-- 小编点评 -->
+
+        <ViewStub
+            android:id="@+id/describeVs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gameBody"
+            android:layout="@layout/item_horizontal_basegame_describe" />
+        <!-- 左上角图片 特别推荐 -->
+        <ImageView
+            android:id="@+id/signVs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/special_commend"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/decorate"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#eeeeee" />
+    </RelativeLayout>
+
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:background="#eeeeee"-->
+    <!--android:layout_marginLeft="12dp"-->
+    <!--android:layout_marginRight="12dp" />-->
+
+
+</LinearLayout>

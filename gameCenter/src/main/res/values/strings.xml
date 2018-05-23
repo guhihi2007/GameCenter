@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">游戏中心</string>
+    <string name="main">精选</string>
+    <string name="rank">排行</string>
+    <string name="category">分类</string>
+    <string name="management">管理</string>
+    <string name="download">下载</string>
+    <string name="install">安装</string>
+    <string name="retry">重试</string>
+    <string name="compile">编辑</string>
+    <string name="install_fail">安装失败</string>
+    <string name="open">打开</string>
+    <string name="go_use">去使用</string>
+    <string name="open_accept">打开领取</string>
+    <string name="accepted">已领取</string>
+    <string name="uninstall">卸载</string>
+    <string name="cancel_ignor_bt">取消</string>
+    <string name="update">升级</string>
+    <string name="wait">等待中</string>
+    <string name="installing">安装中</string>
+    <string name="go_on">继续</string>
+    <string name="delete">删除</string>
+    <string name="send">发表</string>
+    <string name="send_topic">发表话题</string>
+    <string name="send_comment">发送评论</string>
+    <string name="send_reply">发送回复</string>
+    <string name="topic_title">话题标题</string>
+    <string name="topic_content">话题内容</string>
+    <string name="topic_sort">话题分类</string>
+    <string name="already_pause">已暂停</string>
+    <string name="single_game">单机</string>
+    <string name="online_game">网游</string>
+    <string name="hottest">最热</string>
+    <string name="newest">最新</string>
+    <string name="installed">已安装</string>
+    <string name="install_management">下载管理</string>
+    <string name="network_fail">下载失败，您设置了仅WiFi下载，或网络连接断开</string>
+    <string name="download_fail">下载失败</string>
+    <string name="install_fail_retry">安装包错误</string>
+    <string name="down_complete_install">下载完成，待安装</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">松开可以刷新</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据121212</string>
+    <string name="more">加载中</string>
+    <string name="connection_timeout">网络连接超时</string>
+    <string name="waiting">等待中</string>
+    <string name="searchkeyword2">请输入关键字</string>
+    <string name="packagecenter">热门礼包</string>
+    <string name="allGift">全部礼包</string>
+    <string name="mypackage">我的礼包</string>
+
+    <string-array name="favoriteItem">
+        <item>游戏</item>
+        <item>攻略</item>
+        <item>评测</item>
+        <item>新闻</item>
+    </string-array>
+    <!-- 这个ID 必须写死 -->
+    <string name="newstrategyID">98</string>
+    <string name="hotstrategyID">28</string>
+    <string name="newstrategy">最新攻略</string>
+    <string name="strategycenter">攻略中心</string>
+    <string name="hot_topic">热门话题</string>
+    <string name="browsegroups">推荐小组</string>
+    <string name="strategycenter_searchbarBT_text">搜攻略</string>
+    <string name="strategycenter_searchbar_hint">请输入关键字</string>
+    <string name="login_hint">请输入手机号/邮箱</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="password_hint3">请输入6-20个字符的密码,区分大小写</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="register_">一键注册</string>
+    <string name="register_new">新用户注册</string>
+    <string name="login">立即登录</string>
+    <string name="login_title">登录天天游戏中心</string>
+    <string name="use_follow_account_to_login">用以下账号登录</string>
+    <string name="choose_account_type">请选择注册账号类型：</string>
+    <string name="phone_register">手机号码注册</string>
+    <string name="mail_register">邮箱注册</string>
+    <string name="register_text">注册即同意《用户服务条款》</string>
+    <string name="please_input_phone_number">请输入11位数的手机号码</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="get_verify_retry">重新获取</string>
+    <string name="please_input_verify_code">请输入验证码</string>
+    <string name="please_input_mail_account">请输入邮箱账号</string>
+    <string name="next">下一步</string>
+    <string name="unlogin_warn">登录您的账号,愉快的交流起来吧！</string>
+    <string name="unlogin_by_get_gift">请先登录。登陆后礼包可保存在您的个人账户，方便查看使用</string>
+    <string name="find_password">找回密码</string>
+    <string name="reset_password_desc">请设置新登录密码。密码长度为6-20个字符，区分大小写。建议使用字母、数字与标点的组合，可以大幅度提高账号安全度
+    </string>
+    <string name="confirm_new_password">确认新密码:</string>
+    <string name="verify_code_sent_to">校验码已发送至邮箱:</string>
+    <string name="reset_password_sent_to_mailbox">重置密码邮件已发送至邮箱，请登录邮箱完成重置密码。请妥善管理账户安全，祝您游戏愉快！
+    </string>
+    <string name="finish">完成</string>
+    <string name="input_phone_to_get_verify_code">手机号码：用于接收短信验证码</string>
+    <string name="click_to_set_photo">点击设置头像</string>
+    <string name="set_nickname">设置昵称</string>
+    <string name="nickname">昵称:</string>
+    <string name="commit">提交</string>
+    <string name="modify_password">修改密码</string>
+    <string name="change_account">切换账号</string>
+    <string name="edit_info">编辑信息</string>
+    <string name="my_game">我的游戏</string>
+    <string name="my_gift">我的礼包</string>
+    <string name="my_community">我的社区</string>
+    <string name="quit">退出帐号</string>
+    <string name="personal_homepage">个人主页</string>
+    <string name="personal_info">个人资料</string>
+    <string name="birthday">生日:</string>
+    <string name="area">地区:</string>
+    <string name="sex">性别:</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="gentle_reminder">提示</string>
+    <string name="exit_reminder">确定退出天天游戏中心吗？</string>
+    <string name="exit_with_uninstalled">%1$s未安装，是否马上安装？</string>
+    <string name="exit_with_multi_uninstalled">%1$s等%2$d款游戏未安装，是否马上安装？</string>
+    <!--抽奖活动=================================================================-->
+    <string name="award_tips">很遗憾，没有抽中任何奖品</string>
+    <!--抽奖活动==按钮类-->
+    <string name="award_button_continue">继续抽奖</string>
+    <string name="award_button_get">马上领取</string>
+    <string name="award_button_earn_score_now">先去赚积分</string>
+    <string name="award_button_earn_score">赚积分</string>
+    <string name="award_button_click_get">点击领奖</string>
+    <string name="award_button_post">提交</string>
+    <string name="award_button_refresh">刷新</string>
+    <!--抽奖活动==title类-->
+    <string name="award_title_tips">提示</string>
+    <string name="award_title_success">领取成功</string>
+    <string name="award_title_get_award">领奖</string>
+    <!--抽奖活动==message类-->
+    <string name="award_message_tips">太遗憾了，手滑了一下下，换根手指，再来一次给力的掠夺！</string>
+    <string name="award_message_tips_not_get">你有%d个未领取奖品，请尽快领取!</string>
+    <string name="award_message_tips_times">抽奖次数已用完，请明天再来!</string>
+    <string name="award_message_refresh">活动已过期，请刷新获取最新活动</string>
+    <string name="award_message_tips_lack_score">我的天！离大奖就差一点积分！先赚点积分再试试呗~</string>
+    <string name="award_message_join_num">已有%d人参与抽奖</string>
+    <string name="award_message_nodata_record">你还没有中奖记录</string>
+    <string name="award_message_nodata_record_past">你还没有过期奖品记录</string>
+    <string name="award_message_change_code_half">兑换码：%s</string>
+    <string name="award_message_contact">如需更改信息，请联系客服（QQ：2264237956）</string>
+    <string name="award_message_contact_4G">流量已发送，如长时间未收到充值提示，请联系客服（QQ：2264237956）</string>
+
+    <string name="award_message_send_tip">奖品已发出，复制快递单号查询物流信息</string>
+
+    <string name="award_message_tips_free_times_unlogin">你共有%d次免费抽奖机会</string>
+    <string name="award_message_tips_free_times_login">你剩余%d次免费抽奖机会</string>
+    <string name="award_message_tips_lost_score">抽奖消耗%d积分</string>
+
+    <!--=================================================================-->
+    <string name="exit_gamecenter">退出游戏中心</string>
+    <string name="downAllHine">你还有N个应用待升级</string>
+    <string name="gallery_send">确定</string>
+    <string name="packageName">cn.lt.game.ui.app.LoadingActivity</string>
+    <string name="exit">退出</string>
+    <!-- AboutActivity -->
+    <string name="about_shared_string">天天游戏中心，天天要你好玩，快来下载吧。下载地址：http://www.ltbl.cn/Game.html
+    </string>
+
+    <!-- sidebar -->
+
+    <!-- Gift model -->
+    <string name="gift_precent_hot">剩余 : &lt;font color=\'#ff8800\'&gt;%1$s&lt;\//font&gt;</string>
+    <string name="gift_precent">剩余&lt;font color=\'#ff8800\'&gt;%1$s&lt;\//font&gt;</string>
+    <string name="gift_total">总礼包数 : &lt;font color=\'#ff8800\'&gt;%1$s&lt;\//font&gt;</string>
+    <string name="gift_received">已领取 : &lt;font color=\'#ff8800\'&gt;%1$s&lt;\//font&gt;</string>
+    <string name="gift_count">礼包数 : &lt;font color=\'#ff8800\'&gt;%1$s&lt;\//font&gt;</string>
+    <string name="gift_reset">剩余数量 : &lt;font color=\'#ff8800\'&gt;%1$s&lt;\//font&gt;</string>
+    <string name="gift_reset_time">剩余天数 : &lt;font color=\'#ff8800\'&gt;%1$s&lt;\//font&gt;</string>
+    <string name="reading">阅读</string>
+    <string name="comment">评论</string>
+    <string name="like">赞</string>
+    <string name="published_topic">发表的话题</string>
+    <string name="published_comment">发表的评论</string>
+    <string name="collected_topic">收藏的话题</string>
+    <string name="joined_groups">加入的小组</string>
+    <string name="new_topic">最新话题</string>
+    <string name="ta_topic">TA的话题</string>
+    <string name="ta_comment">TA的评论</string>
+    <string name="ta_group">TA的小组</string>
+
+    <!-- 自动装String -->
+    <string name="acc_auto_install_service_description">
+        "「天天游戏中心自动装」可以在安装和升级应用时，无需一直盯着手机，「天天游戏中心自动装」会帮你点击所需的按钮，确保应用顺利安装。
+
+        打开服务时，系统会弹出例行的警告。天天游戏中心承诺不会通过本功能收集你的隐私信息。
+
+        如果你强制关闭「天天游戏中心自动装」，或使用内存清理工具关闭「天天游戏中心自动装」，会造成「天天游戏中心自动装」功能被系统关闭。为保证正常使用，请将「天天游戏中心自动装」放入清理白名单中。
+
+
+        「天天游戏中心自动装」无需获取手机 Root 权限，支持 Android 4.1 以上系统。
+    </string>
+    <string name="acc_auto_install_service_name">天天游戏中心自动装</string>
+    <string name="app_auto_install_confirm">确定</string>
+    <string name="app_auto_install_done">完成</string>
+    <string name="app_auto_install_done_miui">我知道了</string>
+    <string name="app_auto_install_finish_miui">完成</string>
+    <string name="app_auto_install_install">安装</string>
+    <string name="app_auto_install_lenovo_install_success">安装成功</string>
+    <string name="app_auto_install_lenovo_install_success_button">完成</string>
+    <string name="app_auto_install_lenovo_no_perm">该应用没有申请任何权限</string>
+    <string name="app_auto_install_lenovo_pass_le_security">已通过乐安全防病毒检测</string>
+    <string name="app_auto_install_lenovo_perm">该应用申请了以下权限：</string>
+    <string name="app_auto_install_next">下一步</string>
+    <string name="app_auto_install_setting_button">知道了</string>
+    <string name="app_auto_install_setting_desc">开启功能需要你授权确认，本功能不会带来任何风险。</string>
+    <string name="app_auto_install_setting_title">开启「天天游戏中心自动装」</string>
+    <string name="app_auto_install_title">开启自动装。安装和升级应用，无需盯着手机反复点击！</string>
+
+    <!--下载提示语-->
+    <string name="download_no_network">当前没有可用的网络，请检查您的网络设置。</string>
+    <string name="go_setting">去设置</string>
+    <string name="download_mobile_network_autopause">当前处于2G/3G/4G环境，游戏下载自动暂停，是否继续下载？</string>
+    <string name="download_mobile_network_tips">当前处于2G/3G/4G环境，下载将消耗流量，是否继续下载？</string>
+    <string name="download_continue2">继续流量下载</string>
+    <string name="order_wifi_download">预约WIFI下载</string>
+    <string name="download_pause_noti_title">%d个游戏已暂停下载</string>
+    <string name="download_pause_noti_content">2G/3G/4G环境自动暂停，点击查看</string>
+    <string name="download_exit_tips">%d个任务正在下载，确定退出？</string>
+    <string name="download_exit_continue_tips">继续未完成的下载并安装</string>
+
+    <string name="no_more">已加载完全部</string>
+
+
+    <string name="input_count_tips_v1">还能输入%d个字</string>
+    <string name="input_count_tips_v2">已超出%d个字</string>
+    <string name="title_notnull">发表失败，话题标题不能为空</string>
+    <string name="title_too_much">标题过长</string>
+    <string name="finish_select_image">完成(%1$d/%2$d)</string>
+    <string name="select_image">选择照片</string>
+    <string name="image_count_limit_tips">最多只能添加9张图片</string>
+    <string name="draf_saved_tips">已保存到草稿箱</string>
+    <string name="title_activity_user_center">UserCenterActivity</string>
+
+    <!--个人中心-->
+    <string name="title_activity_edit_user_info">EditUserInfoActivity</string>
+    <string name="title_activity_bind_phone">BindPhoneActivity</string>
+    <string name="user_center_user_name">点此登录</string>
+    <string name="user_center_user_name_signin">请登录账号</string>
+    <string name="user_center_user_name_no_signin_save">登录存入积分</string>
+    <string name="user_center_login_prompt">登录可享受更多权益</string>
+    <string name="user_center_menu_game">游戏</string>
+    <string name="user_center_menu_community">社区</string>
+    <string name="user_center_menu_gift">礼包</string>
+    <string name="user_center_menu_setting">设置</string>
+    <string name="user_center_menu_check_update">检查更新</string>
+    <string name="user_center_menu_feedback">意见反馈</string>
+    <string name="user_center_menu_about">关于我们</string>
+    <string name="user_center_menu_check_new">最新版</string>
+    <string name="user_center_user_update_avatar">修改头像</string>
+    <string name="user_center_user_nickname">昵称</string>
+    <string name="user_center_user_not_nickname">匿名</string>
+    <string name="user_center_user_signature">个性签名</string>
+    <string name="user_center_user_not_signature">这个人很懒，什么都没留下！</string>
+    <string name="user_center_user_bind_phone">绑定手机</string>
+    <string name="user_center_user_bind_email">绑定邮箱</string>
+    <string name="user_center_user_not_bind">未绑定</string>
+    <string name="user_center_user_not_check">未验证</string>
+    <string name="user_center_user_birthday">生日</string>
+    <string name="user_center_user_sex">性别</string>
+    <string name="user_center_user_area">地区</string>
+    <string name="user_center_user_not_setting">未设置</string>
+    <string name="user_center_user_password">修改密码</string>
+    <string name="user_center_user_toggle_user">切换账号</string>
+    <string name="user_center_user_logout">退出登录</string>
+    <string name="user_center_bind_phone_text">绑定成功后，您也可以使用手机号登录</string>
+    <string name="user_center_change_phone">已修改成功，请填写新的手机号码！</string>
+    <string name="user_center_bind_phone_hint">请输入11位数的手机号码</string>
+    <string name="user_center_modify_phone_hint">请输入您当前绑定的手机号</string>
+    <string name="user_center_bind_email_text">绑定成功后，您也可以使用邮箱帐号登录</string>
+    <string name="user_center_bind_eamil_hint">请输入您需要绑定的邮箱号</string>
+    <string name="user_center_bind_email_complete">请打开您收到的验证邮件，完成操作</string>
+    <string name="user_center_modify_email_text">修改成功后，您可以使用新的邮箱直接登录，之前绑定的邮箱将不再作为登录凭证</string>
+    <string name="user_center_modify_phone_text">修改手机前，需要验证您当前绑定的手机号。</string>
+    <string name="user_center_bind_show_email">邮箱：</string>
+    <string name="user_center_check_phone_code">验证成功，请绑定新的手机号码</string>
+    <string name="user_center_title_user_center">个人中心</string>
+    <string name="user_center_title_edit_info">编辑资料</string>
+    <string name="user_center_title_bind_phone">绑定手机</string>
+    <string name="user_center_title_modify_phone">修改手机</string>
+    <string name="user_center_title_bind_email">绑定邮箱</string>
+    <string name="user_center_title_modify_email">修改邮箱</string>
+    <string name="user_center_hint_modify_new_pw">请输入新密码</string>
+    <string name="user_center_hint_modify_old_pw">请输入旧密码</string>
+    <string name="user_center_hint_modify_new2_pw">请再次输入新密码</string>
+    <string name="user_center_hint_modify_nickname">请输入1-14个字节的昵称</string>
+    <string name="user_center_sign">签到</string>
+    <string name="user_center_signed">已签到</string>
+    <string name="user_center_sign_count">已连续签到%d天</string>
+    <string name="user_center_unaward_count">你有%s个待领取奖品</string>
+    <string name="user_center_my_award">我的奖品</string>
+    <string name="user_center_my_task">我的任务</string>
+    <string name="userc_center_my_coupon">我的代金券</string>
+    <string name="user_center_my_downmanager">下载管理</string>
+    <string name="user_center_my_upgrade">游戏升级</string>
+
+    <!-- 设置 -->
+    <string name="title_activity_app_setting">AppSettingActivity</string>
+    <string name="user_center_title_setting">设置</string>
+    <string name="user_center_download_setting">下载设置</string>
+    <string name="user_center_download_path">安装包下载位置</string>
+    <string name="user_center_install_setting">安装设置</string>
+    <string name="user_center_auto_install_setting">自动安装游戏</string>
+    <string name="user_center_auto_upgrade_setting">零流量升级</string>
+    <string name="user_center_download_auto_install_setting">下载完成后自动安装（需root权限）</string>
+    <string name="user_center_download_auto_upgrade_setting">开启后，WiFi网络下自动下载游戏升级包</string>
+    <string name="user_center_auto_delete_pack_setting">自动删除安装包</string>
+    <string name="user_center_install_auto_delete_pack_setting">游戏安装完成后，自动删除安装包</string>
+    <string name="user_center_phone_size_setting">手机内存（剩余%1$s）</string>
+    <string name="user_center_sdcard_size_setting">SD卡（剩余%1$s）</string>
+    <string name="user_center_auto_upgrade_desc">
+        \n1、不消耗流量\n仅处于WIFI网络才进行下载，支持断点续传\n\n2、不影响性能\n仅手机CPU使用率高于30%时，该功能才生效;\n打开天天游戏中心后，该功能暂停\n\n3、不浪费空间\n更新完后，自动清除安装包
+    </string>
+
+    <!--个人主页-->
+    <string name="my_topic">话题</string>
+    <string name="my_group">小组</string>
+
+    <string name="strategy">攻略</string>
+    <string name="max_image_selected_tips">最多只能选择%d张照片</string>
+    <string name="my_private_message">我的私信</string>
+
+    <string name="storage_space_not_enough_change_path">手机空间小于%dMB，可能导致下载安装失败，是否清理内存？</string>
+    <string name="clean">清理</string>
+    <string name="storage_sapce_not_enough_download_fail">内存空间不足，下载失败</string>
+    <string name="ignore_upgrade">忽略升级</string>
+    <string name="cancel_ignore">取消忽略</string>
+    <string name="expand_text">展开说明</string>
+    <string name="collapse_text">收起说明</string>
+    <string name="expand_text1">查看全部</string>
+    <string name="collapse_text1">收起全部</string>
+    <string name="one_key_requisite_download">一键下载</string>
+    <string name="one_key_requisite_download_detail">一键下载（共%1$d款游戏，%2$.2fMB）</string>
+    <string name="network_env_wifi">↑ 当前处于wifi环境，请放心下载！</string>
+    <string name="network_env_cellular">↑ 当前处于2G/3G/4G环境，下载将消耗流量！</string>
+    <string name="my_manager">管理</string>
+    <!-- 签到积分start -->
+    <string name="point_sign_tip">签到得积分</string>
+    <string name="point_download_tip">下载得积分</string>
+    <string name="point_record_nodata_tip">您还没有积分记录</string>
+    <string name="point_game_nodata_tip">手速真快！小伙伴们正在努力补货，明天再来看看呗～</string>
+    <!-- 签到积分end -->
+    
+    <string name="version">版本：</string>
+    <string name="customer_service_qq">客服QQ：2264237956</string>
+    <string name="customer_service_email">客服邮箱：yunying@ltbl.cn</string>
+    <string name="share_friends">分享给小伙伴们</string>
+    <string name="integral">积分</string>
+    <string name="model">型号 : </string>
+    <string name="system">系统 : </string>
+    <string name="Network">网络 : </string>
+    <string name="transmit">发送</string>
+    <string name="please_input_information">请输入信息</string>
+    <string name="small_comment">小编点评：</string>
+    <string name="screenshots">游戏截图</string>
+    <string name="game_introduction">游戏简介</string>
+    <string name="game_related">游戏相关</string>
+    <string name="strategy_list">攻略列表</string>
+    <string name="gift_detail">礼包详情</string>
+    <string name="gift_search">礼包搜索</string>
+    <string name="search_gift">搜礼包</string>
+    <string name="join_team">加入小组</string>
+    <string name="all_image">所有图片</string>
+    <string name="reply">回复</string>
+    <string name="not_find_content">没有找到相关内容</string>
+    <string name="promote">推广</string>
+    <string name="choose_album">从相册选择</string>
+    <string name="pictures">拍照</string>
+    <string name="no_one_comment">还没有人评论</string>
+    <string name="loading">正在加载</string>
+    <string name="copy">复制</string>
+    <string name="express_company">快递公司：</string>
+    <string name="selection_play">精选必玩</string>
+    <string name="submitted">正在提交</string>
+    <string name="selection_play_game">精选必玩游戏</string>
+    <string name="wifi_download">您当前处在wifi下，请放心下载</string>
+    <string name="find_new_version">发现新版本</string>
+    <string name="immediately_upgrade">马上升级</string>
+    <string name="return_game_center">返回游戏中心</string>
+    <string name="have_banned">你已经被封禁</string>
+    <string name="one_key_upgrade">一键升级</string>
+    <string name="permission_name">游戏中心需要获取%d权限，用于为您推荐最适合的游戏，保障下载更新顺畅与设备安全。</string>
+    <string name="permission_setting">为了能给您提供更优质的服务，我们需要您授予一些权限；否则会影响到客户端体验哦。
+设置路径：设置->应用->游戏中心->权限
+</string>
+</resources>

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.lt.game.ui.app.sidebar.AppInfoBackDoorActivity">
+
+    <ListView
+        android:id="@+id/lv_appInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="50dp"
+        android:scrollbars="none" />
+
+
+    <Button
+        android:id="@+id/select_city"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        android:text="select city" />
+
+    <LinearLayout
+        android:id="@+id/ll_getui"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:hint="请输入推送ID" />
+
+        <Button
+            android:id="@+id/bt_request"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_weight="1"
+            android:text="模拟推送" />
+    </LinearLayout>
+
+
+</RelativeLayout>

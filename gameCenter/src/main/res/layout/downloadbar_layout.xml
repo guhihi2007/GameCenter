@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 底部栏 start -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_top">
+
+    <RelativeLayout
+        android:id="@+id/game_detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white">
+
+        <!-- 安装按钮 -->
+
+        <RelativeLayout
+            android:id="@+id/install_operation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="9dp">
+
+            <ProgressBar
+                android:id="@+id/download_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/download_progressbackgroud"
+                android:indeterminateOnly="false"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/download_progressdrawable"
+                android:visibility="visible" />
+
+            <cn.lt.game.ui.app.gamedetail.DrawableCenterTextView
+                android:id="@+id/btn_download_ctrl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/deep_btn_green_selector"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/middle_font_size"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout><!-- 底部栏 end -->

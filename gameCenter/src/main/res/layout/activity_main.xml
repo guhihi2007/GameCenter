@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/simple_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@color/theme_green"
+            android:paddingRight="5dp">
+
+            <!-- 后退键 -->
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_background_selector"
+                android:padding="15dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_back" />
+
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_dark_green_selector"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/finish"
+                android:textColor="@color/selector_textcolor_white_gray"
+                android:textSize="@dimen/middle_frront_size" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@id/send"
+                android:layout_toRightOf="@id/back"
+                android:maxLines="1"
+                android:text="@string/select_image"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_font_size" />
+
+        </RelativeLayout>
+
+
+        <GridView
+            android:id="@+id/id_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:clipChildren="true"
+            android:gravity="center"
+            android:horizontalSpacing="3dip"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="3dip"></GridView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_bottom_ly"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#e0000000"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/id_choose_dir"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="@string/all_image"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/id_total_count"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

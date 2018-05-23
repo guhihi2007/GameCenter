@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/action_bar_new" />
+
+    <ImageView
+        android:id="@+id/about_logo"
+        android:layout_width="@dimen/game_detail_imageText_height"
+        android:layout_height="@dimen/game_detail_imageText_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/loading_logo" />
+
+    <TextView
+        android:id="@+id/about_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:text="@string/app_name"
+        android:textColor="@color/light_black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/about_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:text="@string/version"
+        android:textColor="@color/point_grey"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center_vertical"
+            android:text="@string/customer_service_qq"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/middle_frront_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center_vertical"
+            android:text="@string/customer_service_email"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/middle_frront_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:gravity="center_vertical"
+            android:text="@string/share_friends"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/middle_frront_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="1px">
+
+                <ImageView
+                    android:id="@+id/share_wechatIv"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/header_height"
+                    android:layout_weight="1"
+                    android:src="@mipmap/share_weixin" />
+
+                <ImageView
+                    android:id="@+id/share_pyqIv"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/header_height"
+                    android:layout_weight="1"
+                    android:src="@mipmap/share_friend" />
+
+                <ImageView
+                    android:id="@+id/share_qqIv"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/header_height"
+                    android:layout_weight="1"
+                    android:src="@mipmap/share_qq" />
+
+                <ImageView
+                    android:id="@+id/share_sinaIv"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/header_height"
+                    android:layout_weight="1"
+                    android:src="@mipmap/share_weibo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/share_plusIv"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/bottom_bar_height"
+                    android:layout_weight="1"
+                    android:src="@mipmap/share_plus"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/bottom_bar_height"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/bottom_bar_height"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/bottom_bar_height"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

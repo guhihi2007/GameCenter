@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:NoSearchTitleBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:orientation="vertical">
+
+    <cn.lt.game.lib.view.DownLoadBarForOther
+        android:id="@+id/game_other_info_downLoadBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"></cn.lt.game.lib.view.DownLoadBarForOther>
+
+    <cn.lt.game.lib.view.TitleBarView
+        android:id="@+id/game_other_info_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        NoSearchTitleBar:titleName="@string/strategy_list"></cn.lt.game.lib.view.TitleBarView>
+
+    <cn.lt.game.lib.view.StrategyListInfoView
+        android:id="@+id/game_other_info_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game_other_info_titleBar"
+        android:background="@color/white"></cn.lt.game.lib.view.StrategyListInfoView>
+
+    <cn.lt.game.lib.view.loadfresh.AutoListView
+        android:id="@+id/game_other_info_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/game_other_info_downLoadBar"
+        android:layout_below="@+id/game_other_info_view"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+
+    <cn.lt.game.lib.view.NetWorkStateView
+        android:id="@+id/game_other_info_netwrokStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/game_other_info_titleBar"></cn.lt.game.lib.view.NetWorkStateView>
+
+</RelativeLayout>

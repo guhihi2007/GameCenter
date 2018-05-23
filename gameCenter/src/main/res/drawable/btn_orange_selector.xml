@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="1dp" android:color="@color/theme_green"/>
+    <solid android:color="@color/white"/>
+    <corners android:radius="3dp"/>
+</shape>
+    <!--
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:drawable="@mipmap/btn_upgrade_p" android:state_pressed="true"/>
+        <item android:drawable="@mipmap/btn_upgrade_p" android:state_checked="true"/>
+        <item android:drawable="@mipmap/btn_upgrade_p" android:state_selected="true"/>
+        <item android:drawable="@mipmap/btn_upgrade_n" android:state_checked="false"/>
+        <item android:drawable="@mipmap/btn_upgrade_n"/>
+
+    </selector>-->

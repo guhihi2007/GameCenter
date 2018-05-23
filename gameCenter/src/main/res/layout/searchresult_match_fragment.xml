@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ListView
+        android:id="@+id/searchresult_match_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/outerIntervalLeft"
+        android:layout_marginRight="@dimen/outerIntervalRight"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:visibility="gone" >
+    </ListView>
+
+    <cn.lt.game.lib.view.NetWorkStateView
+        android:id="@+id/game_detail_netWrokStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchresult_match_listview" />
+
+</RelativeLayout>

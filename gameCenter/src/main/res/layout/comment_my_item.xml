@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_left_top_right_bottom"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_group_name_comment_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@mipmap/icon_group"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/light_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_group_name_comment_topic"
+            android:gravity="center_vertical"
+            android:text="@string/my_group"
+            android:textColor="#666"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/line111"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/ll_title"
+        android:background="@color/holo_light_grey" />
+
+
+    <TextView
+        android:id="@+id/tv_myCommentContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line111"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="@dimen/margin_size_4dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="3"
+        android:textColor="@color/light_black"
+        android:textSize="17sp" />
+
+
+    <TextView
+        android:id="@+id/tv_commentTopicTitle"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@+id/tv_myCommentContent"
+        android:layout_marginTop="8dp"
+        android:background="@color/background_grey"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@color/light_black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_topicTime"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@+id/tv_commentTopicTitle"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/light_grey"
+        android:textSize="13sp" />
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:NoSearchTitleBar="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_grey"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <cn.lt.game.ui.app.gamegift.view.GiftTitleBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            NoSearchTitleBar:titleName="@string/gift_detail"/>
+
+        <cn.lt.game.lib.view.NetWorkStateView
+            android:id="@+id/rank_netwrolStateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </cn.lt.game.lib.view.NetWorkStateView>
+
+        <cn.lt.game.ui.app.gamegift.view.GiftInfoDetailView
+            android:id="@+id/gift_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/key_layout"
+                    layout="@layout/key_gift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/gift_detail_key_layout_margin_left"
+                    android:layout_marginRight="@dimen/gift_detail_key_layout_margin_right"
+                    android:layout_marginTop="@dimen/gift_detail_key_layout_margin_left"
+                    android:visibility="visible"/>
+
+                <include
+                    android:id="@+id/gift_detail_value"
+                    layout="@layout/gift_value"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/gift_detail_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gift_detail_bottom_root_layout_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border_width"
+                android:layout_alignParentTop="true"
+                android:background="@color/divider"/>
+            <!-- 收藏按钮 -->
+            <cn.lt.game.lib.view.DownLoadBarForGift
+                android:id="@+id/gift_downlaodBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"/>
+
+            <!-- 安装按钮 -->
+
+            <RelativeLayout
+                android:id="@+id/gift_detail_install_operation_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gift_detail_install_button_layout_height"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="9dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+
+
+                <Button
+                    android:id="@+id/bt_get_gift"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/deep_get_gift_button_selector"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font16sp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

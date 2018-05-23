@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:SearchBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:orientation="vertical">
+
+    <cn.lt.game.lib.view.TitleBarView
+        android:id="@+id/seachData_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></cn.lt.game.lib.view.TitleBarView>
+
+
+    <cn.lt.game.lib.view.NetWorkStateView
+        android:id="@+id/seachData_netwrokStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></cn.lt.game.lib.view.NetWorkStateView>
+
+    <cn.lt.game.lib.view.SearchView
+        android:id="@+id/strategycenter_searchbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/outerIntervalTop"
+        android:layout_marginRight="@dimen/outerIntervalRight"
+        android:layout_marginTop="@dimen/outerIntervalTop"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        SearchBar:searchTitle="@string/strategycenter_searchbarBT_text"
+        SearchBar:searchWhat="searchStrategy" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 空数据 -->
+
+        <ListView
+            android:id="@+id/seachData_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/outerIntervalLeft"
+            android:layout_marginRight="@dimen/outerIntervalRight"
+            android:layout_marginTop="8dp"
+            android:divider="@android:color/transparent"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"></ListView>
+
+        <LinearLayout
+            android:id="@+id/seachData_searchbar_aboutgame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/outerIntervalLeft"
+            android:layout_marginRight="@dimen/outerIntervalRight"
+            android:layout_marginTop="@dimen/outerIntervalTop"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- 搜索相关游戏 -->
+
+            <RelativeLayout
+                android:id="@+id/same_type_gamesLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/footer_padding"
+                android:paddingRight="@dimen/footer_padding">
+
+                <!-- 同作者游戏小图栏 -->
+
+                <HorizontalScrollView
+                    android:id="@+id/seachData_searchbar_aboutgame_horizontalScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/seachData_searchbar_aboutgame_rootView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/game_detail_imageTextRoot_paddingBottom"
+                        android:paddingRight="@dimen/game_detail_imageTextRoot_paddingRight"
+                        android:paddingTop="@dimen/game_detail_imageTextRoot_paddingTop" />
+                </HorizontalScrollView>
+
+                <View
+                    android:id="@+id/v_zhezhao"
+                    android:layout_width="40dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/game_detail_gradient" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_data_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_grey"
+            android:paddingBottom="34dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/search_data_nodata_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_size_6dp"
+                android:layout_marginTop="86dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/empty_data_img" />
+
+            <TextView
+                android:id="@+id/search_data_nodata_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/search_data_nodata_img"
+                android:gravity="center"
+                android:text="@string/not_find_content"
+                android:textColor="@color/detail_review"
+                android:textSize="@dimen/middle_font_size" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

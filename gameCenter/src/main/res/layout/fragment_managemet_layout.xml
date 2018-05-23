@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabcontent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:orientation="vertical">
+
+
+    <cn.lt.game.lib.view.NetWorkStateView
+        android:id="@+id/management_networkStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ListView
+        android:id="@+id/management_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/management_downAll"
+        android:layout_marginLeft="@dimen/outerIntervalRight"
+        android:layout_marginRight="@dimen/outerIntervalRight"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/management_downAll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/down_all_ViewHeight"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/border_top"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/down_all_game_down"
+            android:layout_width="64dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/inIntervalRight"
+            android:background="@drawable/btn_all_upgrade"
+            android:gravity="center"
+            android:text="@string/one_key_upgrade"
+            android:textColor="@color/theme_green"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/down_all_game_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/inIntervalLeft"
+            android:layout_toLeftOf="@+id/down_all_game_down"
+            android:gravity="center_vertical"
+            android:text="@string/downAllHine"
+            android:textSize="@dimen/middle_font_size" />
+    </RelativeLayout>
+</RelativeLayout>

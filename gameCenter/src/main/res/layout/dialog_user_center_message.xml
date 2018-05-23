@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/editUserInfoDialog_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dialog_round_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/editUserInfoDialog_titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_center_49"
+            android:layout_marginBottom="@dimen/margin_size_8dp"
+            android:background="@drawable/dialog_round_background">
+
+            <ImageView
+                android:id="@+id/editUserInfoDialog_cancelIv"
+                android:layout_width="@dimen/user_center_49"
+                android:layout_height="@dimen/user_center_49"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="16.5dp"
+                android:paddingLeft="17dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16.5dp"
+                android:src="@mipmap/ic_dialog_close" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_size_16dp"
+                android:text="@string/gentle_reminder"
+                android:textColor="@color/theme_green"
+                android:textSize="@dimen/font16sp" />
+        </RelativeLayout>
+        <!-- 华丽的分割线 -->
+
+        <FrameLayout
+            android:id="@+id/editUserInfoDialog_Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal">
+
+        </FrameLayout>
+        <!-- 底部按钮 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/user_center_14"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/user_center_21"
+            android:paddingRight="@dimen/user_center_21">
+
+            <Button
+                android:id="@+id/editUserInfoDialog_leftBtn"
+                android:layout_width="130dp"
+                android:layout_height="@dimen/user_center_40"
+                android:background="@drawable/btn_cancel_selector"
+                android:text="@string/cancel_ignor_bt"
+                android:textColor="@color/detail_review"
+                android:textSize="@dimen/title_size" />
+
+            <Button
+                android:id="@+id/editUserInfoDialog_rightBtn"
+                android:layout_width="130dp"
+                android:layout_height="@dimen/user_center_40"
+                android:layout_marginLeft="@dimen/user_center_18"
+                android:background="@drawable/deep_btn_green_selector"
+                android:text="@string/gallery_send"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

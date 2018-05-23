@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/action_bar_new" />
+
+    <TextView
+        android:id="@+id/bind_phone_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        android:layout_marginTop="@dimen/margin_size_14dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_size_20dp"
+        android:text="@string/user_center_bind_phone_text"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/font13sp" />
+
+    <EditText
+        android:id="@+id/input_bind_phone"
+        style="@style/loginInputTextViewStyle"
+        android:layout_below="@id/bind_phone_text"
+        android:gravity="center_vertical"
+        android:hint="@string/user_center_bind_phone_hint"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:paddingLeft="0dp"
+        android:textSize="@dimen/font13sp" />
+
+    <EditText
+        android:id="@+id/input_verify_code"
+        style="@style/loginInputTextViewStyle"
+        android:layout_below="@id/input_bind_phone"
+        android:hint="@string/please_input_verify_code"
+        android:imeOptions="actionDone"
+        android:paddingLeft="0dp"
+        android:paddingRight="96dp"
+        android:textSize="@dimen/font13sp" />
+
+    <TextView
+        android:id="@+id/btn_verify_code"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignBottom="@id/input_verify_code"
+        android:layout_alignRight="@id/input_verify_code"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/margin_size_8dp"
+        android:paddingRight="@dimen/margin_size_8dp"
+        android:text="@string/get_verify_code"
+        android:textColor="@color/theme_green"
+        android:textSize="@dimen/font13sp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/input_verify_code"
+        android:layout_alignTop="@id/input_verify_code"
+        android:layout_toLeftOf="@id/btn_verify_code">
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:background="@color/theme_green" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_center_36"
+        android:layout_below="@id/input_verify_code"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_size_8dp"
+        android:layout_marginRight="@dimen/margin_size_8dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/btn_exit_app_selector"
+        android:gravity="center"
+        android:text="@string/commit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font16sp" />
+</RelativeLayout>

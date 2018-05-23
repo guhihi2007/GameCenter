@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/empty_data_img" />
+
+        <TextView
+            android:id="@+id/tv_explain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="你还没有领取过礼包"
+            android:textColor="#999999"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/tv_no_gift_mine"
+            android:layout_width="208dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="马上领取"
+            android:background="@drawable/get_gift_button_selector_green"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="50dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

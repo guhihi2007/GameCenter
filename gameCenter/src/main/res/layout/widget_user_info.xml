@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    <cn.lt.game.lib.view.RoundImageView
+        android:id="@+id/user_icon"
+        android:layout_width="@dimen/userIconWidth"
+        android:layout_height="@dimen/userIconWidth"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/user_icon"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="天天游戏中心管理员"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingLeft="8dp"
+            android:textColor="#666666"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/user_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/user_level"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:visibility="gone"
+            android:src="@mipmap/ic_admin" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#bbbbbb"
+        android:text="2015-08-19 17:32:01"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_toRightOf="@id/user_icon"
+        android:layout_alignBottom="@id/user_icon"
+        android:paddingLeft="8dp"
+        />
+
+
+</merge>

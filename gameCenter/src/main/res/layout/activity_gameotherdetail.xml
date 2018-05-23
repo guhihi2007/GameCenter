@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:NoSearchTitleBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:orientation="vertical">
+
+    <cn.lt.game.lib.view.DownLoadBarForOther
+        android:id="@+id/gameOtherdetail_downloadbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+    <cn.lt.game.lib.view.TitleBarView
+        android:id="@+id/gameOtherdetail_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+    NoSearchTitleBar:titleName="@string/strategy_list"/>
+
+    <cn.lt.game.lib.view.StrategyListInfoView
+        android:id="@+id/gameOtherdetail_info_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameOtherdetail_titleBar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gameOtherdetail_downloadbar"
+        android:layout_below="@+id/gameOtherdetail_info_view"
+        android:cacheColorHint="@android:color/transparent"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/gameOtherdetail_scrollLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/background_grey" />
+
+            <WebView
+                android:id="@+id/gameOtherdetail_webView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_left_top_right_bottom" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/background_grey" />
+
+
+            <LinearLayout
+                android:id="@+id/gameOtherdetail_startegyLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_left_top_right_bottom"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="3dp"
+                        android:layout_height="15dp"
+                        android:background="@color/theme_green"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/gameOtherdetail_startegy_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/strategy"
+                        android:textColor="@color/light_black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/gameOtherdetail_startegy_msgOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/action_bar_height"
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textColor="@color/light_black"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/tab_line_unpressed_color_copy" />
+
+                <TextView
+                    android:id="@+id/gameOtherdetail_startegy_msgTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/action_bar_height"
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textColor="@color/light_black"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/tab_line_unpressed_color_copy" />
+
+                <TextView
+                    android:id="@+id/gameOtherdetail_startegy_msgThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/action_bar_height"
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textColor="@color/light_black"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/background_grey" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <cn.lt.game.lib.view.NetWorkStateView
+        android:id="@+id/gameOtherdetail_networkstateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/gameOtherdetail_titleBar"
+        android:visibility="gone"></cn.lt.game.lib.view.NetWorkStateView>
+
+</RelativeLayout>

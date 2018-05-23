@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_half"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="9dp">
+
+        <TextView
+            android:id="@+id/tv_title_requisite"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="@string/selection_play"
+            android:textColor="@color/theme_green"
+            android:textSize="@dimen/font16sp" />
+
+        <ImageButton
+            android:id="@+id/bt_cancel_requisite"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4.5dp"
+            android:background="@null"
+            android:padding="16.5dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_dialog_close" />
+
+        <cn.lt.game.ui.app.requisite.widget.AutoGridView
+            android:id="@+id/gv_content_requisite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title_requisite"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:horizontalSpacing="@dimen/margin_size_8dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/network_env"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gv_content_requisite"
+            android:layout_marginBottom="9dp"
+            android:layout_marginTop="@dimen/margin_size_16dp"
+            android:gravity="center"
+            android:text="@string/network_env_wifi"
+            android:textColor="@color/light_grey_a"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/bt_download_requisite"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/network_env"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/margin_size_8dp"
+            android:layout_marginRight="@dimen/margin_size_8dp"
+            android:background="@drawable/deep_get_gift_button_selector"
+            android:gravity="center"
+            android:text="@string/one_key_requisite_download"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

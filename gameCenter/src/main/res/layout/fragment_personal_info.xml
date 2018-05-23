@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:an_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/head_img"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="35dp"
+        android:src="@mipmap/user_photo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="@string/click_to_set_photo"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/middle_font_size" />
+
+    <cn.lt.game.lib.widget.EditTextWithLabel
+        android:id="@+id/set_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginTop="25dp"
+        an_custom:label="@string/nickname" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:text="@string/sex"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/middle_font_size" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.70" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:contentDescription="@string/sex"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="40dp"
+                android:button="@drawable/radio_button_selector"
+                android:checked="true"
+                android:paddingLeft="26dp"
+                android:text="@string/male"
+                android:textSize="@dimen/middle_font_size" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@drawable/radio_button_selector"
+                android:paddingLeft="26dp"
+                android:text="@string/female"
+                android:textSize="@dimen/middle_font_size" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:text="@string/birthday"
+            android:textColor="@color/black"
+            android:textSize="@dimen/middle_font_size" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50" />
+
+        <TextView
+            android:id="@+id/set_birthday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/rectangle_strock"
+            android:gravity="center_vertical"
+            android:paddingLeft="13.3dp"
+            android:maxLines="1"
+            android:textColorHint="@color/light_grey"
+            android:textSize="@dimen/middle_font_size"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:text="@string/area"
+            android:textColor="@color/black"
+            android:textSize="@dimen/middle_font_size" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50" />
+
+        <TextView
+            android:id="@+id/set_area"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/rectangle_strock"
+            android:gravity="center_vertical"
+            android:paddingLeft="13.3dp"
+            android:maxLines="1"
+            android:textColorHint="@color/light_grey"
+            android:textSize="@dimen/middle_font_size"></TextView>
+    </LinearLayout>
+</LinearLayout>

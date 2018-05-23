@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_column="2"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:minHeight="60dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_size_8dp"
+        android:layout_marginTop="@dimen/margin_size_8dp"
+        android:lineSpacingExtra="@dimen/margin_size_4dp"
+        android:textSize="@dimen/font_size_16sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="@dimen/margin_size_4dp"
+        android:layout_marginLeft="@dimen/margin_size_8dp"
+        android:layout_marginRight="@dimen/margin_size_8dp"
+        android:layout_marginTop="@dimen/margin_size_4dp"
+        android:text="一分钟之前"
+        android:maxLines="1"
+        android:textColor="#bbb"
+        android:textSize="13sp" />
+
+</LinearLayout>

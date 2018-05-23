@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/messageDialog_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dialog_round_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/messageDialog_titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_center_49"
+            android:background="@drawable/dialog_round_background">
+
+            <ImageView
+                android:id="@+id/messageDialog_cancelIv"
+                android:layout_width="@dimen/user_center_49"
+                android:layout_height="@dimen/user_center_49"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="16.5dp"
+                android:paddingLeft="17dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16.5dp"
+                android:src="@mipmap/ic_dialog_close" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="@string/gentle_reminder"
+                android:textColor="@color/theme_green"
+                android:textSize="@dimen/font16sp" />
+        </RelativeLayout>
+        <!-- 华丽的分割线 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_size_12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="@dimen/margin_size_8dp"
+            android:text="@string/award_message_send_tip"
+            android:textColor="@color/light_yellow"
+            android:textSize="13sp" />
+        <!--姓名、电话-->
+        <LinearLayout
+            android:id="@+id/messageDialog_name_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_size_8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:id="@+id/messageDialog_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:textColor="@color/light_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/messageDialog_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:textColor="@color/light_black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/messageDialog_message_address_real"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="@dimen/user_center_16"
+            android:textColor="@color/detail_review"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_size_8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:text="@string/express_company"
+                android:textColor="@color/light_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/messageDialog_express_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:textColor="@color/light_black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/messageDialog_exchange_number_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_size_8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/messageDialog_copy"
+                android:layout_marginBottom="@dimen/margin_size_16dp"
+                android:layout_marginRight="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="快递单号："
+                    android:textColor="@color/light_black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/messageDialog_express_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:maxLines="2"
+                    android:text="180989304761847618090476"
+                    android:textColor="@color/light_black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/messageDialog_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:text="@string/copy"
+                android:textColor="@color/theme_green"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

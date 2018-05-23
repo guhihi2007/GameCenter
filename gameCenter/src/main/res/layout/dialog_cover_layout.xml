@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:layout_marginBottom="54dp"
+    >
+        <ImageView
+            android:id="@+id/cover_tips"
+            android:layout_width="260dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="100dp"
+            android:src="@mipmap/cover_tips" />
+
+    <ImageView
+        android:id="@+id/cancel_btn"
+        android:layout_alignRight="@id/cover_tips"
+        android:layout_marginRight="-30dp"
+        android:layout_alignBottom="@id/cover_tips"
+        android:layout_marginBottom="150dp"
+        android:layout_width="72dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/cover_got_it"/>
+
+    <ImageView
+        android:id="@+id/cover_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="30dp"
+        android:layout_width="102dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/cover_arrow"/>
+</RelativeLayout>

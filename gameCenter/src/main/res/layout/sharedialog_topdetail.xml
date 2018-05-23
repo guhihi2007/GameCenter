@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shareDialog_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_round_background"
+        android:paddingTop="@dimen/margin_size_5dp"
+        android:paddingLeft="@dimen/inInterval"
+        android:paddingRight="@dimen/inInterval"
+      >
+
+
+        <cn.lt.game.lib.view.ShareView
+            android:id="@+id/shareDialog_share_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingLeft="@dimen/margin_size_4dp"
+            android:paddingRight="@dimen/margin_size_4dp"
+            android:layout_below="@+id/shareDialog_share_viewItem"
+            >
+        </cn.lt.game.lib.view.ShareView>
+
+      <TextView
+          android:id="@+id/shareDialog_comment_view"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/sharedialog_item_height"
+          android:gravity="center_vertical"
+          android:textColor="@color/light_black"
+          android:textSize="@dimen/font_size_16sp"
+          android:layout_alignParentTop="true"
+          android:text="评论倒序"
+          android:background="@drawable/bottom_line_selector"
+          android:layout_alignLeft="@+id/shareDialog_share_view"
+          android:layout_alignRight="@+id/shareDialog_share_view"
+          android:paddingLeft="@dimen/outerInterval"
+          android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/shareDialog_collect_view"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sharedialog_item_height"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/font_size_16sp"
+            android:layout_below="@id/shareDialog_comment_view"
+            android:text="收藏话题"
+            android:gravity="center_vertical"
+            android:background="@drawable/bottom_line_selector"
+            android:layout_alignLeft="@+id/shareDialog_share_view"
+            android:layout_alignRight="@+id/shareDialog_share_view"
+            android:paddingLeft="@dimen/outerInterval"
+           />
+        <TextView
+            android:id="@+id/shareDialog_share_viewItem"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sharedialog_item_height"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/font_size_16sp"
+            android:layout_below="@id/shareDialog_collect_view"
+            android:text="分享到"
+            android:gravity="center_vertical"
+            android:layout_alignLeft="@+id/shareDialog_share_view"
+            android:layout_alignRight="@+id/shareDialog_share_view"
+            android:paddingLeft="@dimen/outerInterval"/>
+
+
+
+    </RelativeLayout>
+</FrameLayout>

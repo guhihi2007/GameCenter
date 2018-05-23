@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:orientation="vertical">
+
+    <cn.lt.game.lib.view.TitleBarView
+        android:id="@+id/topicDetail_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <cn.lt.game.ui.app.community.widget.FailedBar
+        android:id="@+id/fl_publish_failed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topicDetail_titleBar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/topicDetail_bottom_actionBar"
+        android:layout_below="@+id/topicDetail_titleBar">
+
+        <cn.lt.game.lib.widget.RefreshAndLoadMoreListView
+            android:id="@+id/topicDetail_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/outerIntervalRight"
+            android:layout_marginLeft="@dimen/outerIntervalLeft"
+            android:layout_marginRight="@dimen/outerIntervalRight" />
+
+        <FrameLayout
+            android:id="@+id/topicDetail_headerViewGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <cn.lt.game.ui.app.community.topic.detail.GroupListActionbar
+                android:id="@+id/topicDetail_listView_header_actionBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/topicDetail_bottom_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topicdetail_bottomHeight"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/border_top"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/widget_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:background="@color/holo_light_grey" />
+
+        <include
+            layout="@layout/widget_like_of_topic_detail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <cn.lt.game.lib.view.NetWorkStateView
+        android:id="@+id/activity_topicdetail_netwrokStateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/fl_publish_failed" />
+
+</RelativeLayout>

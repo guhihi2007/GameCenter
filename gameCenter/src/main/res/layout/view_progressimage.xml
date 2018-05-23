@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <cn.lt.game.lib.view.RoundImageView
+        android:id="@+id/feedback_listitem_imgIcon"
+        android:layout_width="@dimen/feedback_listItem_iconWidth"
+        android:layout_height="@dimen/feedback_listItem_iconHeight"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/outerInterval"
+        android:src="@mipmap/icon_feedback_user" />
+
+    <LinearLayout
+        android:id="@+id/feedback_listItem_progressImg_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/feedback_listitem_imgIcon">
+
+        <ImageView
+            android:id="@+id/feedback_listItem_failure"
+            android:layout_width="@dimen/feedback_listItemImgFailure"
+            android:layout_height="@dimen/feedback_listItemImgFailure"
+            android:layout_marginTop="@dimen/margin_size_2dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_failure" />
+
+
+        <ImageView
+            android:id="@+id/feedback_listItem_progressImg_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size_4dp"
+            android:layout_marginRight="@dimen/margin_size_4dp"
+            android:layout_toLeftOf="@+id/feedback_listitem_imgIcon"
+            android:src="@mipmap/icon_feedback_failed"
+            android:scaleType="centerCrop"
+           android:maxHeight="@dimen/feedback_listItemImgMaXHeight"
+            android:maxWidth="@dimen/feedback_listItemImgMaxWidth"
+            android:adjustViewBounds="true"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/feedback_listitem_progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/feedback_listItem_progressImg_layout"
+        android:layout_alignLeft="@+id/feedback_listItem_progressImg_layout"
+        android:layout_alignRight="@+id/feedback_listItem_progressImg_layout"
+        android:layout_alignTop="@+id/feedback_listItem_progressImg_layout"
+        android:background="#66000000">
+
+        <ProgressBar
+            android:id="@+id/feedback_listItem_progess"
+            style="@style/imageProgressBarStyle4"
+            android:layout_centerInParent="true"></ProgressBar>
+
+        <TextView
+            android:id="@+id/feedback_listItem_progressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feedback_listItem_progess"
+            android:layout_marginTop="@dimen/margin_size_4dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_13sp" />
+
+    </RelativeLayout>
+
+
+</merge>

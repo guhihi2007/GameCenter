@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginTop="@dimen/margin_size_8dp"
+              android:background="#eeeeee"
+              android:orientation="horizontal"
+              android:weightSum="2">
+
+    <!-- 话题分类 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_topic_category"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="4dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:minHeight="40dp">
+
+        <TextView
+            android:id="@+id/tv_topic_selector"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ib_topic"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="6"
+            android:maxLines="1"
+            android:minHeight="40dp"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="@dimen/font16sp">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/ib_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/ic_arrow_unselect"/>
+    </RelativeLayout>
+    <!-- 最新回复 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_reply"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:minHeight="40dp">
+
+        <TextView
+            android:id="@+id/tv_reply_selector"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ib_reply"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="6"
+            android:maxLines="1"
+            android:minHeight="40dp"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="@dimen/font16sp">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/ib_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/ic_arrow_unselect"/>
+    </RelativeLayout>
+
+</LinearLayout>

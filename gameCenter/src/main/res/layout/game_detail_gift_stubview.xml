@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_game_gift"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_gift_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_gift_detail"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/entergroup_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="3dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:background="@color/theme_green"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:text="游戏礼包"
+                android:textColor="@color/light_black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rl_gift_title_bar"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:id="@+id/ll_game_gift_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_divider"
+        android:background="@color/white"
+        android:orientation="vertical" />
+
+</RelativeLayout>

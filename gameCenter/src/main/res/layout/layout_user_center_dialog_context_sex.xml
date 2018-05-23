@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/user_center_20"
+        android:layout_marginLeft="@dimen/user_center_24"
+        android:layout_marginRight="@dimen/user_center_24"
+        android:orientation="horizontal">
+
+
+
+            <RadioButton
+                android:id="@+id/sex_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/btn_radio_userinfo_sex_selector"
+                android:checked="true" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/user_center_8"
+                android:text="@string/male"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/font15sp" />
+
+
+            <RadioButton
+                android:id="@+id/sex_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/btn_radio_userinfo_sex_selector"
+                android:checked="false" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/user_center_8"
+                android:text="@string/female"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/font15sp" />
+
+    </RadioGroup>
+
+</merge>

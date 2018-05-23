@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="cn.lt.game.ui.app.personalcenter.BindPhoneActivity">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/action_bar_new" />
+
+    <TextView
+        android:id="@+id/text_bind_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="7dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/user_center_modify_email_text"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/font13sp" />
+
+    <LinearLayout
+        android:id="@+id/show_bind_email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/user_center_14"
+        android:layout_marginLeft="@dimen/user_center_20"
+        android:layout_marginRight="@dimen/user_center_20"
+        android:layout_marginTop="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_center_bind_show_email"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/font15sp" />
+
+        <TextView
+            android:id="@+id/show_bind_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_green"
+            android:textSize="@dimen/font15sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/input_bind_eamil"
+        style="@style/loginInputTextViewStyle"
+        android:hint="@string/user_center_bind_eamil_hint"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="0dp"
+        android:textColor="@color/light_black"
+        android:textColorHint="@color/light_grey"
+        android:textSize="@dimen/font13sp" />
+
+    <TextView
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_center_36"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_size_8dp"
+        android:layout_marginRight="@dimen/margin_size_8dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/btn_exit_app_selector"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font16sp" />
+</LinearLayout>

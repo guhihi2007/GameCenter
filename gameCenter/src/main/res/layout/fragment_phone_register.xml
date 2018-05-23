@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <EditText
+        android:id="@+id/input_phone"
+        style="@style/loginInputTextViewStyle"
+        android:hint="@string/input_phone_to_get_verify_code"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:paddingLeft="24dp"
+        android:paddingRight="58dp"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/iv_clear"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_alignBottom="@id/input_phone"
+        android:layout_alignRight="@id/input_phone"
+        android:paddingBottom="22dp"
+        android:paddingLeft="44dp"
+        android:paddingTop="22dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/btn_cancel_or_del"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="58dp"
+        android:layout_alignBottom="@id/input_phone"
+        android:layout_alignLeft="@id/input_phone"
+        android:paddingBottom="21dp"
+        android:paddingTop="21dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_account" />
+
+
+    <EditText
+        android:id="@+id/input_password"
+        style="@style/loginInputTextViewStyle"
+        android:layout_below="@id/input_phone"
+        android:hint="@string/password_hint3"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:paddingLeft="24dp"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="58dp"
+        android:layout_alignBottom="@id/input_password"
+        android:layout_alignLeft="@id/input_password"
+        android:paddingBottom="21dp"
+        android:paddingTop="21dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_account_pwd" />
+
+    <EditText
+        android:id="@+id/verify_code"
+        style="@style/loginInputTextViewStyle"
+        android:layout_below="@id/input_password"
+        android:layout_centerVertical="true"
+        android:hint="@string/please_input_verify_code"
+        android:imeOptions="actionDone"
+        android:inputType="numberSigned"
+        android:paddingLeft="24dp"
+        android:paddingRight="96dp"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="58dp"
+        android:layout_alignBottom="@id/verify_code"
+        android:layout_alignLeft="@id/verify_code"
+        android:paddingBottom="21dp"
+        android:paddingTop="21dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_account_verification" />
+
+    <TextView
+        android:id="@+id/get_verify_code"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignBottom="@id/verify_code"
+        android:layout_alignRight="@id/verify_code"
+        android:gravity="center"
+        android:paddingLeft="@dimen/margin_size_8dp"
+        android:paddingRight="@dimen/margin_size_8dp"
+        android:text="@string/get_verify_code"
+        android:textColor="@color/theme_green"
+        android:textSize="@dimen/font13sp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/verify_code"
+        android:layout_alignTop="@id/verify_code"
+        android:layout_toLeftOf="@id/get_verify_code">
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:background="@color/theme_green" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignLeft="@+id/btn_register"
+        android:layout_below="@+id/btn_register"
+        android:layout_marginTop="@dimen/margin_size_8dp"
+        android:gravity="center"
+        android:text="@string/register_text"
+        android:textColor="@color/detail_comments"
+        android:textSize="@dimen/font13sp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/loginRegisterButtonStyle"
+        android:layout_below="@+id/verify_code"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/deep_btn_green_selector"
+        android:text="@string/register_" />
+
+</RelativeLayout>

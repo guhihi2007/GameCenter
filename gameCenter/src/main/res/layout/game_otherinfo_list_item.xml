@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/rl_contanier"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/game_otherinfo_listitem_value"
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/game_otherinfo_listitem_time"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:maxLines="1"
+        android:textColor="@color/light_black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/game_otherinfo_listitem_time"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingRight="20dp"
+        android:maxLines="1"
+        android:text="2014-10-11"
+        android:textColor="@color/light_grey_a"
+        android:textSize="@dimen/font_size_13sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/game_otherinfo_listitem_value"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/tab_line_unpressed_color_copy" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_8dp"
+        android:layout_below="@+id/view"
+        android:background="@color/background_grey"
+        android:visibility="gone" />
+</RelativeLayout>

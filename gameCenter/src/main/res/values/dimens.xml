@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Comment_topic_list_mine -->
+    <!--  -->
+
+    <dimen name="bottom_bar_height">58dp</dimen>
+    <dimen name="large_font_size">18sp</dimen>
+    <dimen name="middle_font_size">16sp</dimen>
+    <dimen name="small_font_size">12sp</dimen>
+    <dimen name="mini_font_size">10sp</dimen>
+    <dimen name="font_size_14sp">14sp</dimen>
+    <dimen name="font_size_15sp">15sp</dimen>
+    <dimen name="font_size_16sp">16sp</dimen>
+    <dimen name="font_size_17sp">17sp</dimen>
+    <dimen name="font_size_13sp">13sp</dimen>
+    <dimen name="font_size_11sp">11sp</dimen>
+    <dimen name="page_title_text">20sp</dimen>
+    <dimen name="grid_item_text_size">13sp</dimen>
+    <!-- 根据UI要求，首页下载量，分类之类tag文字用12sp -->
+    <dimen name="title_size">16sp</dimen>
+    <dimen name="not_serache_actionbar_height">40dp</dimen>
+    <dimen name="actionbar_height_gift">44dp</dimen>
+    <dimen name="not_serache_actionbar_btBack_height">40dp</dimen>
+    <dimen name="not_serache_actionbar_btBack_width">40dp</dimen>
+    <dimen name="actionbar_btBack_width">20dp</dimen>
+
+    <!-- 游戏详情 相关参数 480*800 -->
+    <dimen name="inIntervalTop">12dp</dimen>
+    <dimen name="inIntervalLeft">12dp</dimen>
+    <dimen name="inIntervalRight">12dp</dimen>
+    <dimen name="inIntervalBottom">12dp</dimen>
+    <dimen name="inInterval">12dp</dimen>
+    <dimen name="outerIntervalTop">8dp</dimen>
+    <dimen name="outerIntervalLeft">8dp</dimen>
+    <dimen name="outerIntervalRight">8dp</dimen>
+    <dimen name="outerIntervalBottom">8dp</dimen>
+    <dimen name="outerInterval">8dp</dimen>
+    <dimen name="margin_size_0dp">0dp</dimen>
+    <dimen name="margin_size_6dp">6dp</dimen>
+    <dimen name="margin_size_16dp">16dp</dimen>
+    <dimen name="margin_size_14dp">14dp</dimen>
+    <dimen name="margin_size_11dp">11dp</dimen>
+    <dimen name="margin_size_12dp">12dp</dimen>
+    <dimen name="margin_size_10dp">10dp</dimen>
+    <dimen name="margin_size_4dp">4dp</dimen>
+    <dimen name="margin_size_7dp">7dp</dimen>
+    <dimen name="margin_size_8dp">8dp</dimen>
+    <dimen name="margin_size_2dp">2dp</dimen>
+    <dimen name="margin_size_20dp">20dp</dimen>
+    <dimen name="margin_size_23dp">23dp</dimen>
+    <dimen name="margin_size_18dp">18dp</dimen>
+    <dimen name="margin_size_5dp">5dp</dimen>
+    <dimen name="appIconViewWidth_normal">70dp</dimen>
+    <dimen name="appIconViewHeight_small">56dp</dimen>
+    <!-- app 卡片信息 -->
+
+    <!-- 收藏页面 -->
+
+    <!-- 网络状态View属性 -->
+    <dimen name="netwrokState_buttonWidth">72dp</dimen>
+    <dimen name="netwrokState_buttonHeight">32dp</dimen>
+    <!-- 忽略升级按钮 -->
+    <!-- 一键升级按钮 -->
+    <dimen name="down_all_ViewHeight">48dp</dimen>
+
+    <!-- 子标题上下间隔 -->
+    <dimen name="game_detail_subTitle_marginTop">18.5dp</dimen>
+    <!-- 游戏详情  父布局间隔 -->
+
+
+    <!-- 游戏详情  内容字体大小 -->
+
+    <!-- 游戏详情  子布局间隔 -->
+
+
+    <!-- 游戏详情  游戏点评间隔 -->
+
+
+    <!-- 游戏详情 子标题相关属性 -->
+
+    <!-- 游戏详情   礼包相关属性 -->
+    <dimen name="game_detail_gift_itemRoot_paddingLeft">12dp</dimen>
+
+    <!-- 游戏详情   同类游戏相关属性 -->
+    <dimen name="game_detail_imageText_height">70dp</dimen>
+    <dimen name="game_detail_imageText_width">70dp</dimen>
+    <dimen name="game_detail_imageText_image_paddingRight">16dp</dimen>
+    <dimen name="game_detail_imageTextRoot_paddingTop">12dp</dimen>
+    <dimen name="game_detail_imageTextRoot_paddingBottom">10dp</dimen>
+    <dimen name="game_detail_imageTextRoot_paddingRight">12dp</dimen>
+
+    <!-- 游戏详情 标签相关属性 -->
+    <dimen name="game_detail_titileView_spaceWidth">14dp</dimen>
+    <dimen name="game_detail_titileView_spaceHeigth">21dp</dimen>
+
+
+    <!-- 游戏详情 游戏信息 相关属性 -->
+
+    <!-- 游戏详情  底部Tab相关属性 -->
+    <dimen name="game_detail_bottomTab_BTWidth">208dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+
+    <!-- 最新攻略 相关参数 480*800 -->
+
+
+    <!-- 攻略ListView Item 相关参数  480*800 -->
+
+    <!-- 攻略中心 相关参数 480*800 -->
+
+    <!-- 攻略中心 搜索结果 480*800 -->
+
+
+    <!-- 攻略详情 -->
+
+
+    <!-- 我的礼包 -->
+    <dimen name="mygift_listView_margin">8dp</dimen>
+
+    <!-- 礼包信息头 -->
+
+
+    <!-- 礼包列表 itemView 相关属性 -->
+
+
+    <!-- 礼包中心 -->
+    <dimen name="giftCenter_logo_pointView_height">16dp</dimen>
+    <dimen name="giftCenter_logo_point_height">2.5dp</dimen>
+    <dimen name="giftCenter_logo_point_width">24dp</dimen>
+    <dimen name="giftCenter_logo_point_marginRigth">4dp</dimen>
+
+    <!-- 礼包领取 layout -->
+
+
+    <!-- 礼包列表 -->
+
+
+    <!-- 礼包内容 -->
+
+
+    <!-- 桌面文件夹 -->
+
+    <!-- toastdialog 相关参数 480*800 -->
+    <dimen name="toastdialog_viewSpace">20dp</dimen>
+    <!-- 按钮大小 -->
+    <!-- 总高宽大小 -->
+    <!-- 按钮左右间隔大小 -->
+    <!-- 提示内容上下左右间隔大小 -->
+    <dimen name="index_width">4dp</dimen>
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="footer_padding">10dp</dimen>
+    <dimen name="gift_dialog_text_one">15sp</dimen>
+    <dimen name="gift_dialog_text_two">13sp</dimen>
+    <dimen name="gift_dialog_tx_margintop">12dp</dimen>
+    <dimen name="gift_dialog_tx_space">7dp</dimen>
+
+    <!-- 话题详情相关 -->
+    <dimen name="group_list_actionbar_height">48dp</dimen>
+    <dimen name="group_list_actionbar_ValueHeight">40dp</dimen>
+    <dimen name="group_list_item_imgHeight">36dp</dimen>
+    <dimen name="group_list_item_imgWidth">36dp</dimen>
+
+    <!-- 是actionbar 的2 倍 -->
+
+
+    <!-- 社区相关 -->
+    <dimen name="group_item_icon_width">72dp</dimen>
+    <dimen name="group_item_icon_height">72dp</dimen>
+    <dimen name="group_icon_width">80dp</dimen>
+    <dimen name="group_icon_height">80dp</dimen>
+    <dimen name="group_listactionbar_paddingTop">16dp</dimen>
+    <dimen name="topicdetail_bottomHeight">54dp</dimen>
+    <dimen name="member_item_icon_width">42dp</dimen>
+    <dimen name="member_item_icon_height">42dp</dimen>
+    <dimen name="topicdetail_item_likeviewHeight">60dp</dimen>
+    <dimen name="publish_topic_btn_width">176dp</dimen>
+    <dimen name="publish_topic_btn_height">40dp</dimen>
+    <dimen name="publish_topic_ll_height">54dp</dimen>
+    <dimen name="topic_item_hintHeight">96dp</dimen>
+
+    <!-- 文字尺寸 -->
+    <dimen name="font8sp">8sp</dimen>
+    <dimen name="font11sp">11sp</dimen>
+    <dimen name="font12sp">12sp</dimen>
+    <dimen name="font13sp">13sp</dimen>
+    <dimen name="font14sp">14sp</dimen>
+    <dimen name="font15sp">15sp</dimen>
+    <dimen name="font16sp">16sp</dimen>
+    <dimen name="font17sp">17sp</dimen>
+    <dimen name="font18sp">18sp</dimen>
+    <dimen name="font20sp">20sp</dimen>
+    <!-- 线条宽度 -->
+    <dimen name="border_width">1px</dimen>
+
+    <!-- 轮播图尺寸 -->
+    <dimen name="banner_height">126dp</dimen>
+    <dimen name="banner_height2">120dp</dimen>
+
+    <!-- 礼包尺寸标注 -->
+    <dimen name="gift_mine_listview_dividerheight">8dp</dimen>
+    <dimen name="gift_serach_searchview_margin_top">8dp</dimen>
+    <dimen name="gift_serach_searchview_margin_left">8dp</dimen>
+    <dimen name="gift_serach_searchview_margin_right">8dp</dimen>
+    <dimen name="gift_list_download_layout_height">54dp</dimen>
+    <dimen name="gift_detail_key_layout_margin_left">8dp</dimen>
+    <dimen name="gift_detail_key_layout_margin_right">8dp</dimen>
+    <dimen name="gift_detail_bottom_root_layout_height">54dp</dimen>
+    <dimen name="gift_detail_install_button_layout_height">54dp</dimen>
+    <dimen name="gift_giftheadview_margin_top">-8dp</dimen>
+    <dimen name="gift_giftinfoview_root_padding">12dp</dimen>
+    <dimen name="gift_giftinfoview_img_margin_right">12dp</dimen>
+    <dimen name="gift_giftitemview_tv_gift_name_max_width">200dp</dimen>
+    <dimen name="gift_giftitemview_iv_cursor_layout_height">4dp</dimen>
+    <dimen name="gift_giftitemview_tv_gift_content_margin_top">8dp</dimen>
+    <dimen name="gift_gifmineitem_btcopy_layout_width">60dp</dimen>
+    <dimen name="gift_gifmineitem_btcopy_layout_height">25dp</dimen>
+
+    <!-- 个人中心 -->
+    <dimen name="corner">30dp</dimen>
+    <dimen name="user_center_40">40dp</dimen>
+    <dimen name="user_center_5">5dp</dimen>
+    <dimen name="user_center_2">2dp</dimen>
+    <dimen name="user_center_7">7dp</dimen>
+    <dimen name="user_center_8">8dp</dimen>
+    <dimen name="user_center_12">12dp</dimen>
+    <dimen name="user_center_14">14dp</dimen>
+    <dimen name="user_center_16">16dp</dimen>
+    <dimen name="user_center_20">20dp</dimen>
+    <dimen name="user_center_25">25dp</dimen>
+    <dimen name="user_center_21">21dp</dimen>
+    <dimen name="user_center_36">36dp</dimen>
+    <dimen name="user_center_60">60dp</dimen>
+    <dimen name="user_center_48">48dp</dimen>
+    <dimen name="user_center_49">49dp</dimen>
+    <dimen name="user_center_p5">0.5dp</dimen>
+    <dimen name="user_center_34">34dp</dimen>
+    <dimen name="user_center_56">56dp</dimen>
+    <dimen name="user_center_66">66dp</dimen>
+    <dimen name="user_center_44">44dp</dimen>
+    <dimen name="user_center_1">1dp</dimen>
+    <dimen name="user_center_18">18dp</dimen>
+    <dimen name="user_center_24">24dp</dimen>
+    <dimen name="user_center_108">108dp</dimen>
+
+
+    <!-- 通知 -->
+    <!-- 游戏排行 -->
+    <!-- 分享 -->
+    <dimen name="shareView_img_width">60dp</dimen>
+    <dimen name="sharedialog_item_height">43dp</dimen>
+    <!-- title bar -->
+    <dimen name="titel_bar_muen_icon_width">44dp</dimen>
+    <dimen name="titel_bar_muen_icon_hieght">44dp</dimen>
+    <dimen name="list_item_lift_right_padding">8dp</dimen>
+
+
+    <!-- 反馈 1080-->
+    <dimen name="feedback_sendbarHeight">64dp</dimen>
+    <dimen name="feedback_sendBtnHeight">40dp</dimen>
+    <dimen name="feedback_sendBtnWidth">80dp</dimen>
+    <dimen name="feedback_listItemImgMaXHeight">125dp</dimen>
+    <dimen name="feedback_listItemImgMaxWidth">125dp</dimen>
+    <dimen name="feedback_listItemImgMinWidth">62dp</dimen>
+    <dimen name="feedback_listItemImgFailure">12dp</dimen>
+    <dimen name="feedback_listItem_iconHeight">40dp</dimen>
+    <dimen name="feedback_listItem_iconWidth">40dp</dimen>
+
+    <dimen name="replay_icon_height">54dp</dimen>
+    <dimen name="replay_icon_width">54dp</dimen>
+    <dimen name="adv_img_height">110dp</dimen>
+    <!-- 首页精选框的最大高度值 -->
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="index_search_margin_bottom_other">5dp</dimen>
+
+    <dimen name="action_bar_height">44dp</dimen>
+    <dimen name="action_bar_padding">12dp</dimen>
+    <dimen name="action_bar_title">17sp</dimen>
+
+    <dimen name="viewpager_indicator_height">44dp</dimen>
+</resources>

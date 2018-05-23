@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/transparent_half"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_round_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/messageDialog_titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="49dp">
+
+            <ImageView
+                android:id="@+id/messageDialog_cancelIv"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_background_selector"
+                android:paddingBottom="16.5dp"
+                android:paddingLeft="17dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16.5dp"
+                android:visibility="gone"
+                android:src="@mipmap/ic_dialog_close" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="打发点权限呗"
+                android:textColor="@color/theme_green"
+                android:textSize="@dimen/font16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="游戏中心需要获取存储空间和设备信息权限，用于为您推荐最适合的游戏，保障下载更新顺畅与设备安全"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/message1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设置路径：设置->应用->游戏中心->权限"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="13dp"
+            />
+
+        <Button
+            android:id="@+id/messageDialog_rightBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/deep_btn_green_selector"
+            android:gravity="center"
+            android:text="去设置"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size" />
+    </LinearLayout>
+</LinearLayout>

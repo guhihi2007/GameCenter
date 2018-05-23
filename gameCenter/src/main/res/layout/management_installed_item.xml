@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/gap_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_8dp" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/game_item"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:background="@drawable/favorite_list_item_selector"
+        android:descendantFocusability="blocksDescendants">
+
+        <!-- 游戏icon -->
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/img_default_80x80_round" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icon"
+            android:paddingBottom="12dp"
+            android:paddingLeft="@dimen/margin_size_12dp"
+            android:paddingTop="12dp">
+
+            <FrameLayout
+                android:id="@+id/ll_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/install_operation_bar"
+                android:layout_marginTop="-4dp"
+                android:layout_toLeftOf="@id/install_operation_bar">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ellipsize="none"
+                    android:maxLines="1"
+                    android:text="My Om Nom HHHHaaaa"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/middle_frront_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/fade_selector" />
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/countSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_name"
+                android:layout_marginTop="7dp"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:text="3000万次下载|231MB"
+                android:textColor="@color/light_grey_a"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/countSize"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="4dp"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:text="修仙游戏|超级好玩的欧系哦"
+                android:textColor="@color/light_grey_a"
+                android:textSize="11sp" />
+
+            <RelativeLayout
+                android:id="@+id/install_operation_bar"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="12dp">
+
+
+                <ImageView
+                    android:id="@+id/btn_more"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/btn_more" />
+
+                <Button
+                    android:id="@+id/uninstall_btn"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_uninstall_selector"
+                    android:gravity="center"
+                    android:text="@string/uninstall"
+                    android:textColor="@color/light_grey_a"
+                    android:textSize="@dimen/grid_item_text_size" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/gap_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_8dp" />
+</LinearLayout>

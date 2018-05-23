@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="@dimen/margin_size_8dp"
+        android:background="@drawable/favorite_list_item_selector"
+        android:orientation="horizontal">
+
+        <!--android:background="@drawable/favorite_list_item_selector"-->
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_size_20dp"
+            android:includeFontPadding="false"
+            android:text="已经忽略升级(5)"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/middle_font_size" />
+
+        <ImageView
+            android:id="@+id/iv_expand_collapse"
+            android:layout_width="@dimen/margin_size_16dp"
+            android:layout_height="@dimen/margin_size_16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/drawable_expand" />
+
+        <TextView
+            android:id="@+id/expand_collapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_size_8dp"
+            android:layout_toLeftOf="@id/iv_expand_collapse"
+            android:includeFontPadding="false"
+            android:text="查看全部"
+            android:textColor="#aaa"
+            android:textSize="@dimen/font_size_13sp" />
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="0dp"
+            android:layout_alignBottom="@id/name"
+            android:layout_alignTop="@id/name"
+            android:layout_marginLeft="@dimen/margin_size_12dp"
+            android:background="@color/theme_green" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/gap_upgrade"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_8dp"/>
+</LinearLayout>

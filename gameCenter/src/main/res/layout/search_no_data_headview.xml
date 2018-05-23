@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="#F3F3F3"
+    >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/textView2"
+            android:src="@mipmap/search_no_data"
+        />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="76dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:text="没有找到相关内容"
+            android:textColor="#999999"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/white"
+        android:paddingBottom="3dp"
+        android:paddingTop="17dp"
+    >
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="#86BF13"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="本周搜索排行榜"
+            android:textColor="#333333"
+            android:layout_gravity="center"
+            android:textSize="@dimen/font_size_15sp"/>
+    </LinearLayout>
+</LinearLayout>

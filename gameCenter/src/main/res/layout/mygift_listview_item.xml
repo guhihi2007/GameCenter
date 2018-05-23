@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:id="@+id/mygift_listView_item_img"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="14dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/mygift_listView_item_txName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/mygift_listView_item_img"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="天龙八部 3D 新手礼包"
+            android:textColor="#333333"
+            android:textSize="@dimen/font16sp" />
+
+        <TextView
+            android:id="@+id/mygift_listView_item_txTimeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mygift_listView_item_txName"
+            android:layout_below="@+id/mygift_listView_item_txName"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="剩余时间 : 25天"
+            android:textColor="#aaaaaa"
+            android:textSize="@dimen/font11sp" />
+
+        <View
+            android:id="@+id/mygift_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/border_width"
+            android:layout_below="@+id/mygift_listView_item_img"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:id="@+id/jhm"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_below="@+id/mygift_line"
+            android:gravity="center_vertical"
+            android:text="激活码 : "
+            android:textColor="#aaaaaa"
+            android:textSize="@dimen/font11sp" />
+
+        <TextView
+            android:id="@+id/mygift_listView_item_activationCode"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/mygift_line"
+            android:layout_gravity="center|left"
+            android:layout_toRightOf="@+id/jhm"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="7ey1982ey9812y8e99182ye98y1"
+            android:textColor="#aaaaaa"
+            android:textSize="@dimen/font11sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mygift_line">
+
+            <TextView
+                android:id="@+id/mygift_listView_item_btCopy"
+                android:layout_width="@dimen/gift_gifmineitem_btcopy_layout_width"
+                android:layout_height="@dimen/gift_gifmineitem_btcopy_layout_height"
+                android:layout_centerVertical="true"
+                android:background="@drawable/get_gift_button_selector"
+                android:gravity="center"
+                android:text="复制"
+                android:textColor="@color/theme_green"
+                android:textSize="@dimen/font13sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/v_bottomInterval"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:visibility="gone" />
+</LinearLayout>

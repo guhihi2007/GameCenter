@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/choose_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="28dp">
+
+        <ImageView
+            android:id="@+id/choose_mail_check"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="8dp"
+            android:clickable="true"
+            android:src="@mipmap/uncheck" />
+
+        <TextView
+            android:id="@+id/choose_mail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/mail_register"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font15sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_in_mail"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/choose_mail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="14dp"
+        android:background="#eeeeee"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/input_mail"
+        style="@style/loginInputTextViewStyle"
+        android:layout_below="@id/line_in_mail"
+        android:hint="@string/please_input_mail_account"
+        android:paddingLeft="0dp"
+        android:textSize="@dimen/font13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/input_mail"
+        android:layout_marginRight="@dimen/margin_size_20dp"
+        android:layout_marginTop="@dimen/margin_size_14dp"
+        android:background="@android:color/transparent"
+        android:text="联系客服"
+        android:textColor="#89c119"
+        android:textSize="@dimen/font13sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

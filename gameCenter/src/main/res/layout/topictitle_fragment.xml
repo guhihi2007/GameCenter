@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <cn.lt.game.ui.app.community.widget.ContainsEmojiEditText
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="134dp"
+        android:layout_margin="8dp"
+        android:background="#ffffff"
+        android:gravity="top|left"
+        android:hint="请输入标题"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:textColor="#666" />
+
+    <TextView
+        android:id="@+id/prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/input_count_tips_v1"
+        android:textColor="@color/point_grey" />
+
+
+</LinearLayout>

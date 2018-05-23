@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_grey">
+
+    <cn.lt.game.lib.view.TitleBarView
+        android:id="@+id/titleBarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </cn.lt.game.lib.view.TitleBarView>
+
+    <cn.lt.game.lib.widget.RefreshAndLoadMoreListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sendLayout"
+        android:layout_below="@+id/titleBarView"
+    />
+
+    <RelativeLayout
+        android:id="@+id/sendLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/feedback_sendbarHeight"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/top_line_click">
+
+        <ImageButton
+            android:id="@+id/photographBtn"
+            android:layout_width="@dimen/feedback_sendbarHeight"
+            android:layout_height="@dimen/feedback_sendbarHeight"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/feedback_photograph_selector"/>
+
+        <TextView
+            android:id="@+id/sendBtn"
+            android:layout_width="@dimen/feedback_sendBtnWidth"
+            android:layout_height="@dimen/feedback_sendBtnHeight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/outerInterval"
+            android:background="@drawable/imgbt_background_selector"
+            android:gravity="center"
+            android:text="@string/transmit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16sp"/>
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/sendBtn"
+            android:layout_alignTop="@+id/sendBtn"
+            android:layout_toLeftOf="@+id/sendBtn"
+            android:layout_toRightOf="@+id/photographBtn"
+            android:background="@drawable/left_top_right_bottom_selector"
+            android:hint="@string/please_input_information"
+            android:paddingLeft="@dimen/outerInterval"/>
+
+    </RelativeLayout>
+
+
+    <cn.lt.game.lib.view.NetWorkStateView
+        android:id="@+id/netWrokStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/titleBarView"
+        android:visibility="gone">
+
+    </cn.lt.game.lib.view.NetWorkStateView>
+
+</RelativeLayout>

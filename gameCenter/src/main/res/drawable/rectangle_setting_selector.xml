@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:Android="http://schemas.android.com/apk/res/android">
+
+    <item Android:state_selected="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <gradient android:endColor="@color/index_item_selector_background" android:startColor="@color/index_item_selector_background" />
+        </shape>
+    </item>
+    <item Android:state_pressed="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <gradient android:endColor="@color/index_item_selector_background" android:startColor="@color/index_item_selector_background" />
+        </shape>
+    </item>
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <gradient android:endColor="#ffffffff" android:startColor="#ffffffff" />
+        </shape>
+    </item>
+
+</selector>

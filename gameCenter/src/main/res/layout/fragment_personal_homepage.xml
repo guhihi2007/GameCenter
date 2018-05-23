@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 用户信息 -->
+
+        <include layout="@layout/personal_homepage_top" />
+
+        <!-- 我的游戏 -->
+
+        <LinearLayout
+            android:id="@+id/my_game"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_strock_light_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="10.6dp"
+                android:background="@mipmap/ic_mygame" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_game"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/middle_font_size" />
+        </LinearLayout>
+
+
+        <!-- 我的礼包 -->
+
+        <LinearLayout
+            android:id="@+id/my_gift"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_strock_light_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="10.6dp"
+                android:background="@mipmap/ic_gift" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_gift"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/middle_font_size" />
+        </LinearLayout>
+
+        <!-- 我的论坛 -->
+
+        <LinearLayout
+            android:id="@+id/my_community"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_strock_light_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="10.6dp"
+                android:background="@mipmap/ic_community" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_community"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/middle_font_size" />
+        </LinearLayout>
+
+        <!-- 退出帐号 -->
+
+        <Button
+            android:id="@+id/quit"
+            android:layout_width="176dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/deep_btn_green_selector"
+            android:text="@string/quit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/page_title_text" />
+    </LinearLayout>
+
+</ScrollView>

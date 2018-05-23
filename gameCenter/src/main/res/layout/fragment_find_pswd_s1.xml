@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <!-- 请选择账号类别 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/margin_size_14dp"
+        android:text="@string/choose_account_type"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/font13sp" />
+
+    <!-- 手机号注册 -->
+
+    <include layout="@layout/verify_account_by_phone" />
+
+    <!-- 邮箱注册 -->
+
+    <include layout="@layout/verify_account_by_mail" />
+
+    <!-- 联系客服 -->
+
+    <Button
+        android:id="@+id/btn_next_step"
+        style="@style/loginRegisterButtonStyle"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/deep_btn_green_selector"
+        android:text="@string/next"
+        android:textSize="@dimen/font16sp" />
+
+</LinearLayout>

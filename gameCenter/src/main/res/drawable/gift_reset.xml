@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >  
+    <item android:id="@android:id/progress">  
+        <clip>  
+            <shape android:shape="rectangle" >  
+                <corners android:radius="0dp" /><!--<span style="font-family: Arial, Helvetica, sans-serif;">设置为0dp就是直角</span>-->  
+                <solid android:color="@color/light_yellow" />
+            </shape>  
+        </clip>  
+    </item>  
+</layer-list>
+

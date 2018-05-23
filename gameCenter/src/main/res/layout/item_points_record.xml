@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 积分记录item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/mChangPadding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/user_center_1"
+        android:paddingLeft="@dimen/margin_size_12dp"
+        android:paddingRight="@dimen/margin_size_12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_size_14dp"
+            android:paddingTop="@dimen/margin_size_14dp">
+
+            <TextView
+                android:id="@+id/tv_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/light_yellow"
+                android:textSize="@dimen/font13sp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_points"
+                android:layout_alignBottom="@id/tv_points"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@id/tv_points"
+                android:layout_toStartOf="@id/tv_points"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/font15sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_marginTop="@dimen/user_center_8"
+                android:textColor="@color/detail_review"
+                android:textSize="@dimen/font11sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+    </LinearLayout>
+</LinearLayout>

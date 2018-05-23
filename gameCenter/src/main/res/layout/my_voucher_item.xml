@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/margin_size_8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:background="@drawable/cqsdk_ticket_bg"
+            >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:src="@mipmap/img_default_80x80_round" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/icon"
+                android:paddingBottom="1dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/voucher_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="游戏中心8元代金券"
+                    android:textColor="@color/light_black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/time_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="有效期：2017-12-27~2017-12-28"
+                    android:textColor="@color/detail_review"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/max_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="充值满300元可用"
+                    android:textColor="@color/detail_review"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <!--按钮-->
+
+            <RelativeLayout
+                android:id="@+id/down_load_bar"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                >
+
+                <ProgressBar
+                    android:id="@+id/download_progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/download_progressbackgroud"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/download_progressdrawable"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/grid_item_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_green_selector"
+                    android:gravity="center"
+                    android:text="@string/download"
+                    android:textColor="@color/theme_green"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ticket_time_logo_iv"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@mipmap/game_day1"
+                android:scaleType="fitCenter" />
+    </RelativeLayout>
+</RelativeLayout>

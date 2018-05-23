@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/topicdetail_bottomHeight"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_attention"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingRight="1dp">
+
+        <ImageView
+            android:id="@+id/iv_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@null"
+            />
+
+        <TextView
+            android:id="@+id/tv_my_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="@dimen/margin_size_4dp"
+            android:gravity="center_vertical"
+            android:text="加关注"
+            />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="36dp"
+        android:background="#bbb"/>
+
+    <LinearLayout
+        android:id="@+id/ll_sendMsg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="1dp">
+
+        <ImageView
+            android:id="@+id/iv_send_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_send_msg_selector"/>
+
+        <TextView
+            android:id="@+id/tv_send_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="@dimen/margin_size_4dp"
+            android:gravity="center_vertical"
+            android:text="发私信"/>
+    </LinearLayout>
+
+</merge>

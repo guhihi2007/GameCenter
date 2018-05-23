@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="98dp"
+    android:background="@color/white"
+    >
+
+    <!-- logo图片 -->
+
+    <ImageView
+        android:id="@+id/appMsg_logo_Iv"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:src="@mipmap/img_default_80x80_round" />
+    <!-- 游戏名 -->
+
+    <TextView
+        android:id="@+id/appMsg_gameName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/appMsg_logo_Iv"
+        android:ellipsize="end"
+        android:maxEms="10"
+        android:maxLines="1"
+        android:text="天堂之路"
+        android:textColor="@color/light_black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_download_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appMsg_gameName"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/tv_game_size"
+        android:maxLines="1"
+        android:text="222次下载"
+        android:textColor="@color/light_grey"
+        android:textSize="11sp" />
+
+
+    <TextView
+        android:id="@+id/tv_game_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appMsg_gameName"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/appMsg_logo_Iv"
+        android:text="30M "
+        android:textColor="@color/light_grey"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_game_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_game_size"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="17dp"
+        android:layout_toRightOf="@+id/appMsg_logo_Iv"
+        android:text="射击"
+        android:textColor="@color/light_grey"
+        android:textSize="11sp" />
+
+    <!-- 版本号和大小 -->
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@mipmap/drawable_right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        />
+
+</RelativeLayout>

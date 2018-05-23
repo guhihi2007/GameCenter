@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/head_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/user_center_14"
+        android:paddingTop="@dimen/user_center_20">
+
+        <cn.lt.game.lib.view.RoundImageView
+            android:id="@+id/head_img"
+            android:layout_width="@dimen/user_center_56"
+            android:layout_height="@dimen/user_center_56"
+            android:src="@mipmap/user_center_avatar_" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user_center_8"
+            android:text="@string/click_to_set_photo"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/font13sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/input_nickname"
+        style="@style/loginInputTextViewStyle"
+        android:hint="@string/user_center_hint_modify_nickname"
+        android:textSize="@dimen/font13sp" />
+
+    <Button
+        android:id="@+id/btn_finish"
+        style="@style/loginRegisterButtonStyle"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/deep_btn_green_selector"
+        android:text="@string/finish"
+        android:textSize="@dimen/font16sp" />
+
+</LinearLayout>

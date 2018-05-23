@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/item_bg"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2.5dp">
+        <!--第一层背景-->
+        <RelativeLayout
+            android:id="@+id/item_bg_basic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/award_basic_bg">
+            <LinearLayout
+                android:layout_width="99dp"
+                android:layout_height="84dp"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/award_iv_icon"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/user_avatar" />
+
+                <TextView
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/award_tv_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:maxEms="6"
+                    android:textSize="@dimen/font11sp"
+                    android:textColor="@color/background_award_times"
+                    android:text="第一个奖品" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--光圈的容器-->
+    <FrameLayout
+        android:gravity="center"
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@drawable/second_bg"
+        />
+
+</FrameLayout>

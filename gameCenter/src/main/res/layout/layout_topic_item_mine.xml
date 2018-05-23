@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_left_top_right_bottom">
+
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:drawableLeft="@mipmap/icon_group"
+        android:drawablePadding="4dp"
+        android:text="天龙八部小组"
+        android:textColor="#666"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/group_name"
+        android:textColor="#666"
+        android:textSize="16sp"
+        android:text="小组"
+        />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/group_name"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/holo_light_grey" />
+
+    <cn.lt.game.ui.app.community.topic.my.TopicItemByMyPublish
+        android:id="@+id/topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line" />
+
+    <cn.lt.game.ui.app.community.widget.MoreButton
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp" />
+
+</RelativeLayout>

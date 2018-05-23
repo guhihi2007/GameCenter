@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/margin_size_8dp"
+    android:paddingBottom="@dimen/margin_size_12dp"
+    android:paddingTop="@dimen/margin_size_11dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+
+    <cn.lt.game.ui.app.requisite.widget.AutoGridView
+        android:id="@+id/hot_cats_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="@dimen/margin_size_8dp"
+        android:verticalSpacing="@dimen/margin_size_8dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:scrollbars="none" />
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/hot_category_item1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/hot_category_item1_iv"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:src="@mipmap/ic_refresh" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/hot_category_item1_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:text="最新推荐"-->
+            <!--android:textColor="#999"-->
+            <!--android:textSize="11sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/hot_category_item2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/hot_category_item2_iv"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:src="@mipmap/ic_refresh" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/hot_category_item2_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:text="经典单机"-->
+            <!--android:textColor="#999"-->
+            <!--android:textSize="11sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/hot_category_item3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/hot_category_item3_iv"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:src="@mipmap/ic_refresh" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/hot_category_item3_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:text="最新上线"-->
+            <!--android:textColor="#999"-->
+            <!--android:textSize="11sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/hot_category_item4"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/hot_category_item4_iv"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:src="@mipmap/ic_refresh" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/hot_category_item4_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:text="热门网游"-->
+            <!--android:textColor="#999"-->
+            <!--android:textSize="11sp" />-->
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

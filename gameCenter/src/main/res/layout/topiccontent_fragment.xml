@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="62dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        >
+
+        <cn.lt.game.ui.app.community.widget.RichEditText
+            android:id="@+id/richEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:hint="请输入您要发表的话题内容"
+            android:gravity="left|top"
+            android:padding="12dp"
+            android:textColor="@color/light_black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="53dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/changeview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/keyboard"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="18dp"
+                    android:background="@mipmap/topic_keyboard"/>
+
+                <ImageView
+                    android:id="@+id/face"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="18dp"
+                    android:background="@mipmap/community_topic_face"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/gallery"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="18dp"
+                android:background="@mipmap/community_topic_gallery"/>
+
+            <ImageView
+                android:id="@+id/camera"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="18dp"
+                android:background="@mipmap/community_topic_camera"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/facegroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

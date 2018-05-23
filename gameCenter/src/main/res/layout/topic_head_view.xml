@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/iv_topic_logo"
+            android:layout_width="@dimen/group_icon_width"
+            android:layout_height="@dimen/group_icon_height"
+            android:layout_centerVertical="true"
+            android:layout_margin="12dp"
+            android:src="@mipmap/img_default_80x80_round"/>
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_size_12dp"
+            android:layout_toRightOf="@id/iv_topic_logo"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/ll_bottom_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_topic_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="marquee"
+                    android:maxEms="10"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:id="@+id/tv_topic_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:drawableLeft="@mipmap/ic_comm_hot"
+                    android:drawablePadding="@dimen/margin_size_6dp"
+                    android:maxLines="1"
+                    android:text="222"
+                    android:textColor="#ff8800"
+                    android:textSize="13sp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_topic_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="#666"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/topic_selector_view"/>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_change"
+            android:layout_width="match_parent"
+            android:layout_height="84dp">
+        </FrameLayout>
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/tl_3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#ffffff"
+            tl:tl_iconGravity="LEFT"
+            tl:tl_iconHeight="18dp"
+            tl:tl_iconMargin="5dp"
+            tl:tl_iconWidth="18dp"
+            tl:tl_indicator_bounce_enable="false"
+            tl:tl_indicator_color="#2C97DE"
+            tl:tl_indicator_gravity="TOP"
+            tl:tl_textSelectColor="#2C97DE"
+            tl:tl_textUnselectColor="#66000000"
+            tl:tl_textsize="15sp"
+            tl:tl_underline_color="#DDDDDD"
+            tl:tl_underline_gravity="TOP"
+            tl:tl_underline_height="1dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/award_green_bg"
+    android:paddingBottom="24dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="12dp">
+
+    <LinearLayout
+        android:id="@+id/real_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@mipmap/award_head" />
+        <!--光环突出2.5dp-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/award_yellow_bg"
+            android:paddingBottom="36.5dp"
+            android:paddingLeft="15.5dp"
+            android:paddingRight="15.5dp"
+            android:paddingTop="15.5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--<cn.lt.game.ui.app.awardgame.view.RatioLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="89dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--Juice:relative="width"-->
+                    <!--Juice:picRatio="1.16854"-->
+                    <!--&gt;-->
+                    <!--<cn.lt.game.ui.app.awardgame.view.SingleAwardsView-->
+                    <!--android:id="@+id/item1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--/>-->
+                    <!--</cn.lt.game.ui.app.awardgame.view.RatioLayout><cn.lt.game.ui.app.awardgame.view.RatioLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="89dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--Juice:relative="width"-->
+                    <!--Juice:picRatio="1.16854"-->
+                    <!--&gt;-->
+                    <!--<cn.lt.game.ui.app.awardgame.view.SingleAwardsView-->
+                    <!--android:id="@+id/item2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--/>-->
+                    <!--</cn.lt.game.ui.app.awardgame.view.RatioLayout>-->
+                    <!--<cn.lt.game.ui.app.awardgame.view.RatioLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="89dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--Juice:relative="width"-->
+                    <!--Juice:picRatio="1.16854"-->
+                    <!--&gt;-->
+                    <!--<cn.lt.game.ui.app.awardgame.view.SingleAwardsView-->
+                    <!--android:id="@+id/item3"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--/>-->
+                    <!--</cn.lt.game.ui.app.awardgame.view.RatioLayout>-->
+                    <cn.lt.game.ui.app.awardgame.view.SingleAwardsView
+                        android:id="@+id/item1"
+                        android:layout_width="0dp"
+                        android:layout_height="89dp"
+                        android:layout_weight="1" />
+
+                    <cn.lt.game.ui.app.awardgame.view.SingleAwardsView
+                        android:id="@+id/item2"
+                        android:layout_width="0dp"
+                        android:layout_height="89dp"
+                        android:layout_weight="1" />
+
+                    <cn.lt.game.ui.app.awardgame.view.SingleAwardsView
+                        android:id="@+id/item3"
+                        android:layout_width="0dp"
+                        android:layout_height="89dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--<cn.lt.game.ui.app.awardgame.view.RatioLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="89dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--Juice:relative="width"-->
+                    <!--Juice:picRatio="1.16854"-->
+                    <!--&gt;-->
+                    <!--<cn.lt.game.ui.app.awardgame.view.SingleAwardsView-->
+                    <!--android:id="@+id/item4"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--/>-->
+                    <!--</cn.lt.game.ui.app.awardgame.view.RatioLayout><cn.lt.game.ui.app.awardgame.view.RatioLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="89dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--Juice:relative="width"-->
+                    <!--Juice:picRatio="1.16854"-->
+                    <!--&gt;-->
+                    <!--<cn.lt.game.ui.app.awardgame.view.SingleAwardsView-->
+                    <!--android:id="@+id/start"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--/>-->
+                    <!--</cn.lt.game.ui.app.awardgame.view.RatioLayout>-->
+                    <!--<cn.lt.game.ui.app.awardgame.view.RatioLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="89dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--Juice:relative="width"-->
+                    <!--Juice:picRatio="1.16854"-->
+                    <!--&gt;-->
+                    <!--<cn.lt.game.ui.app.awardgame.view.SingleAwardsView-->
+                    <!--android:id="@+id/item6"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--/>-->
+                    <!--</cn.lt.game.ui.app.awardgame.view.RatioLayout>-->
+                    <cn.lt.game.ui.app.awardgame.view.SingleAwardsView
+                        android:id="@+id/item4"
+                        android:layout_width="0dp"
+                        android:layout_height="89dp"
+                        android:layout_weight="1" />
+
+                    <cn.lt.game.ui.app.awardgame.view.SingleAwardsView
+                        android:id="@+id/start"
+                        android:layout_width="0dp"
+                        android:layout_height="89dp"
+                        android:layout_weight="1" />
+
+                    <cn.lt.game.ui.app.awardgame.view.SingleAwardsView
+                        android:id="@+id/item6"
+                        android:layout_width="0dp"
+                        android:layout_height="89dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--<cn.lt.game.ui.app.awardgame.view.RatioLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="89dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--Juice:relative="width"-->
+                    <!--Juice:picRatio="1.16854"-->
+                    <!--&gt;-->
+                    <!--<cn.lt.game.ui.app.awardgame.view.SingleAwardsView-->
+                    <!--android:id="@+id/item7"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--/>-->
+                    <!--</cn.lt.game.ui.app.awardgame.view.RatioLayout>-->
+                    <!--<cn.lt.game.ui.app.awardgame.view.RatioLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="89dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--Juice:relative="width"-->
+                    <!--Juice:picRatio="1.16854"-->
+                    <!--&gt;-->
+                    <!--<cn.lt.game.ui.app.awardgame.view.SingleAwardsView-->
+                    <!--android:id="@+id/item8"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--/>-->
+                    <!--</cn.lt.game.ui.app.awardgame.view.RatioLayout>-->
+                    <!--<cn.lt.game.ui.app.awardgame.view.RatioLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="89dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--Juice:relative="width"-->
+                    <!--Juice:picRatio="1.16854"-->
+                    <!--&gt;-->
+                    <!--<cn.lt.game.ui.app.awardgame.view.SingleAwardsView-->
+                    <!--android:id="@+id/item9"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--/>-->
+                    <!--</cn.lt.game.ui.app.awardgame.view.RatioLayout>-->
+                    <cn.lt.game.ui.app.awardgame.view.SingleAwardsView
+                        android:id="@+id/item7"
+                        android:layout_width="0dp"
+                        android:layout_height="89dp"
+                        android:layout_weight="1" />
+
+
+                    <cn.lt.game.ui.app.awardgame.view.SingleAwardsView
+                        android:id="@+id/item8"
+                        android:layout_width="0dp"
+                        android:layout_height="89dp"
+                        android:layout_weight="1" />
+
+                    <cn.lt.game.ui.app.awardgame.view.SingleAwardsView
+                        android:id="@+id/item9"
+                        android:layout_width="0dp"
+                        android:layout_height="89dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/award_number_expaire"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignTop="@id/real_container"
+        android:gravity="center"
+        android:text="你有5次领奖机会"
+        android:textColor="@color/background_award_times"
+        android:textSize="@dimen/font13sp" />
+
+    <TextView
+        android:id="@+id/award_join_number_tv"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_alignBottom="@id/real_container"
+        android:gravity="center"
+        android:text="已有2000人参与抽奖"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font13sp" />
+</RelativeLayout>

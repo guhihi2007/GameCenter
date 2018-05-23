@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <cn.lt.game.ui.app.community.topic.TopicItemWidget
+        android:id="@+id/topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <cn.lt.game.ui.app.community.widget.MoreButton
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp" />
+
+</RelativeLayout>

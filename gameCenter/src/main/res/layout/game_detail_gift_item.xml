@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:id="@+id/tv_gift_name"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/iv_icGift"
+            android:ellipsize="marquee"
+            android:maxLines="1"
+            android:textColor="@color/light_black"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/iv_icGift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/game_detail_gift"/>
+
+    </RelativeLayout>
+    <!-- 分割线 -->
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/divider"/>
+</LinearLayout>

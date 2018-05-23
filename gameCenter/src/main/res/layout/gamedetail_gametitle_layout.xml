@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_hot_tag"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@color/theme_green"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/gamedetail_roottitle"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="本周热门标签"
+            android:textColor="@color/light_black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <cn.lt.game.ui.common.TagGroup
+        android:id="@+id/tag_group"
+        android:background="@color/white"
+        style="@style/TagGroup"
+        android:paddingLeft="20dp"
+        android:paddingBottom="14dp"
+        android:paddingRight="20dp" />
+
+
+    <LinearLayout
+        android:id="@+id/gamedetail_rootlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingRight="18dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="14dp"
+        android:visibility="gone"
+        android:orientation="vertical"/>
+
+
+</LinearLayout>

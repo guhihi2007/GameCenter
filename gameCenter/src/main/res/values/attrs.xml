@@ -1,0 +1,212 @@
+<!--
+  Copyright 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+    <declare-styleable name="RatioLayout">
+
+        <attr name="picRatio" format="float"></attr>
+        <attr name="relative" format="enum">
+
+            <enum name="width" value="0"></enum>
+            <enum name="height" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="PullToRefresh">
+        <attr name="adapterViewBackground" format="reference|color" />
+        <attr name="headerBackground" format="reference|color" />
+        <attr name="headerTextColor" format="color" />
+        <attr name="modes">
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+            <flag name="both" value="0x3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="EditTextWithLabel">
+        <attr name="label" format="string" />
+        <attr name="hint" format="string" />
+    </declare-styleable>
+    <declare-styleable name="NoSearchTitleBar">
+        <attr name="titleName" format="string" />
+        <attr name="iconHomeVisibility" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="SearchBar">
+        <attr name="searchTitle" format="string" />
+        <attr name="searchWhat">
+            <enum name="searchGift" value="0x1" />
+            <enum name="searchStrategy" value="0x2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="GiftMsg">
+        <attr name="color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="WrapContentHeightViewPager">
+        <attr name="row" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="WrapGridLayout">
+        <attr name="numColumns" format="integer" />
+        <attr name="itemMargin" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="AppMsgImgMoreState">
+        <attr name="isVisible" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="MyView">
+        <attr name="myviewtextColor" format="color" />
+        <attr name="myviewtextSize" format="dimension" />
+        <attr name="textWordMargin" format="dimension" />
+        <attr name="textLineMargin" format="dimension" />
+        <attr name="textBackground" format="integer" />
+        <attr name="textPaddingLeft" format="dimension" />
+        <attr name="textPaddingRight" format="dimension" />
+        <attr name="textPaddingTop" format="dimension" />
+        <attr name="textPaddingBottom" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="loadingView">
+        <attr name="loadingViewDrawable" format="reference" />
+        <attr name="loadingViewAngle" format="float" />
+        <attr name="loadingViewRefreshTime" format="integer" />
+    </declare-styleable>
+    <!-- 悬浮球 -->
+    <declare-styleable name="FloatingActionButton">
+        <attr name="drawable" format="integer" />
+        <attr name="color2" format="color" />
+        <attr name="shadowRadius" format="float" />
+        <attr name="shadowDx" format="float" />
+        <attr name="shadowDy" format="float" />
+        <attr name="shadowColor" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="BannerView">
+        <attr name="banner_height" format="dimension" />
+        <attr name="show_point" format="boolean" />
+        <attr name="show_without_data" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="SearchView">
+        <attr name="is_index" format="boolean" />
+        <attr name="backgroudColor" format="integer" />
+    </declare-styleable>
+
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+
+    <attr name="tabView" format="reference"/>
+    <attr name="iconWidth" format="dimension"/>
+    <attr name="iconHeight" format="dimension"/>
+
+    <declare-styleable name="TabView">
+        <attr name="tabView"/>
+        <attr name="iconWidth"/>
+        <attr name="iconHeight"/>
+    </declare-styleable>
+
+    <declare-styleable name="BubbleView">
+        <attr name="arrowWidth" format="dimension"/>
+        <attr name="angle" format="dimension"/>
+        <attr name="arrowHeight" format="dimension"/>
+        <attr name="arrowPosition" format="dimension"/>
+        <attr name="bubbleColor" format="color"/>
+        <attr name="arrowLocation" format="enum">
+            <enum name="left" value="0x00"/>
+            <enum name="right" value="0x01"/>
+            <enum name="top" value="0x02"/>
+            <enum name="bottom" value="0x03"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MyRadioButton">
+
+        <attr name="drawableSize" format="dimension"/>
+        <attr name="drawableTop" format="reference"/>
+        <attr name="drawableLeft" format="reference"/>
+        <attr name="drawableRight" format="reference"/>
+        <attr name="drawableBottom" format="reference"/>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="TagGroup">
+        <!-- Whether the tag group is in append mode. -->
+        <attr name="atg_isAppendMode" format="boolean" />
+        <!-- If the tag group is in append mode, what the hint of input tag. -->
+        <attr name="atg_inputHint" format="string" />
+
+        <!-- The tag view outline border color. -->
+        <attr name="atg_borderColor" format="color" />
+        <!-- The tag view text color. -->
+        <attr name="atg_textColor" format="color" />
+        <!-- The tag view background color. -->
+        <attr name="atg_backgroundColor" format="color" />
+
+        <!-- The dash outline border color, when in append mode. -->
+        <attr name="atg_dashBorderColor" format="color" />
+        <!-- The input tag hint text color, when in append mode. -->
+        <attr name="atg_inputHintColor" format="color" />
+        <!-- The input tag type text color, when in append mode. -->
+        <attr name="atg_inputTextColor" format="color" />
+
+        <!-- The checked tag view outline border color. -->
+        <attr name="atg_checkedBorderColor" format="color" />
+        <!-- The checked text color. -->
+        <attr name="atg_checkedTextColor" format="color" />
+        <!-- The checked marker color. -->
+        <attr name="atg_checkedMarkerColor" format="color" />
+        <!-- The checked tag view background color. -->
+        <attr name="atg_checkedBackgroundColor" format="color" />
+
+        <!-- The tag view background color, when the tag view is being pressed. -->
+        <attr name="atg_pressedBackgroundColor" format="color" />
+
+        <!-- The tag view outline border stroke width. -->
+        <attr name="atg_borderStrokeWidth" format="dimension" />
+        <!-- The tag view text size. -->
+        <attr name="atg_textSize" format="dimension" />
+
+        <attr name="atg_horizontalSpacing" format="dimension" />
+        <attr name="atg_verticalSpacing" format="dimension" />
+        <attr name="atg_horizontalPadding" format="dimension" />
+        <attr name="atg_verticalPadding" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="tagGroupStyle" format="reference" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:NoSearchTitleBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/gift_list_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <cn.lt.game.ui.app.gamegift.view.GiftTitleBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            NoSearchTitleBar:titleName="礼包列表" />
+
+        <cn.lt.game.ui.app.gamegift.view.GiftInfoView
+            android:id="@+id/gift_list_msgLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <cn.lt.game.lib.view.NetWorkStateView
+        android:id="@+id/rank_netwrolStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/gift_list_linear" />
+
+    <!--<com.handmark.pulltorefresh.library.PullToRefreshListView-->
+        <!--xmlns:ptr="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/gift_list_listView1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:paddingTop="8dp"-->
+        <!--android:clipToPadding="false"-->
+        <!--android:layout_above="@+id/gift_list_download"-->
+        <!--android:layout_below="@+id/gift_list_linear"-->
+        <!--ptrScrollingWhileRefreshingEnabled="true"-->
+        <!--android:cacheColorHint="#00000000"-->
+        <!--android:fadingEdge="none"-->
+        <!--android:divider="@null"-->
+        <!--android:fastScrollEnabled="false"-->
+        <!--android:footerDividersEnabled="false"-->
+        <!--android:headerDividersEnabled="false"-->
+        <!--android:listSelector="@android:color/transparent"-->
+        <!--android:scrollbars="none"-->
+        <!--ptr:ptrAnimationStyle="flip"-->
+        <!--ptr:ptrHeaderTextColor="@color/light_grey" />-->
+    <cn.lt.game.lib.widget.RefreshAndLoadMoreListView
+        android:id="@+id/gift_list_listView"
+        ptrScrollingWhileRefreshingEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/gift_list_download"
+        android:layout_below="@+id/gift_list_linear"
+        android:cacheColorHint="#00000000"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:paddingTop="8dp"
+        android:scrollbars="none"/>
+    <RelativeLayout
+        android:id="@+id/gift_list_download"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gift_list_download_layout_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/border_width"
+            android:layout_alignParentTop="true"
+            android:background="#dddddd" />
+
+        <cn.lt.game.lib.view.DownLoadBarForGift
+            android:id="@+id/gift_downlaodBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</RelativeLayout>

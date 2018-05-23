@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/change_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_size_8dp"
+    android:paddingRight="@dimen/margin_size_8dp">
+
+    <LinearLayout
+        android:id="@+id/llt_title_root"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        >
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="15dp"
+            android:background="@color/theme_green"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="dsfsdf"
+            android:textSize="@dimen/font15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_root_game_square"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        />
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/background_grey"
+        />
+
+</LinearLayout>

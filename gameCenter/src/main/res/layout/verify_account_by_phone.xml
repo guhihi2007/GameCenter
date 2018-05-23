@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/choose_phone"
+        android:paddingTop="28dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/choose_phone_check"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="8dp"
+            android:clickable="true"
+            android:src="@mipmap/check" />
+
+        <TextView
+            android:id="@+id/choose_phone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignTop="@id/choose_phone_check"
+            android:layout_toRightOf="@id/choose_phone_check"
+            android:gravity="center_vertical"
+            android:text="@string/phone_register"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font15sp" />
+    </LinearLayout>
+
+
+
+    <View
+        android:id="@+id/line_in_phone"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/choose_phone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="14dp"
+        android:background="#eeeeee" />
+
+    <EditText
+        android:id="@+id/input_phone_number"
+        style="@style/loginInputTextViewStyle"
+        android:layout_below="@id/line_in_phone"
+        android:hint="@string/please_input_phone_number"
+        android:imeOptions="actionNext"
+        android:textSize="@dimen/font13sp"
+        android:inputType="numberSigned"
+        android:paddingLeft="0dp" />
+
+
+    <EditText
+        android:id="@+id/input_verify_code"
+        style="@style/loginInputTextViewStyle"
+        android:layout_below="@id/input_phone_number"
+        android:hint="@string/please_input_verify_code"
+        android:textSize="@dimen/font13sp"
+        android:paddingRight="96dp"
+        android:inputType="numberSigned"
+        android:imeOptions="actionDone"
+        android:paddingLeft="0dp" />
+
+    <Button
+        android:id="@+id/get_verify_code"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/margin_size_8dp"
+        android:paddingRight="@dimen/margin_size_8dp"
+        android:layout_alignBottom="@id/input_verify_code"
+        android:layout_alignRight="@id/input_verify_code"
+        android:layout_alignTop="@id/input_verify_code"
+        android:background="@android:color/transparent"
+        android:text="@string/get_verify_code"
+        android:textColor="@color/theme_green"
+        android:textSize="@dimen/font13sp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/input_verify_code"
+        android:layout_alignTop="@id/input_verify_code"
+        android:layout_toLeftOf="@id/get_verify_code">
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:background="@color/theme_green" />
+
+    </FrameLayout>
+
+</RelativeLayout>

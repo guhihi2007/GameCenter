@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/userIconWidth"
+            android:layout_height="@dimen/userIconWidth">
+
+            <ImageView
+                android:id="@+id/user_icon"
+                android:layout_width="@dimen/userIconWidth"
+                android:layout_height="@dimen/userIconWidth"
+                android:scaleType="fitCenter" />
+
+            <View
+                android:id="@+id/red_point"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/circle_red_point" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:maxLines="1"
+                        android:text="客服户为您付21333333333333333333333333333333333333333333333333333333333333"
+                        android:textColor="@color/light_black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/name"
+                        android:paddingLeft="8dp"
+                        android:src="@drawable/user_level" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="一分钟前"
+                    android:textColor="@color/light_grey" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="消息减肥法金额饭呢烦呢微风那位客服 俄方麦克风吗可我们few麻烦可"
+                android:textColor="@color/main_btn_normal"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

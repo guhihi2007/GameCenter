@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/shape_round_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_retry"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableLeft="@mipmap/failure_retry"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/retry"
+        android:textColor="@color/light_black"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/tv_edit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableLeft="@mipmap/failure_compile"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/compile"
+        android:textColor="@color/light_black"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableLeft="@mipmap/ic_delete_green"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/delete"
+        android:textColor="@color/light_black"
+        android:textSize="17sp" />
+
+</LinearLayout>

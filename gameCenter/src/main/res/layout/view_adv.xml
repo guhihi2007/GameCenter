@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   >
+
+    <cn.lt.game.lib.view.RoundImageView
+        android:id="@+id/adv_icon"
+        android:layout_width="@dimen/group_list_item_imgWidth"
+        android:layout_height="@dimen/group_list_item_imgHeight"
+        android:layout_marginRight="@dimen/inIntervalLeft"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/adv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="推广"
+        android:textColor="@color/bule"
+        android:textSize="@dimen/font_size_13sp" />
+
+    <TextView
+        android:id="@+id/adv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/adv_title"
+        android:layout_toRightOf="@+id/adv_icon"
+        android:text="bbbbbbbbbbbbbb"
+        android:textColor="@color/main_btn_normal"
+        android:textSize="@dimen/font_size_15sp" />
+
+    <TextView
+        android:id="@+id/adv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adv_name"
+        android:layout_marginTop="@dimen/margin_size_4dp"
+        android:layout_toRightOf="@+id/adv_icon"
+        android:text="aaaaaaaaaaa"
+        android:textColor="@color/light_grey"
+        android:textSize="@dimen/font_size_13sp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/adv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/inInterval"
+        android:textSize="@dimen/font_size_13sp"
+        android:textColor="@color/light_black"
+        android:layout_toRightOf="@+id/adv_icon"
+        android:layout_below="@+id/adv_time"/>
+
+
+    <ImageView
+        android:id="@+id/adv_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/adv_img_height"
+        android:src="@mipmap/photo"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/adv_content"
+        android:layout_marginTop="@dimen/outerInterval"
+        android:layout_alignLeft="@+id/adv_name"/>
+
+
+    <View
+        android:id="@+id/adv_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/holo_light_grey"
+        android:layout_marginTop="@dimen/inInterval"
+        android:layout_below="@+id/adv_img"/>
+
+</RelativeLayout>

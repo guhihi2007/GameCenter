@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+
+    <LinearLayout
+        android:id="@+id/llt_root"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="激活码："
+            android:textColor="#aaaaaa"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/tv_gift_key_value"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="5555598565659853888"
+            android:textColor="#aaaaaa"
+            android:textSize="13sp"/>
+
+        <Button
+            android:id="@+id/bt_copy"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:background="@drawable/get_gift_button_selector"
+            android:gravity="center"
+            android:text="复制"
+            android:textColor="@color/theme_green"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/llt_root"-->
+    <!--android:layout_marginTop="12dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="请尽快使用激活码，以免过期"-->
+    <!--android:textColor="#333333"-->
+    <!--android:textSize="14sp" />-->
+
+</RelativeLayout>

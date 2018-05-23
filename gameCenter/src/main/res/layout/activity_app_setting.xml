@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/action_bar_new" />
+
+    <!-- 设置主体界面 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_grey"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="25dp">
+
+
+            <!-- 下载路径 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_size_20dp"
+                android:paddingRight="@dimen/margin_size_20dp">
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/user_center_49"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <!--android:background="@drawable/favorite_list_item_selector"-->
+
+                    <TextView
+                        android:id="@+id/download_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_size_8dp"
+                        android:includeFontPadding="false"
+                        android:text="@string/user_center_download_setting"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/font15sp" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/theme_green" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setting_download_path"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/user_center_49"
+                    android:background="@drawable/rectangle_setting_selector">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/user_center_download_path"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/font15sp" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/drawable_right" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setting_auto_upgrade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_size_8dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/ll_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/setting_auto_upgrade_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_center_auto_upgrade_setting"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/font15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/user_center_7"
+                            android:text="@string/user_center_download_auto_upgrade_setting"
+                            android:textColor="@color/light_grey"
+                            android:textSize="@dimen/font11sp" />
+                    </LinearLayout>
+
+                    <ToggleButton
+                        android:id="@+id/setting_toggle_auto_upgrade"
+                        android:layout_width="48dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/btn_toggle_setting_selector"
+                        android:textOff=""
+                        android:textOn="" />
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@id/ll_label"
+                        android:layout_marginTop="@dimen/margin_size_8dp"
+                        android:background="@color/divider" />
+
+                    <com.ms.square.android.expandabletextview.ExpandableTextView
+                        android:id="@+id/expand_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/divider"
+                        expandableTextView:animDuration="200"
+                        expandableTextView:collapseDrawable="@mipmap/drawable_collapse"
+                        expandableTextView:expandDrawable="@mipmap/drawable_expand"
+                        expandableTextView:maxCollapsedLines="0">
+
+                        <TextView
+                            android:id="@id/expandable_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/detail_review"
+                            android:textSize="11sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_expand_or_collapse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="13dp"
+                            android:paddingTop="13dp">
+
+                            <TextView
+                                android:id="@+id/expand_or_collapse_desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:paddingRight="4dp"
+                                android:text="@string/expand_text"
+                                android:textColor="@color/detail_review"
+                                android:textSize="11sp" />
+
+                            <ImageButton
+                                android:id="@id/expand_collapse"
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitXY" />
+                        </LinearLayout>
+                    </com.ms.square.android.expandabletextview.ExpandableTextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_size_8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_size_20dp"
+                android:paddingRight="@dimen/margin_size_20dp">
+
+                <!-- 安装设置 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/install_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_size_8dp"
+                        android:includeFontPadding="false"
+                        android:text="@string/user_center_install_setting"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/font15sp" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/theme_green" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setting_autoInstallRoot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="16dp">
+
+                        <TextView
+                            android:id="@+id/setting_auto_install"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_center_auto_install_setting"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/font15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/setting_auto_install"
+                            android:layout_marginTop="@dimen/user_center_7"
+                            android:text="@string/user_center_download_auto_install_setting"
+                            android:textColor="@color/point_grey"
+                            android:textSize="@dimen/font11sp" />
+                    </LinearLayout>
+
+                    <ToggleButton
+                        android:id="@+id/setting_toggle_auto_install"
+                        android:layout_width="48dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/btn_toggle_setting_selector"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider" />
+
+                <RelativeLayout
+                    android:id="@+id/setting_auto_delete_Root"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/user_center_66">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/setting_auto_delete_pack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_center_auto_delete_pack_setting"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/font15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/setting_auto_delete_pack"
+                            android:layout_marginTop="@dimen/user_center_7"
+                            android:text="@string/user_center_install_auto_delete_pack_setting"
+                            android:textColor="@color/point_grey"
+                            android:textSize="@dimen/font11sp" />
+                    </LinearLayout>
+
+                    <ToggleButton
+                        android:id="@+id/setting_toggle_auto_delete_pack"
+                        android:layout_width="48dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/btn_toggle_setting_selector"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

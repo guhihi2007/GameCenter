@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/messageDialog_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dialog_round_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/messageDialog_titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_center_49"
+            android:background="@drawable/dialog_round_background">
+
+            <ImageView
+                android:id="@+id/messageDialog_cancelIv"
+                android:layout_width="@dimen/user_center_49"
+                android:layout_height="@dimen/user_center_49"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="16.5dp"
+                android:paddingLeft="17dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16.5dp"
+                android:src="@mipmap/ic_dialog_close" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="@string/gentle_reminder"
+                android:textColor="@color/theme_green"
+                android:textSize="@dimen/font16sp" />
+        </RelativeLayout>
+        <!-- 华丽的分割线 -->
+
+        <RelativeLayout
+            android:id="@+id/messageDialog_textBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp">
+
+            <TextView
+                android:id="@+id/messageDialog_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginTop="8dp"
+                android:minLines="2"
+                android:text="@string/exit_reminder"
+                android:textColor="@color/light_black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <!-- 底部按钮 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="21dp"
+            android:paddingRight="21dp">
+
+            <Button
+                android:id="@+id/messageDialog_leftBtn"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_cancel_selector"
+                android:gravity="center"
+                android:text="@string/cancel_ignor_bt"
+                android:textColor="@color/detail_review"
+                android:textSize="@dimen/title_size" />
+
+            <Button
+                android:id="@+id/messageDialog_rightBtn"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="18dp"
+                android:background="@drawable/deep_btn_green_selector"
+                android:gravity="center"
+                android:text="@string/gallery_send"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

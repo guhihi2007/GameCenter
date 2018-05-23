@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_left_top_right_bottom"
+    android:orientation="vertical"
+    android:paddingBottom="12dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+    <RelativeLayout
+        android:id="@+id/root_which_topic_topic_detail"
+        android:layout_width="match_parent"
+        android:layout_height="42.66dp"
+        android:layout_marginTop="12dp" >
+
+        <cn.lt.game.lib.view.RoundImageView
+            android:id="@+id/iv_user_head_pht_topic_detail"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/img_default_80x80_round" />
+
+        <TextView
+            android:id="@+id/tv_user_name_topic_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_user_head_pht_topic_detail"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignTop="@id/tv_user_name_topic_detail"
+            android:layout_toRightOf="@id/tv_user_name_topic_detail"
+            android:layout_alignBottom="@+id/tv_user_name_topic_detail"
+            android:layout_marginLeft="@dimen/margin_size_4dp">
+
+
+            <ImageView
+                android:id="@+id/iv_level_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_level"
+                android:layout_marginLeft="@dimen/margin_size_4dp"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/iv_is_manger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:src="@mipmap/ic_admin"
+                android:layout_gravity="center"  />
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/tv_comment_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_user_name_topic_detail"
+            android:layout_below="@id/tv_user_name_topic_detail"
+            android:layout_marginTop="1dp"
+            android:text=""
+            android:textColor="#bbbbbb"
+            android:textSize="13sp" />
+
+        <cn.lt.game.ui.app.community.widget.MoreButton
+            android:id="@+id/mb_topic_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+
+
+
+        <cn.lt.game.ui.app.community.topic.my.TopicTitleView
+            android:id="@+id/tv_comment_title_topic_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_info"
+            android:layout_gravity="center_vertical"
+            android:gravity="top"
+            android:ellipsize="end"
+            android:textColor="#333"
+            android:textSize="17sp" />
+
+
+    <TextView
+        android:id="@+id/tv_comment_content_topic_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="#666666"
+        android:textSize="16sp" />
+
+</LinearLayout>

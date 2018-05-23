@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dialog_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:background="@drawable/rectangle_toast_corner"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@android:color/transparent"
+            android:indeterminateDrawable="@drawable/loading_rotate"/>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="@string/submitted"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16sp"/>
+    </LinearLayout>
+
+</LinearLayout>

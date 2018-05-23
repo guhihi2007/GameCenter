@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@drawable/favorite_list_item_selector" >
+
+    <!--<cn.lt.game.lib.view.RoundImageView-->
+        <!--android:id="@+id/user_avatar"-->
+        <!--android:layout_width="42dp"-->
+        <!--android:layout_height="42dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginBottom="6dp"-->
+        <!--android:layout_marginLeft="12dp"-->
+        <!--android:layout_marginRight="12dp"-->
+        <!--android:layout_marginTop="6dp" />-->
+
+    <TextView
+        android:id="@+id/user_name"
+        android:paddingLeft="@dimen/margin_size_12dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/font13sp"
+        android:textColor="#ccc"
+        android:gravity="left|center_vertical"
+        android:text="1858823216"
+        android:layout_toLeftOf="@+id/user_del" />
+        <!--android:layout_toRightOf="@+id/user_avatar"-->
+
+    <TextView
+        android:id="@+id/user_del"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:background="@mipmap/btn_cancel_or_del" />
+
+    <!--android:background="@mipmap/search_deleteone"-->
+
+</RelativeLayout>

@@ -1,0 +1,361 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowEnterAnimation">@anim/splash_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/splash_fade_out</item>
+    </style>
+
+    <style name="viewPagerIndicators">
+        <item name="android:background">@color/white</item>
+        <item name="tl_tab_space_equal">true</item>
+        <item name="tl_textUnselectColor">@color/detail_review</item>
+        <item name="tl_textSelectColor">@color/theme_green</item>
+        <item name="tl_indicator_color">@color/theme_green</item>
+        <item name="tl_textsize">@dimen/title_size</item>
+        <item name="tl_indicator_width">20dp</item>
+        <item name="tl_indicator_height">3dp</item>
+        <item name="tl_underline_color">@color/divider</item>
+        <item name="tl_underline_height">1px</item>
+    </style>
+    <style name="viewPagerIndicators_award">
+        <item name="android:background">@color/theme_green</item>
+        <item name="tl_tab_space_equal">true</item>
+        <item name="tl_textUnselectColor">@color/gray</item>
+        <item name="tl_textSelectColor">@color/white</item>
+        <item name="tl_indicator_color">@color/white</item>
+        <item name="tl_textsize">@dimen/title_size</item>
+        <item name="tl_indicator_width">20dp</item>
+        <item name="tl_indicator_height">3dp</item>
+        <item name="tl_underline_color">@color/divider</item>
+        <item name="tl_underline_height">0px</item>
+    </style>
+
+    <style name="anim_popup_dir">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+    <style name="RankTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="GameRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar_full</item>
+        <item name="android:minHeight">11dip</item>
+        <item name="android:maxHeight">11dip</item>
+    </style>
+
+    <style name="GameAppMsgRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/app_msg_rating_bar_full</item>
+        <item name="android:minHeight">13dip</item>
+        <item name="android:maxHeight">13dip</item>
+    </style>
+
+    <style name="Widget" parent="android:Widget" />
+
+    <style name="mProgressBarHorizontal" parent="@style/Widget">
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:minHeight">29dip</item>
+        <item name="android:maxHeight">29dip</item>
+    </style>
+
+    <style name="home_tab_bottom">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:background">@null</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- SettingActivity TextView  by zhaoqile -->
+
+    <!-- SliderMenu TextView  by zhaoqile -->
+
+    <!-- SettingActivity check  by  zhaoqile -->
+
+    <!-- feedback dialog  by zhaoqile -->
+    <style name="loadingDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- updateInfo dialog by zhaoqile -->
+    <style name="updateInfoDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="awardDialogStyle" >
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 游戏截图放大dialogStyle -->
+    <style name="screenshotDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="android:windowFullscreen">true</item> -->
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--
+    dialog Anim  by zhaoqile 
+      <style name="dialogWindowAnim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+    </style>
+    -->
+
+
+    <!-- widget TextView  by zhaoqile -->
+
+    <!-- widget TextView  by zhaoqile -->
+
+    <style name="imageProgressBarStyle" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/image_progress</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="imageProgressBarStyle2" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/image_progress</item>
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="imageProgressBarStyle3" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/image_progress</item>
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="imageProgressBarStyle4" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/image_progress4</item>
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- wcn -->
+    <style name="loginInputTextViewStyle">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">58dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:textColorHint">@color/point_grey</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/rectangle_user_center_input_bg</item>
+        <item name="android:textColor">@color/light_black</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- wcn 找回密码输入框 -->
+
+    <!-- wcn 登录/注册按键 -->
+    <style name="loginRegisterButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/user_center_36</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/middle_font_size</item>
+        <item name="android:layout_marginLeft">@dimen/margin_size_8dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_size_8dp</item>
+    </style>
+
+    <!-- wcn可点击的小文字 -->
+
+    <style name="allwrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item> <!-- 模糊 -->
+    </style>
+
+    <!-- wcn : add for community -->
+    <style name="community_textview_style" parent="@style/allwrap_content">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#666</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 自定义进度条 by ztl -->
+    <style name="ProgressBar_Mini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">5dip</item>
+        <item name="android:minHeight">3dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+    </style>
+
+    <!-- wcn : 话题阅读的样式 -->
+    <style name="community_reading_num_style" parent="@style/community_textview_style">
+        <item name="android:drawableLeft">@mipmap/ic_reading</item>
+        <item name="android:text">@string/reading</item>
+    </style>
+
+    <!-- wcn : 话题评论的样式 -->
+    <style name="community_comment_style" parent="@style/community_textview_style">
+        <item name="android:drawableLeft">@drawable/btn_comment_selector</item>
+        <item name="android:text">@string/comment</item>
+    </style>
+
+    <!-- wcn : 话题赞的样式 -->
+    <style name="community_like_style" parent="@style/community_textview_style">
+        <item name="android:drawableLeft">@mipmap/btn_like_n</item>
+        <item name="android:text">@string/like</item>
+    </style>
+
+    <style name="replyProgressBarStyle" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDuration">800</item>
+        <item name="android:indeterminateDrawable">@drawable/default_ptr_rotate</item>
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+
+    <style name="commentProgressBarStyle" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:indeterminateDuration">800</item>
+        <item name="android:indeterminateDrawable">@drawable/default_ptr_rotate</item>
+        <item name="android:minWidth">18.66dip</item>
+        <item name="android:maxWidth">18.66dip</item>
+        <item name="android:minHeight">18.66dip</item>
+        <item name="android:maxHeight">18.66dip</item>
+    </style>
+
+
+    <style name="test" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/red</item>
+    </style>
+    <!-- 用户评分的ratting bar -->
+    <style name="comment_star_style" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/game_comment_star</item>
+        <item name="android:minHeight">15dp</item>
+        <item name="android:maxHeight">20dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <!-- 发表评论的ratting bar -->
+    <style name="send_comment_star_style" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/publish_comment_star</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:maxHeight">50dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <!--个人主页的TabIndicator-->
+    <style name="PersonalPageTheme" parent="@android:style/Theme.Light">
+        <item name="tabView">@style/MyTabView</item>
+        <!--<item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>-->
+    </style>
+    <!--<style name="CustomUnderlinePageIndicator">-->
+        <!--<item name="selectedColor">@color/theme_green</item>-->
+        <!--<item name="fadeLength">1000</item>-->
+        <!--<item name="fadeDelay">1000</item>-->
+    <!--</style>-->
+    <style name="MyTabView">
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/tab_text_selector</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="iconWidth">24dp</item>
+        <item name="iconHeight">24dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    <style name="LoadingTheme" parent="android:Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowEnterAnimation">@anim/splash_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/splash_fade_out</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--蒙层样式-->
+    <style name="CoverDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <!--<item name="android:windowAnimationStyle">@style/CoverSheetAnimationStyle</item>-->
+    </style>
+
+    <style name="TagGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="atg_isAppendMode">false</item>
+        <item name="atg_inputHint">""</item>
+        <item name="atg_borderColor">@color/theme_green</item>
+        <item name="atg_textColor">@color/theme_green</item>
+        <item name="atg_backgroundColor">#FFFFFF</item>
+        <item name="atg_dashBorderColor">#FFFFFF</item>
+
+        <item name="atg_inputHintColor">#80000000</item>
+        <item name="atg_inputTextColor">#DE000000</item>
+        <item name="atg_checkedBorderColor">@color/theme_green</item>
+        <item name="atg_checkedTextColor">#FFFFFF</item>
+        <item name="atg_checkedMarkerColor">#FFFFFF</item>
+
+        <item name="atg_checkedBackgroundColor">@color/theme_green</item>
+        <item name="atg_pressedBackgroundColor">@color/white</item>
+        <item name="atg_borderStrokeWidth">1dp</item>
+        <item name="atg_textSize">13sp</item>
+
+        <item name="atg_horizontalSpacing">10dp</item>
+        <item name="atg_verticalSpacing">8dp</item>
+
+        <item name="atg_horizontalPadding">8dp</item>
+        <item name="atg_verticalPadding">5dp</item>
+    </style>
+</resources>

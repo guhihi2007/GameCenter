@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:SearchBar="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_grey"
+                android:orientation="vertical">
+
+    <cn.lt.game.lib.view.SearchView
+        android:id="@+id/strategycenter_searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/outerInterval"
+        android:layout_marginRight="@dimen/outerInterval"
+        android:layout_marginTop="@dimen/outerInterval"
+        SearchBar:searchTitle="搜攻略"
+        SearchBar:searchWhat="searchStrategy"></cn.lt.game.lib.view.SearchView>
+
+    <cn.lt.game.lib.widget.RefreshAndLoadMoreListView
+        android:id="@+id/strategycenter_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/strategycenter_searchbar"
+        android:layout_marginLeft="@dimen/outerIntervalLeft"
+        android:layout_marginRight="@dimen/outerIntervalRight"
+    />
+
+    <cn.lt.game.lib.view.NetWorkStateView
+        android:id="@+id/strategycenter_networkstateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"></cn.lt.game.lib.view.NetWorkStateView>
+
+</RelativeLayout>

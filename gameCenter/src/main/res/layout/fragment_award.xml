@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/award_elasticSV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <cn.lt.game.ui.app.awardgame.view.AwardsPlateView
+                android:id="@+id/award_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></cn.lt.game.ui.app.awardgame.view.AwardsPlateView>
+
+            <!--领奖流程-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_size_8dp"
+                android:layout_marginRight="@dimen/margin_size_8dp"
+                android:layout_marginTop="-12dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
+
+                    <TextView
+                        android:layout_width="3dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_size_12dp"
+                        android:background="@color/theme_green"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/same_type_games_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="49dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center_vertical"
+                        android:text="活动流程"
+                        android:textColor="@color/light_black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/award_process_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="@dimen/margin_size_2dp"
+                    android:paddingBottom="@dimen/margin_size_14dp"
+                    android:paddingLeft="@dimen/margin_size_12dp"
+                    android:paddingRight="@dimen/margin_size_12dp"
+                    android:text="流程一：抽奖好处多多抽奖好处多多抽奖好处多多抽奖好处多多抽奖好处多多抽奖好处多多抽奖好处多多抽奖好处多多抽奖好处多多"
+                    android:textColor="@color/detail_review"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <!--领奖规则-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_size_8dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
+
+                    <TextView
+                        android:layout_width="3dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_size_12dp"
+                        android:background="@color/theme_green"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="49dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center_vertical"
+                        android:text="活动规则"
+                        android:textColor="@color/light_black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/award_rule_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="@dimen/margin_size_2dp"
+                    android:paddingBottom="@dimen/margin_size_14dp"
+                    android:paddingLeft="@dimen/margin_size_12dp"
+                    android:paddingRight="@dimen/margin_size_12dp"
+                    android:text="规则一：抽奖好处多多抽奖好处多多抽奖好处多多抽奖好处多多抽奖好处多多抽奖好处多多抽奖好处多多抽奖好处多多抽奖好处多多"
+                    android:textColor="@color/detail_review"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <cn.lt.game.lib.view.NetWorkStateView
+        android:id="@+id/award_netWrokStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>

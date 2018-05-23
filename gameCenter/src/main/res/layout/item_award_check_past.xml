@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/past_container"
+    android:paddingTop="@dimen/margin_size_6dp"
+    android:paddingBottom="@dimen/margin_size_14dp">
+
+    <TextView
+        android:id="@+id/tv_award_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="查看已过期奖品>>"
+        android:textColor="@color/detail_review"
+        android:textSize="@dimen/font13sp" />
+</LinearLayout>

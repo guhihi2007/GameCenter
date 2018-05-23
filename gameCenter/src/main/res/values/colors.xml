@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="light_grey_a">#aaaaaa</color>
+    <color name="light_grey">#bbbbbb</color>
+    <color name="holo_light_grey">#dddddd</color>
+    <color name="main_btn_normal">#666666</color>
+    <color name="light_black">#333333</color>
+    <color name="background_grey">#F3F3F3</color>
+    <color name="background_award_times">#814c00</color>
+    <!--主题绿色-->
+    <color name="theme_green">#86bf13</color>
+    <color name="theme_green_bg">#d6eaad</color>
+    <color name="tab_line_unpressed_color_copy">#eeeeee</color>
+    <color name="light_yellow">#ff8800</color>
+    <color name="red">#ff0033</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#dfedcd</color>
+    <color name="black">#130c0e</color>
+    <color name="imgBT_default">#6fa305</color>
+    <!-- 用于RelativeLayout之类布局框的点击颜色 -->
+    <!-- UI提供，按钮点击效果背景色的sez -->
+    <color name="line_background">#eaeaea</color>
+    <color name="point_orange">#f0a53c</color>
+    <color name="point_grey">#cccccc</color>
+    <color name="index_item_selector_background">#f9f9f9</color>
+    <color name="detail_comments">#666666</color>
+    <color name="detail_review">#999999</color>
+
+    <!-- 热门话题 置顶推荐标题颜色 橙色 -->
+    <color name="hot_tuijian_top">#FF8800</color>
+    <color name="transparent_half">#88000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="button_orange_clicked">#ff6600</color>
+    <color name="blue">#13b9d7</color>
+    <color name="bule">#006699</color>
+
+
+    <!-- 首页入口按钮默认颜色 -->
+
+
+    <color name="tab_text_normal">#696969</color>
+    <color name="tab_text_selected">#73bf40</color>
+
+    <!--分割线颜色-->
+    <color name="divider">#eeeeee</color>
+    <color name="signed">#bcda91</color>
+    <color name="deeplink_bg">#ffffeb</color>
+
+    <color name="sign_bbs">#ff8800</color>
+    <color name="sign_gift">#86bf13</color>
+    <color name="sign_strategy">#15b8d9</color>
+    <color name="sign_official">#0060ff</color>
+</resources>

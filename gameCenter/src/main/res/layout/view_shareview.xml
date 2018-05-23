@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+
+    <TextView
+        android:id="@+id/share_wechatIv"
+        android:layout_width="@dimen/shareView_img_width"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/share_weixin"
+        android:gravity="center"
+        android:text="微信"
+        android:textColor="@color/detail_comments"
+        android:textSize="@dimen/font15sp"
+        android:drawablePadding="@dimen/margin_size_6dp"/>
+
+    <TextView
+        android:id="@+id/share_pyqIv"
+        android:layout_width="@dimen/shareView_img_width"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/share_friend"
+        android:gravity="center"
+        android:text="朋友圈"
+        android:textColor="@color/detail_comments"
+        android:textSize="@dimen/font15sp"
+        android:drawablePadding="@dimen/margin_size_6dp"
+        android:layout_marginLeft="@dimen/margin_size_16dp"/>
+
+    <TextView
+         android:id="@+id/share_qqIv"
+        android:layout_width="@dimen/shareView_img_width"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/share_qq"
+        android:gravity="center"
+        android:text="QQ"
+        android:textColor="@color/detail_comments"
+        android:layout_marginLeft="@dimen/margin_size_16dp"
+        android:textSize="@dimen/font15sp"
+        android:drawablePadding="@dimen/margin_size_6dp"/>
+
+    <TextView
+        android:id="@+id/share_sinaIv"
+        android:layout_width="@dimen/shareView_img_width"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/share_weibo"
+        android:gravity="center"
+        android:text="新浪微博"
+        android:textColor="@color/detail_comments"
+        android:textSize="@dimen/font15sp"
+        android:drawablePadding="@dimen/margin_size_6dp"
+        android:layout_marginLeft="@dimen/margin_size_16dp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+
+</merge>

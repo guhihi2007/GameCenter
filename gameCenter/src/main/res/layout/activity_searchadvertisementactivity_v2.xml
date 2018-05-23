@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey">
+
+    <cn.lt.game.ui.app.search.SearchTitleBarView
+        android:id="@+id/saatitle_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/rl_serach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ViewStub
+            android:id="@+id/SSA_gametitleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/gamedetail_gametitle_hotsearch_layout" />
+
+    </LinearLayout>
+
+    <cn.lt.game.lib.view.NetWorkStateView
+        android:id="@+id/game_detail_netWrokStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/saatitle_bar"></cn.lt.game.lib.view.NetWorkStateView>
+
+
+</RelativeLayout>

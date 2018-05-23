@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:NoSearchTitleBar="http://schemas.android.com/apk/res-auto"
+    xmlns:SearchBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:orientation="vertical">
+
+    <cn.lt.game.ui.app.gamegift.view.GiftTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        NoSearchTitleBar:titleName="@string/gift_search" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <cn.lt.game.lib.view.SearchView
+            android:id="@+id/sv_gift_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gift_serach_searchview_margin_left"
+            android:layout_marginRight="@dimen/gift_serach_searchview_margin_right"
+            android:layout_marginTop="@dimen/gift_serach_searchview_margin_top"
+            SearchBar:searchTitle="@string/search_gift"
+            SearchBar:searchWhat="searchGift" />
+
+        <TextView
+            android:id="@+id/tv_no_search_data"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginBottom="-8dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#999999"
+            android:textSize="@dimen/font13sp"
+            android:visibility="gone" />
+
+        <cn.lt.game.lib.view.NetWorkStateView
+            android:id="@+id/rank_netwrolStateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></cn.lt.game.lib.view.NetWorkStateView>
+
+        <cn.lt.game.lib.widget.RefreshAndLoadMoreListView
+            android:id="@+id/glv_gift_search1"
+            ptrScrollingWhileRefreshingEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:scrollbars="none"
+            />
+    </LinearLayout>
+
+    <cn.lt.game.ui.app.gamegift.view.GiftTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        NoSearchTitleBar:titleName="@string/gift_search" />
+
+</LinearLayout>
