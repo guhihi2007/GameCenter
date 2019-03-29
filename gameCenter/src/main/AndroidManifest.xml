@@ -95,9 +95,7 @@
         <!--百度统计部分 start-->
         <meta-data
             android:name="BaiduMobAd_STAT_ID"
-            android:value="7c949c267d" />
-         
-        <!--渠道商编号-->
+            android:value="7c949c267d" /><!--渠道商编号-->
         <meta-data
             android:name="BaiduMobAd_CHANNEL"
             android:value="${channel_lt}" />
@@ -113,7 +111,7 @@
         <meta-data
             android:name="BaiduMobAd_TIME_INTERVAL"
             android:value="1" />
-         <!--日志仅在 wifi 网络下发送，默认为 false-->
+        <!--日志仅在 wifi 网络下发送，默认为 false-->
         <meta-data
             android:name="BaiduMobAd_ONLY_WIFI"
             android:value="false" />
@@ -121,7 +119,7 @@
         <meta-data
             android:name="BaiduMobAd_CELL_LOCATION"
             android:value="true" />
-         <!--是否获取 GPS 位置信息，默认为 true -->
+        <!--是否获取 GPS 位置信息，默认为 true -->
         <meta-data
             android:name="BaiduMobAd_GPS_LOCATION"
             android:value="true" />
@@ -573,7 +571,7 @@
             android:exported="false">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths" />`
+                android:resource="@xml/file_paths" />
         </provider>
 
         <service
